@@ -15,12 +15,13 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2026.0.0.16",
   },
   "name":"Canary in a Coal Mine",
   "resources":[
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
+    {"id":{"name":"Script2","path":"scripts/Script2/Script2.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
