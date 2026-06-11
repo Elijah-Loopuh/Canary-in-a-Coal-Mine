@@ -3,6 +3,8 @@
   "%Name":"Canary in a Coal Mine",
   "AudioGroups":[
     {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup1","exportDir":"","name":"audiogroup1","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup2","exportDir":"","name":"audiogroup2","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
@@ -13,7 +15,9 @@
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],
-  "IncludedFiles":[],
+  "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"save_the_miners_filler_song.m4a","CopyToMask":-1,"filePath":"datafiles","name":"save_the_miners_filler_song.m4a","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+  ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
@@ -24,11 +28,13 @@
     {"id":{"name":"oBucket","path":"objects/oBucket/oBucket.yy",},},
     {"id":{"name":"oCapacity","path":"objects/oCapacity/oCapacity.yy",},},
     {"id":{"name":"oCarrying","path":"objects/oCarrying/oCarrying.yy",},},
+    {"id":{"name":"oJukebox","path":"objects/oJukebox/oJukebox.yy",},},
     {"id":{"name":"oMiner","path":"objects/oMiner/oMiner.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oPoints","path":"objects/oPoints/oPoints.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"BackroundMusic","path":"sounds/BackroundMusic/BackroundMusic.yy",},},
     {"id":{"name":"Bucket","path":"sprites/Bucket/Bucket.yy",},},
     {"id":{"name":"Miner","path":"sprites/Miner/Miner.yy",},},
     {"id":{"name":"Numbers","path":"sprites/Numbers/Numbers.yy",},},
