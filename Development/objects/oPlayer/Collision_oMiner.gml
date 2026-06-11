@@ -2,5 +2,4 @@
 if (cancollect = true)
 {
 	minersCollected += 1;
-	minerscore += 1;
 }
