@@ -22,6 +22,7 @@
   "name":"Canary in a Coal Mine",
   "resources":[
     {"id":{"name":"oBucket","path":"objects/oBucket/oBucket.yy",},},
+    {"id":{"name":"oCapacity","path":"objects/oCapacity/oCapacity.yy",},},
     {"id":{"name":"oCarrying","path":"objects/oCarrying/oCarrying.yy",},},
     {"id":{"name":"oMiner","path":"objects/oMiner/oMiner.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
@@ -32,6 +33,7 @@
     {"id":{"name":"Miner","path":"sprites/Miner/Miner.yy",},},
     {"id":{"name":"Numbers","path":"sprites/Numbers/Numbers.yy",},},
     {"id":{"name":"PurpleCubeOfDebuggig","path":"sprites/PurpleCubeOfDebuggig/PurpleCubeOfDebuggig.yy",},},
+    {"id":{"name":"Slash","path":"sprites/Slash/Slash.yy",},},
     {"id":{"name":"WALL","path":"sprites/WALL/WALL.yy",},},
   ],
   "resourceType":"GMProject",
