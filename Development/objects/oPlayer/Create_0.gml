@@ -7,4 +7,4 @@ yspd = 0;
 //Jumping
 grav = 0.275;
 termVel = 6;
-jspd = -3;
+jspd = -5.5;
