@@ -2,11 +2,11 @@
 
 rightKey = keyboard_check( ord( "D" ));
 leftKey = keyboard_check( ord( "A" ));
-jumpKeyPressed = keyboard_check_pressed( vk_space ) or keyboard_check_pressed( ord( "W" ));
-jumpKey = keyboard_check( vk_space );
+jumpKeyPressed = keyboard_check_pressed( vk_space ) or keyboard_check_pressed( ord( "W" )); // true 1st step keys are held
+jumpKey = keyboard_check( vk_space ) or keyboard_check( ord( "W" )); // true every step keys are held
 sprintKey = keyboard_check( vk_shift );
 //X Movement
-	//Direction
+	//Direction (right = positive, left = negative)
 	moveDir = rightKey - leftKey;
 	
 	//Sprint
