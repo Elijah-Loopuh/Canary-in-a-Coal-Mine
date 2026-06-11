@@ -72,3 +72,13 @@ sprintKey = keyboard_check( vk_shift );
 	
 	//Move
 	y += yspd;
+	
+	///checking if can collect more miners
+	if(minersCollected < minercapacity)
+	{
+		cancollect = true;
+	}
+	else
+	{
+		cancollect = false;
+	}

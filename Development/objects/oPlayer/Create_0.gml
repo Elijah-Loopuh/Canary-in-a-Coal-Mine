@@ -8,3 +8,9 @@ yspd = 0;
 grav = 0.275;
 termVel = 6;
 jspd = -5.5;
+
+//miner points
+minersCollected = 0;
+minercapacity = 1;
+cancollect = true;
+minerscore = 0;

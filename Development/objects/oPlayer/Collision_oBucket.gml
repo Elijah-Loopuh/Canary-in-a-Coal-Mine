@@ -1,0 +1,1 @@
+minersCollected = 0;

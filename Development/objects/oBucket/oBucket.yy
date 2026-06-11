@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oWall",
+  "%Name":"oBucket",
   "eventList":[],
   "managed":true,
-  "name":"oWall",
+  "name":"oBucket",
   "overriddenProperties":[],
   "parent":{
     "name":"Canary in a Coal Mine",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"WALL",
-    "path":"sprites/WALL/WALL.yy",
+    "name":"Bucket",
+    "path":"sprites/Bucket/Bucket.yy",
   },
   "spriteMaskId":null,
   "visible":true,
