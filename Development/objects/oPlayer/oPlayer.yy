@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Miner",
-    "path":"sprites/Miner/Miner.yy",
+    "name":"FatMiner",
+    "path":"sprites/FatMiner/FatMiner.yy",
   },
   "spriteMaskId":null,
   "visible":true,
