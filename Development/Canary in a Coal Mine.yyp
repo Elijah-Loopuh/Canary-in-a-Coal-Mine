@@ -25,6 +25,7 @@
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"New_Piskel_1_png__1_","path":"sprites/New_Piskel_1_png__1_/New_Piskel_1_png__1_.yy",},},
+    {"id":{"name":"New_Piskel_1_png__1_4","path":"sprites/New_Piskel_1_png__1_4/New_Piskel_1_png__1_4.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
     {"id":{"name":"sWall","path":"sprites/sWall/sWall.yy",},},
   ],

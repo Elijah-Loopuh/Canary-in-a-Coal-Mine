@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"New_Piskel_1_png__1_",
-    "path":"sprites/New_Piskel_1_png__1_/New_Piskel_1_png__1_.yy",
+    "name":"New_Piskel_1_png__1_4",
+    "path":"sprites/New_Piskel_1_png__1_4/New_Piskel_1_png__1_4.yy",
   },
   "spriteMaskId":null,
   "visible":true,
