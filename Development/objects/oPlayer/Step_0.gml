@@ -1,13 +1,25 @@
 //Get inputs
+
 rightKey = keyboard_check( ord( "D" ));
 leftKey = keyboard_check( ord( "A" ));
 jumpKeyPressed = keyboard_check_pressed( vk_space ) or keyboard_check_pressed( ord( "W" ));
 jumpKey = keyboard_check( vk_space );
-
+sprintKey = keyboard_check( vk_shift );
 //X Movement
 	//Direction
 	moveDir = rightKey - leftKey;
+	
+	//Sprint
+	if (sprintKey == true)
+	{
+		moveSpd = 4;
+	}
+	else
+	{
+		moveSpd = 2;
+	}
 
+	
 	//Get xspd
 	xspd = moveDir * moveSpd;
 
