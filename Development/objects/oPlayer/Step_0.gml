@@ -2,12 +2,60 @@
 
 rightKey = keyboard_check( ord( "D" ));
 leftKey = keyboard_check( ord( "A" ));
-jumpKeyPressed = keyboard_check_pressed( vk_space ) or keyboard_check_pressed( ord( "W" )); // true 1st step keys are held
-jumpKey = keyboard_check( vk_space ) or keyboard_check( ord( "W" )); // true every step keys are held
+jumpKeyPressed = keyboard_check_pressed( vk_space ) or keyboard_check_pressed( ord( "W" )); //true 1st step keys are held
+jumpKey = keyboard_check( vk_space ) or keyboard_check( ord( "W" )); //true every step keys are held
 sprintKey = keyboard_check( vk_shift );
+moveSmooth = 0.1; //horizontal acceleration
+
 //X Movement
 	//Direction (right = positive, left = negative)
 	moveDir = rightKey - leftKey;
+	
+	//Return moveDirSmooth to 0 when no key pressed, or when moving in opposite direction
+	if (sign(moveDir) != sign(moveDirSmooth)) || (moveDir == 0)
+	{
+		if moveDirSmooth > 0
+		{
+			moveDirSmooth -= moveSmooth
+		}
+		
+		if moveDirSmooth < 0
+		{
+			moveDirSmooth += moveSmooth
+		}
+	}
+	
+	//Increase moveDirSmooth when moving Right
+	if moveDir == 1
+	{
+		if moveDirSmooth <= moveDir
+		{
+			moveDirSmooth += moveSmooth;
+		}
+		else
+		{
+			moveDirSmooth = moveDir;
+		}
+	}
+	
+	//Decrease moveDirSmooth when moving left
+	if moveDir == -1
+	{
+		if moveDirSmooth >= moveDir
+		{
+			moveDirSmooth -= moveSmooth;
+		}
+		else
+		{
+			moveDirSmooth = moveDir;
+		}
+	}
+	
+	//Set moveDirSmooth to 0 to prevent fluttering around 0 from float errors
+	if abs(moveDirSmooth) < moveSmooth
+	{
+		moveDirSmooth = 0.0
+	}
 	
 	//Sprint
 	if (sprintKey == true)
@@ -21,7 +69,7 @@ sprintKey = keyboard_check( vk_shift );
 
 	
 	//Get xspd
-	xspd = moveDir * moveSpd;
+	xspd = moveDirSmooth * moveSpd;
 
 	//X collision
 	var _subPixel = 0.5;

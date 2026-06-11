@@ -1,5 +1,6 @@
 //Moving
 moveDir = 0;
+moveDirSmooth = 0.0;
 moveSpd = 2;
 xspd = 0;
 yspd = 0;
