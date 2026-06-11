@@ -26,6 +26,7 @@
   "name":"Canary in a Coal Mine",
   "resources":[
     {"id":{"name":"oBucket","path":"objects/oBucket/oBucket.yy",},},
+    {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"oCapacity","path":"objects/oCapacity/oCapacity.yy",},},
     {"id":{"name":"oCarrying","path":"objects/oCarrying/oCarrying.yy",},},
     {"id":{"name":"oJukebox","path":"objects/oJukebox/oJukebox.yy",},},
