@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Bucket",
-    "path":"sprites/Bucket/Bucket.yy",
+    "name":"GoodBucket",
+    "path":"sprites/GoodBucket/GoodBucket.yy",
   },
   "spriteMaskId":null,
   "visible":true,
