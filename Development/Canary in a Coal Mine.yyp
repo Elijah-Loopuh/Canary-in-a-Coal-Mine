@@ -35,6 +35,7 @@
     {"id":{"name":"oPoints","path":"objects/oPoints/oPoints.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
     {"id":{"name":"BackroundMusic","path":"sounds/BackroundMusic/BackroundMusic.yy",},},
     {"id":{"name":"Bucket","path":"sprites/Bucket/Bucket.yy",},},
     {"id":{"name":"FatMiner","path":"sprites/FatMiner/FatMiner.yy",},},
