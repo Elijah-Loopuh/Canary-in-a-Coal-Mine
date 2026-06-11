@@ -9,10 +9,18 @@ moveSmooth = 0.1; //horizontal acceleration
 
 //X Movement
 	//Direction (right = positive, left = negative)
-	moveDir = rightKey - leftKey;
+	if sprintKey
+	{
+		moveDir = 2*(rightKey - leftKey)
+	}
+	else
+	{
+		moveDir = rightKey - leftKey
+	}
+
 	
 	//Return moveDirSmooth to 0 when no key pressed, or when moving in opposite direction
-	if (sign(moveDir) != sign(moveDirSmooth)) || (moveDir == 0)
+	if sign(moveDir) != sign(moveDirSmooth)
 	{
 		if moveDirSmooth > 0
 		{
@@ -26,28 +34,30 @@ moveSmooth = 0.1; //horizontal acceleration
 	}
 	
 	//Increase moveDirSmooth when moving Right
-	if moveDir == 1
-	{
-		if moveDirSmooth <= moveDir
+	if moveDir > 0
+	{		
+		if moveDirSmooth < moveDir
 		{
 			moveDirSmooth += moveSmooth;
 		}
-		else
-		{
-			moveDirSmooth = moveDir;
-		}
-	}
-	
-	//Decrease moveDirSmooth when moving left
-	if moveDir == -1
-	{
-		if moveDirSmooth >= moveDir
+		
+		if moveDirSmooth > moveDir
 		{
 			moveDirSmooth -= moveSmooth;
 		}
-		else
+	}
+	
+	//Increase moveDirSmooth when moving Right
+	if moveDir < 0
+	{		
+		if moveDirSmooth < moveDir
 		{
-			moveDirSmooth = moveDir;
+			moveDirSmooth += moveSmooth;
+		}
+		
+		if moveDirSmooth > moveDir
+		{
+			moveDirSmooth -= moveSmooth;
 		}
 	}
 	
@@ -57,17 +67,13 @@ moveSmooth = 0.1; //horizontal acceleration
 		moveDirSmooth = 0.0
 	}
 	
-	//Sprint
-	if (sprintKey == true)
+	//See above but for max speed
+	if abs(moveDirSmooth - moveDir) < moveSmooth
 	{
-		moveSpd = 4;
-	}
-	else
-	{
-		moveSpd = 2;
+		moveDirSmooth = moveDir
 	}
 
-	
+
 	//Get xspd
 	xspd = moveDirSmooth * moveSpd;
 
