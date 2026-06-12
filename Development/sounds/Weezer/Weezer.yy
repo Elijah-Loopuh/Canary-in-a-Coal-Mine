@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Weezer",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":3.16,
+  "exportDir":"",
+  "name":"Weezer",
+  "parent":{
+    "name":"Canary in a Coal Mine",
+    "path":"Canary in a Coal Mine.yyp",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Weezer.ogg",
+  "volume":1.0,
+}
