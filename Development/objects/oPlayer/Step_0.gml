@@ -11,7 +11,7 @@ moveSmooth = 0.1; //horizontal acceleration
 	//Direction (right = positive, left = negative)
 	if sprintKey
 	{
-		moveDir = 2*(rightKey - leftKey)
+		moveDir = 3 * (rightKey - leftKey)
 	}
 	else
 	{
