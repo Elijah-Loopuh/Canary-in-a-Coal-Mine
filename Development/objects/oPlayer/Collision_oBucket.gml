@@ -1,7 +1,8 @@
-minerscore += minersCollected;
+
+oBucket.MinerQueue += minersCollected
 if (minersCollected != 0)
 {
-	oBucket.image_index = 1;
+	oBucket.alarm[0] = 1;
 }
 minersCollected = 0;
 

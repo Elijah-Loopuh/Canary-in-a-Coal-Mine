@@ -1,0 +1,1 @@
+minercapacity += 1;

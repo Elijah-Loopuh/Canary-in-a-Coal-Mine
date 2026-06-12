@@ -128,6 +128,10 @@ moveSmooth = 0.1; //horizontal acceleration
 	y += yspd;
 	
 	///checking if can collect more miners
+	if(minersCollected > minercapacity)
+	{
+		minersCollected -= 1;
+	}
 	if(minersCollected < minercapacity)
 	{
 		cancollect = true;
