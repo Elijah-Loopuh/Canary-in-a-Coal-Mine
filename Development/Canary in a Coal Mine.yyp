@@ -37,7 +37,6 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
     {"id":{"name":"BackroundMusic","path":"sounds/BackroundMusic/BackroundMusic.yy",},},
-    {"id":{"name":"Bucket","path":"sprites/Bucket/Bucket.yy",},},
     {"id":{"name":"BucketWitAFriend","path":"sprites/BucketWitAFriend/BucketWitAFriend.yy",},},
     {"id":{"name":"EvilMiner","path":"sprites/EvilMiner/EvilMiner.yy",},},
     {"id":{"name":"FatMiner","path":"sprites/FatMiner/FatMiner.yy",},},
