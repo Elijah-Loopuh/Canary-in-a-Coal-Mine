@@ -10,8 +10,8 @@
   "name":"oPoints",
   "overriddenProperties":[],
   "parent":{
-    "name":"Canary in a Coal Mine",
-    "path":"Canary in a Coal Mine.yyp",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

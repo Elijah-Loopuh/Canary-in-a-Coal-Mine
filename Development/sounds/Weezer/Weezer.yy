@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"Weezer",
   "parent":{
-    "name":"Canary in a Coal Mine",
-    "path":"Canary in a Coal Mine.yyp",
+    "name":"Sound",
+    "path":"folders/Sound.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
