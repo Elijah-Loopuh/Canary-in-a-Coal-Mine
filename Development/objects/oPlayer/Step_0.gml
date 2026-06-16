@@ -5,13 +5,12 @@ leftKey = keyboard_check( ord( "A" ));
 jumpKeyPressed = keyboard_check_pressed( vk_space ) or keyboard_check_pressed( ord( "W" )); //true 1st step keys are held
 jumpKey = keyboard_check( vk_space ) or keyboard_check( ord( "W" )); //true every step keys are held
 sprintKey = keyboard_check( vk_shift );
-moveSmooth = 0.1; //horizontal acceleration
 
 //X Movement
 	//Direction (right = positive, left = negative)
 	if sprintKey
 	{
-		moveDir = 3 * (rightKey - leftKey)
+		moveDir = sprintPower * (rightKey - leftKey)
 	}
 	else
 	{
@@ -24,12 +23,12 @@ moveSmooth = 0.1; //horizontal acceleration
 	{
 		if moveDirSmooth > 0
 		{
-			moveDirSmooth -= moveSmooth
+			moveDirSmooth -= grip
 		}
 		
 		if moveDirSmooth < 0
 		{
-			moveDirSmooth += moveSmooth
+			moveDirSmooth += grip
 		}
 	}
 	
@@ -38,12 +37,12 @@ moveSmooth = 0.1; //horizontal acceleration
 	{		
 		if moveDirSmooth < moveDir
 		{
-			moveDirSmooth += moveSmooth;
+			moveDirSmooth += grip;
 		}
 		
 		if moveDirSmooth > moveDir
 		{
-			moveDirSmooth -= moveSmooth;
+			moveDirSmooth -= grip;
 		}
 	}
 	
@@ -52,23 +51,23 @@ moveSmooth = 0.1; //horizontal acceleration
 	{		
 		if moveDirSmooth < moveDir
 		{
-			moveDirSmooth += moveSmooth;
+			moveDirSmooth += grip;
 		}
 		
 		if moveDirSmooth > moveDir
 		{
-			moveDirSmooth -= moveSmooth;
+			moveDirSmooth -= grip;
 		}
 	}
 	
 	//Set moveDirSmooth to 0 to prevent fluttering around 0 from float errors
-	if abs(moveDirSmooth) < moveSmooth
+	if abs(moveDirSmooth) < grip
 	{
 		moveDirSmooth = 0.0
 	}
 	
 	//See above but for max speed
-	if abs(moveDirSmooth - moveDir) < moveSmooth
+	if abs(moveDirSmooth - moveDir) < grip
 	{
 		moveDirSmooth = moveDir
 	}
@@ -104,7 +103,7 @@ moveSmooth = 0.1; //horizontal acceleration
 	if yspd > termVel { yspd = termVel };
 	
 	//Jump
-	if jumpKeyPressed && place_meeting( x, y + 1, oWall)
+	if jumpKeyPressed && (place_meeting( x, y + 1, oWall) || vDEBUG)
 	{
 		yspd = jspd;
 	}

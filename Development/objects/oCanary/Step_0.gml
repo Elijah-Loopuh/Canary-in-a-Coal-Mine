@@ -1,20 +1,52 @@
-//Player & nearest miner positions for mathing
-playerX = oPlayer.x
-playerX = oPlayer.y
+
 
 //Variable to hold the nearest miner for mathing
 minerNearest = instance_nearest(oPlayer.x, oPlayer.y, oMiner)
 
-//Updating miner coords
-minerX = minerNearest.x
-minerY = minerNearest.y
+//only do miner math when miners exist
+if minerNearest == noone
+{
+	canaryX = oPlayer.x
+	canaryY = oPlayer.y
+}
+else
+{
+	//doing miner math
 
+	//Doing weighted averages to find the spot the canary wants to be
+	canaryX = ((playerWeight) * oPlayer.x + (1 - playerWeight) * instance_nearest(oPlayer.x, oPlayer.y, oMiner).x)
+	canaryY = ((playerWeight) * oPlayer.y + (1 - playerWeight) * instance_nearest(oPlayer.x, oPlayer.y, oMiner).y)
+}
 
-//Setting pos to between miner and player
-/*
-x = ((playerWeight * oPlayer.x) + ((1 - playerWeight) * minerX)) / 2
-y = ((playerWeight * oPlayer.y) + ((1 - playerWeight) * minerY)) / 2
-*/
+	//sets the canary properly every frame
+	if canaryX < oPlayer.x + maxDist
+	{
+		if canaryX > oPlayer.x - maxDist
+		{
+			x = canaryX
+		}
+		else
+		{
+			x = oPlayer.x - maxDist
+		}
+	}
+	else
+	{
+		x = oPlayer.x + maxDist
+	}
 
-x = (2 * oPlayer.x + instance_nearest(oPlayer.x, oPlayer.y, oMiner).x) / 3
-y = (2 * oPlayer.y + instance_nearest(oPlayer.x, oPlayer.y, oMiner).y) / 3
+	if canaryY < oPlayer.y + maxDist
+	{
+		if canaryY > oPlayer.y - maxDist
+		{
+			y = canaryY
+		}
+		else
+		{
+			y = oPlayer.y - maxDist
+		}
+	}
+	else
+	{
+		y = oPlayer.y + maxDist
+	}

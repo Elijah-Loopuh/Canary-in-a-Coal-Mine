@@ -4,6 +4,8 @@ moveDirSmooth = 0.0;
 moveSpd = 2;
 xspd = 0;
 yspd = 0;
+grip = 0.1;
+sprintPower = 3
 
 //Jumping
 grav = 0.275;
@@ -15,3 +17,14 @@ minersCollected = 0;
 minercapacity = 1;
 cancollect = true;
 minerscore = 0;
+
+vDEBUG = false
+
+//increased grip, sprint speed, carry cap, low gravity, infinite jumps
+if vDEBUG
+{
+	grip = 0.5
+	sprintPower = 4
+	minercapacity = 999
+	grav /= 2
+}
