@@ -9,8 +9,8 @@
   "name":"oButtonParent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Canary in a Coal Mine",
-    "path":"Canary in a Coal Mine.yyp",
+    "name":"Buttons",
+    "path":"folders/Objects/Buttons.yy",
   },
   "parentObjectId":null,
   "persistent":false,

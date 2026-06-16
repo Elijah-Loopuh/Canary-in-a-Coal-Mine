@@ -6,3 +6,4 @@ if (minersCollected != 0)
 }
 minersCollected = 0;
 
+ 

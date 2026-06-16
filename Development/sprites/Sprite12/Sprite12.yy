@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Canary in a Coal Mine",
-    "path":"Canary in a Coal Mine.yyp",
+    "name":"Buttons",
+    "path":"folders/Objects/Buttons.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
