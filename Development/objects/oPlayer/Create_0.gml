@@ -18,7 +18,7 @@ minercapacity = 1;
 cancollect = true;
 minerscore = 0;
 
-vDEBUG = false
+vDEBUG = true
 
 //increased grip, sprint speed, carry cap, low gravity, infinite jumps
 if vDEBUG
