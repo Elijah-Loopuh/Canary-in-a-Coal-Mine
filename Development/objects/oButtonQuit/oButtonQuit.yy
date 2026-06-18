@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite12",
-    "path":"sprites/Sprite12/Sprite12.yy",
+    "name":"Button",
+    "path":"sprites/Button/Button.yy",
   },
   "spriteMaskId":null,
   "visible":true,
