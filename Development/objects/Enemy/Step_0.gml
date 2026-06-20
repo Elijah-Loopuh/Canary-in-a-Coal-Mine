@@ -5,7 +5,7 @@ x += move_speed;
 var look_ahead = 16 * sign(move_speed);
 
 // Turn after check
-if (place_meeting(x + look_ahead, y, obj_wall) || !position_meeting(x + look_ahead, bbox_bottom + 1, obj_wall))
+if (place_meeting(x + look_ahead, y, oWall) || !position_meeting(x + look_ahead, bbox_bottom + 1, oWall))
 {
 	move_speed = -move_speed;
 }
