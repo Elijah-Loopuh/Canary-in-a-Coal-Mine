@@ -33,6 +33,7 @@
   "name":"Canary in a Coal Mine",
   "resources":[
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
+    {"id":{"name":"Enemy","path":"objects/Enemy/Enemy.yy",},},
     {"id":{"name":"oBackPack","path":"objects/oBackPack/oBackPack.yy",},},
     {"id":{"name":"oBucket","path":"objects/oBucket/oBucket.yy",},},
     {"id":{"name":"oButtonDebug","path":"objects/oButtonDebug/oButtonDebug.yy",},},
@@ -71,6 +72,7 @@
     {"id":{"name":"Numbers","path":"sprites/Numbers/Numbers.yy",},},
     {"id":{"name":"PurpleCubeOfDebuggig","path":"sprites/PurpleCubeOfDebuggig/PurpleCubeOfDebuggig.yy",},},
     {"id":{"name":"room2background","path":"sprites/room2background/room2background.yy",},},
+    {"id":{"name":"Sprite17","path":"sprites/Sprite17/Sprite17.yy",},},
     {"id":{"name":"WALL","path":"sprites/WALL/WALL.yy",},},
     {"id":{"name":"weezer","path":"sprites/weezer/weezer.yy",},},
   ],
