@@ -34,6 +34,7 @@
   "resources":[
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
     {"id":{"name":"Enemy","path":"objects/Enemy/Enemy.yy",},},
+    {"id":{"name":"Health","path":"objects/Health/Health.yy",},},
     {"id":{"name":"oBackPack","path":"objects/oBackPack/oBackPack.yy",},},
     {"id":{"name":"oBucket","path":"objects/oBucket/oBucket.yy",},},
     {"id":{"name":"oButtonDebug","path":"objects/oButtonDebug/oButtonDebug.yy",},},
