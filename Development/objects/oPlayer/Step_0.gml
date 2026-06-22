@@ -139,3 +139,9 @@ sprintKey = keyboard_check( vk_shift );
 	{
 		cancollect = false;
 	}
+	
+	// Check Dead\Alive
+	if (hp <= 0 || y > room_height)
+	{
+		reset_player();
+	}
