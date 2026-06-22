@@ -9,8 +9,8 @@
   "name":"oPoints",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"UI Elements",
+    "path":"folders/Objects/UI Elements.yy",
   },
   "parentObjectId":null,
   "persistent":false,

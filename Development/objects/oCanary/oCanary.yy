@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"New_Piskel",
-    "path":"sprites/New_Piskel/New_Piskel.yy",
+    "name":"canary",
+    "path":"sprites/canary/canary.yy",
   },
   "spriteMaskId":null,
   "visible":true,

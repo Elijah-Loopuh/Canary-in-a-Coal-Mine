@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"oInGameMenu",
+  "%Name":"oExitShop",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oInGameMenu",
+  "name":"oExitShop",
   "overriddenProperties":[],
   "parent":{
-    "name":"UI Elements",
-    "path":"folders/Objects/UI Elements.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"GameMenu",
-    "path":"sprites/GameMenu/GameMenu.yy",
+    "name":"exitShop",
+    "path":"sprites/exitShop/exitShop.yy",
   },
   "spriteMaskId":null,
   "visible":true,

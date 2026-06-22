@@ -8,4 +8,4 @@ oPlayer.minercapacity = 999;
 oPlayer.grav /= 2;
 oPlayer.max_hp = 1000;
 oPlayer.hp = 1000;
-
+oPlayer.minerscore = 800;
