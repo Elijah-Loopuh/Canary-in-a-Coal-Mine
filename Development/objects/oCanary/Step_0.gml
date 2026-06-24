@@ -1,58 +1,61 @@
 
+centerX = oPlayer.x + sprite_get_width(sFatMiner)/2 - sprite_get_width(sCanary)/2
+centerY = oPlayer.y + sprite_get_height(sFatMiner)/2 - sprite_get_height(sCanary)/2
+
 //Calculate stopping distances
 xStop = (xSpd * xSpd) / (2 * grip)
 yStop = (ySpd * ySpd) / (2 * grip)
 
 //Variable to hold the nearest miner for mathing
-minerNearest = instance_nearest(oPlayer.x, oPlayer.y, oMiner)
+minerNearest = instance_nearest(centerX, centerY, oMiner)
 
 //only do miner math when miners exist
 if minerNearest == noone
 {
-	canaryX = oPlayer.x
-	canaryY = oPlayer.y
+	canaryX = centerX
+	canaryY = centerY
 }
 else
 {
 	//doing miner math
 
 	//Doing weighted averages to find the spot the canary wants to be
-	canaryX = ((playerWeight) * oPlayer.x + (1 - playerWeight) * instance_nearest(oPlayer.x, oPlayer.y, oMiner).x)
-	canaryY = ((playerWeight) * oPlayer.y + (1 - playerWeight) * instance_nearest(oPlayer.x, oPlayer.y, oMiner).y)
+	canaryX = ((playerWeight) * centerX + (1 - playerWeight) * instance_nearest(centerX, centerY, oMiner).x)
+	canaryY = ((playerWeight) * centerY + (1 - playerWeight) * instance_nearest(centerX, centerY, oMiner).y)
 }
 
 
 	//sets the target properly every frame
-	if canaryX < oPlayer.x + maxDist
+	if canaryX < centerX + maxDist
 	{
-		if canaryX > oPlayer.x - maxDist
+		if canaryX > centerX - maxDist
 		{
 			xTgt = canaryX
 		}
 		else
 		{
-			xTgt = oPlayer.x - maxDist
+			xTgt = centerX - maxDist
 		}
 	}
 	else
 	{
-		xTgt = oPlayer.x + maxDist
+		xTgt = centerX + maxDist
 	}
 
-	if canaryY < oPlayer.y + maxDist
+	if canaryY < centerY + maxDist
 	{
-		if canaryY > oPlayer.y - maxDist
+		if canaryY > centerY - maxDist
 		{
 			yTgt = canaryY
 		}
 		else
 		{
-			yTgt = oPlayer.y - maxDist
+			yTgt = centerY - maxDist
 		}
 	}
 	else
 	{
-		yTgt = oPlayer.y + maxDist
+		yTgt = centerY + maxDist
 	}
 	
 	
@@ -132,28 +135,6 @@ else
 				}
 			}
 		}
-		
-		
-		/*
-		//Drag & speed snapping
-		if xSpd >= 0
-		{
-			xSpd -= drag
-		}
-		if xSpd <= 0
-		{
-			xSpd += drag
-		}
-		
-		if ySpd >= 0
-		{
-			ySpd -= drag
-		}
-		if ySpd <= 0
-		{
-			xSpd += drag
-		}
-		*/
 		
 		if abs(xTgt - x) < snapDist
 		{

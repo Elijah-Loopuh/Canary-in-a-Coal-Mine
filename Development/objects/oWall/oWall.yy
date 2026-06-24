@@ -6,8 +6,8 @@
   "name":"oWall",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Physical Elements",
+    "path":"folders/Objects/Physical Elements.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"WALL",
-    "path":"sprites/WALL/WALL.yy",
+    "name":"sWALL",
+    "path":"sprites/sWALL/sWALL.yy",
   },
   "spriteMaskId":null,
   "visible":true,

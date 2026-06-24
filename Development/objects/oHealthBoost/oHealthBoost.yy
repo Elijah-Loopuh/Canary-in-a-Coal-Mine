@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"pill",
-    "path":"sprites/pill/pill.yy",
+    "name":"sPill",
+    "path":"sprites/sPill/sPill.yy",
   },
   "spriteMaskId":null,
   "visible":true,

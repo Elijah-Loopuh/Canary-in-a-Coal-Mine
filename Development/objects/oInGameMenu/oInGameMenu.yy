@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"GameMenu",
-    "path":"sprites/GameMenu/GameMenu.yy",
+    "name":"sGameMenu",
+    "path":"sprites/sGameMenu/sGameMenu.yy",
   },
   "spriteMaskId":null,
   "visible":true,

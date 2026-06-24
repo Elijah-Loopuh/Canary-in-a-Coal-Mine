@@ -89,6 +89,7 @@ sprintKey = keyboard_check( vk_shift );
 	
 		//Set xspd to zero to "collide
 		xspd = 0;
+		moveDirSmooth = 0;
 	}
 
 	//Move

@@ -8,8 +8,8 @@
   "name":"oCamera",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Invisible Elements",
+    "path":"folders/Objects/Invisible Elements.yy",
   },
   "parentObjectId":null,
   "persistent":true,

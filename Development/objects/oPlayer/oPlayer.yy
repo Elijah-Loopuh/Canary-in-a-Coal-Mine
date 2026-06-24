@@ -13,8 +13,8 @@
   "name":"oPlayer",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Physical Elements",
+    "path":"folders/Objects/Physical Elements.yy",
   },
   "parentObjectId":null,
   "persistent":true,
@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"FatMiner",
-    "path":"sprites/FatMiner/FatMiner.yy",
+    "name":"sFatMiner",
+    "path":"sprites/sFatMiner/sFatMiner.yy",
   },
   "spriteMaskId":null,
   "visible":true,

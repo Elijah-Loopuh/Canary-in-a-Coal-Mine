@@ -9,8 +9,8 @@
   "name":"oCanary",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Physical Elements",
+    "path":"folders/Objects/Physical Elements.yy",
   },
   "parentObjectId":null,
   "persistent":true,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"canary",
-    "path":"sprites/canary/canary.yy",
+    "name":"sCanary",
+    "path":"sprites/sCanary/sCanary.yy",
   },
   "spriteMaskId":null,
   "visible":true,

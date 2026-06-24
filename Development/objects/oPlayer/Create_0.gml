@@ -4,7 +4,7 @@ moveDirSmooth = 0.0;
 moveSpd = 2;
 xspd = 0;
 yspd = 0;
-grip = 0.1;
+grip = 0.3;
 sprintPower = 3
 
 //Jumping

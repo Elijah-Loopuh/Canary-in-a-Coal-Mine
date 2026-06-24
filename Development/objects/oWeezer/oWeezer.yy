@@ -8,8 +8,8 @@
   "name":"oWeezer",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Physical Elements",
+    "path":"folders/Objects/Physical Elements.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"weezer",
-    "path":"sprites/weezer/weezer.yy",
+    "name":"sWeezer",
+    "path":"sprites/sWeezer/sWeezer.yy",
   },
   "spriteMaskId":null,
   "visible":true,

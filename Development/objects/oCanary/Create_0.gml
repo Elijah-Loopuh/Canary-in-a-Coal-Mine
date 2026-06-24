@@ -13,4 +13,4 @@ xSpd = 0
 ySpd = 0
 grip = 0.1
 drag = 0.5
-snapDist = 1
+snapDist = 0.5

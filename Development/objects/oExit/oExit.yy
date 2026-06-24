@@ -9,8 +9,8 @@
   "name":"oExit",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Physical Elements",
+    "path":"folders/Objects/Physical Elements.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"ExitSprite",
-    "path":"sprites/ExitSprite/ExitSprite.yy",
+    "name":"sExit",
+    "path":"sprites/sExit/sExit.yy",
   },
   "spriteMaskId":null,
   "visible":true,

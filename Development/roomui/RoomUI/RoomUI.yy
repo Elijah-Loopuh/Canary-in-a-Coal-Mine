@@ -15,7 +15,7 @@
             {"$GMRInstance":"v4","%Name":"inst_44D5C29B","colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_44D5C29B","objectId":{"name":"oButtonQuit_2","path":"objects/oButtonQuit_2/oButtonQuit_2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":46.0,"y":71.0,},
             {"$GMRInstance":"v4","%Name":"inst_6105C318","colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6105C318","objectId":{"name":"oInGameMenu","path":"objects/oInGameMenu/oInGameMenu.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
           ],"flexDirection":0,"height":{"unit":3,"value":92.0,},"justifyContent":1,"name":"FlexPanel","nodeColour":4282970758,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":92.0,},},
-      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"PlayerScoreUI","nodeColour":4292735560,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
+      ],"flexDirection":0,"gridX":16,"gridY":16,"justifyContent":1,"name":"PlayerScoreUI","nodeColour":4292735560,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
   ],
   "locked":false,
   "name":"RoomUI",
@@ -26,5 +26,5 @@
   "resourceType":"GMRoomUI",
   "resourceVersion":"2.0",
   "viewspaceChildren":[],
-  "visible":true,
+  "visible":false,
 }

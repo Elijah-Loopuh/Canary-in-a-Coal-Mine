@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"BackPack",
-    "path":"sprites/BackPack/BackPack.yy",
+    "name":"sBackPack",
+    "path":"sprites/sBackPack/sBackPack.yy",
   },
   "spriteMaskId":null,
   "visible":true,

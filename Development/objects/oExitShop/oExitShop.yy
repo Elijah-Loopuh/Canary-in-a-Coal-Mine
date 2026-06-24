@@ -9,8 +9,8 @@
   "name":"oExitShop",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"UI Elements",
+    "path":"folders/Objects/UI Elements.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"exitShop",
-    "path":"sprites/exitShop/exitShop.yy",
+    "name":"sExitShop",
+    "path":"sprites/sExitShop/sExitShop.yy",
   },
   "spriteMaskId":null,
   "visible":true,

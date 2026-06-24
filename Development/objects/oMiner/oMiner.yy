@@ -9,8 +9,8 @@
   "name":"oMiner",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Physical Elements",
+    "path":"folders/Objects/Physical Elements.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Miner",
-    "path":"sprites/Miner/Miner.yy",
+    "name":"sMiner",
+    "path":"sprites/sMiner/sMiner.yy",
   },
   "spriteMaskId":null,
   "visible":true,

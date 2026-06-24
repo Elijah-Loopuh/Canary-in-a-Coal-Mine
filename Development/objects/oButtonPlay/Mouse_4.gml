@@ -3,5 +3,5 @@ event_inherited();
 
 vDebug = false
 
-room_goto(TestingRoom);
+room_goto(rBigTestingRoom);
 layer_set_visible(layer_get_id("PlayerScoreUI"), true);

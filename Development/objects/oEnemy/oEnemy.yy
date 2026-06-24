@@ -9,8 +9,8 @@
   "name":"oEnemy",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Physical Elements",
+    "path":"folders/Objects/Physical Elements.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"EvilMiner",
-    "path":"sprites/EvilMiner/EvilMiner.yy",
+    "name":"sEvilMiner",
+    "path":"sprites/sEvilMiner/sEvilMiner.yy",
   },
   "spriteMaskId":null,
   "visible":true,

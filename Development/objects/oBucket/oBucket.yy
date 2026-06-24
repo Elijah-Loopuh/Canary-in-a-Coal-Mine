@@ -12,8 +12,8 @@
   "name":"oBucket",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Physical Elements",
+    "path":"folders/Objects/Physical Elements.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -39,8 +39,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"GoodBucket",
-    "path":"sprites/GoodBucket/GoodBucket.yy",
+    "name":"sGoodBucket",
+    "path":"sprites/sGoodBucket/sGoodBucket.yy",
   },
   "spriteMaskId":null,
   "visible":true,
