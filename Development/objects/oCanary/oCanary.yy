@@ -35,5 +35,5 @@
     "path":"sprites/sCanary/sCanary.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

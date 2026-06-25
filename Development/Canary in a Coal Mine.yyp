@@ -57,7 +57,6 @@
     {"id":{"name":"oMiner","path":"objects/oMiner/oMiner.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oPoints","path":"objects/oPoints/oPoints.yy",},},
-    {"id":{"name":"oShopDEPRECATED","path":"objects/oShopDEPRECATED/oShopDEPRECATED.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"oWeezer","path":"objects/oWeezer/oWeezer.yy",},},
     {"id":{"name":"PlayerState","path":"objects/PlayerState/PlayerState.yy",},},

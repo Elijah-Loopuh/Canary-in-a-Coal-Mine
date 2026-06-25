@@ -8,6 +8,9 @@ maxDist = 20
 xTgt = 0
 yTgt = 0
 
+//Setting draw depth to be in front of stuff
+id.depth = 75
+
 //Smooth movement variables
 xSpd = 0
 ySpd = 0

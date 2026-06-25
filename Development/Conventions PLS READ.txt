@@ -1,0 +1,17 @@
+controls:
+- wasd = move
+- tab = open debug/quit menu
+- esc = exit menu
+- f8 = toggle fullscreen
+
+dev notes:
+- depth is used to determine where layers are drawn, larger numbers drawn on lower layers
+- depth listings below:
+	- backgrounds: 600
+	- doors: 450
+	- player: 300
+	- walls: 150
+	- canary: 75
+	- shop background: 35
+	- shop objects: 18
+	- in game menus/ui readouts: 9

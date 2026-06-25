@@ -1,3 +1,3 @@
-targetRoom = rSecondRoom
-targetX = 350
-targetY = 300
+targetRoom = rBigTestingRoom
+targetX = 176
+targetY = 144

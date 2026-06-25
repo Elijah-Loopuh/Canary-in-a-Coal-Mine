@@ -7,6 +7,10 @@ jumpKeyPressed = keyboard_check_pressed( vk_space ) or keyboard_check_pressed( o
 jumpKey = keyboard_check( vk_space ) or keyboard_check( ord( "W" )); //true every step keys are held
 sprintKey = keyboard_check( vk_shift );
 
+//print position
+show_debug_message(x)
+show_debug_message(y)
+
 //X Movement
 	//Direction (right = positive, left = negative)
 	if sprintKey

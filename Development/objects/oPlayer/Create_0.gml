@@ -12,6 +12,9 @@ grav = 0.275;
 termVel = 6;
 jspd = -5.5;
 
+//set depth
+id.depth = 300
+
 //miner points
 minersCollected = 0;
 minercapacity = 1;
