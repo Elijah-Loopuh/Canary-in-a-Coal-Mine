@@ -3,6 +3,7 @@ controls:
 - tab = open debug/quit menu
 - esc = exit menu
 - f8 = toggle fullscreen
+- p to turn off music
 
 dev notes:
 - depth is used to determine where layers are drawn, larger numbers drawn on lower layers
