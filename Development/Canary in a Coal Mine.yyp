@@ -60,6 +60,7 @@
     {"id":{"name":"oShopDEPRECATED","path":"objects/oShopDEPRECATED/oShopDEPRECATED.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"oWeezer","path":"objects/oWeezer/oWeezer.yy",},},
+    {"id":{"name":"PlayerState","path":"objects/PlayerState/PlayerState.yy",},},
     {"id":{"name":"rBigTestingRoom","path":"rooms/rBigTestingRoom/rBigTestingRoom.yy",},},
     {"id":{"name":"rMenu","path":"rooms/rMenu/rMenu.yy",},},
     {"id":{"name":"rSecondRoom","path":"rooms/rSecondRoom/rSecondRoom.yy",},},

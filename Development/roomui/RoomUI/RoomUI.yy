@@ -3,6 +3,9 @@
   "%Name":"RoomUI",
   "children":[
     {"$GMRUILayer":"v1","%Name":"PlayerScoreUI","alignItems":2,"children":[
+        {"$GMRFlexPanel":"","%Name":"FlexPanel_1","alignItems":2,"children":[
+            {"$GMRInstance":"v4","%Name":"inst_45CD8999","colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_45CD8999","objectId":{"name":"PlayerState","path":"objects/PlayerState/PlayerState.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":9.0,"scaleY":3.0,"x":680.0,"y":354.0,},
+          ],"flexDirection":0,"height":{"unit":3,"value":16.0,},"justifyContent":1,"name":"FlexPanel_1","nodeColour":4282970813,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":48.0,},},
         {"$GMRFlexPanel":"","%Name":"FlexPanel_2","alignItems":2,"children":[
             {"$GMRInstance":"v4","%Name":"inst_62AA4992","colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":4,"resourceType":"InstanceFlexProps",},"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_62AA4992","objectId":{"name":"oCarrying","path":"objects/oCarrying/oCarrying.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.0,"scaleY":3.0,"x":527.0,"y":394.0,},
           ],"flexDirection":2,"height":{"unit":2,"value":109.07,},"justifyContent":1,"name":"FlexPanel_2","nodeColour":4286204146,"positionBottom":{"unit":1,"value":3.0,},"positionLeft":{"unit":1,"value":1.0,},"positionType":2,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":100.0,},},

@@ -1,5 +1,6 @@
 //Get inputs
-
+image_speed = 0;
+image_index = 0;
 rightKey = keyboard_check( ord( "D" ));
 leftKey = keyboard_check( ord( "A" ));
 jumpKeyPressed = keyboard_check_pressed( vk_space ) or keyboard_check_pressed( ord( "W" )); //true 1st step keys are held
@@ -146,3 +147,68 @@ sprintKey = keyboard_check( vk_shift );
 	{
 		reset_player();
 	}
+	
+	// Player State
+	
+
+if(moveDir > 0)
+{
+	if(yspd > 0)
+	{
+		if(moveDir > 1 || moveDir < -1){image_index = 12;}	
+		else{image_index = 6;}
+	}		
+	if(yspd < 0)
+	{
+		if(moveDir > 1 || moveDir < -1){image_index = 14;}	
+		else{image_index = 5;}
+
+	}
+	if(yspd = 0)
+	{
+		if(moveDir > 1 || moveDir < -1){image_index = 13;}	
+		else{image_index = 4;}
+	}
+}
+if(moveDir == 0)
+{
+	if(yspd > 0)
+	{
+		image_index = 1;
+	}		
+	if(yspd < 0)
+	{
+		image_index = 2;
+	}
+	if(yspd = 0)
+	{
+		image_index = 0;
+	}
+}
+if(moveDir < 0)
+{	
+	if(yspd > 0)
+	{
+		if(moveDir > 1 || moveDir < -1){image_index = 11;}	
+		else{image_index = 8;}
+	}		
+	if(yspd < 0)
+	{
+		if(moveDir > 1 || moveDir < -1){image_index = 10;}	
+		else{image_index = 7;}
+		
+	}
+	if(yspd = 0)
+	{
+		if(moveDir > 1 || moveDir < -1){image_index = 9;}	
+		else{image_index = 3;}
+	}
+}
+
+
+
+
+
+
+
+
