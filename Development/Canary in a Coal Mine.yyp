@@ -67,6 +67,7 @@
     {"id":{"name":"rTestingRoom","path":"rooms/rTestingRoom/rTestingRoom.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
     {"id":{"name":"BackroundMusic","path":"sounds/BackroundMusic/BackroundMusic.yy",},},
+    {"id":{"name":"intence_running","path":"sounds/intence_running/intence_running.yy",},},
     {"id":{"name":"Weezer","path":"sounds/Weezer/Weezer.yy",},},
     {"id":{"name":"sBackPack","path":"sprites/sBackPack/sBackPack.yy",},},
     {"id":{"name":"sBgTileBasic","path":"sprites/sBgTileBasic/sBgTileBasic.yy",},},
