@@ -5,7 +5,7 @@ moveSpd = 2;
 xspd = 0;
 yspd = 0;
 grip = 0.3;
-sprintPower = 3
+sprintPower = 3;
 
 //Jumping
 grav = 0.275;
@@ -13,7 +13,7 @@ termVel = 6;
 jspd = -5.5;
 
 //set depth
-id.depth = 300
+id.depth = 300;
 
 //miner points
 minersCollected = 0;
@@ -31,12 +31,15 @@ is_dead = false;
 // Stored Initial Position
 start_x = x;
 start_y = y;
+start_room = room;
 
 //Reset Player
 reset_player = function()
 {
 	x = start_x;
 	y = start_y;
+	room_goto(start_room); //goes back to spawn room for when the player died
+	
 	hp = max_hp;
 	visible = true;
 	
