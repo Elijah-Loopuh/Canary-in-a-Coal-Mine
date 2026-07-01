@@ -16,3 +16,8 @@ dev notes:
 	- shop background: 35
 	- shop objects: 18
 	- in game menus/ui readouts: 9
+
+- sprite file names start with s
+- objects file names start with o
+- rooms file names start with r
+- sounds file names start with m

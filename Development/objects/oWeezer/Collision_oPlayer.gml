@@ -1,2 +1,2 @@
-audio_play_sound(Weezer, 100, false);
+audio_play_sound(mWeezer, 100, false);
 instance_deactivate_object(id)

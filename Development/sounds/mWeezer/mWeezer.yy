@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"BackroundMusic",
+  "%Name":"mWeezer",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":108.34431,
+  "duration":3.16,
   "exportDir":"",
-  "name":"BackroundMusic",
+  "name":"mWeezer",
   "parent":{
     "name":"Sound",
     "path":"folders/Sound.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"BackroundMusic.mp3",
+  "soundFile":"mWeezer.ogg",
   "volume":1.0,
 }
