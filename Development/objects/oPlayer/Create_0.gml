@@ -8,7 +8,7 @@ xspd = 0;
 yspd = 0;
 grip = 0.3;
 sprintPower = 2;
-
+facing = 0;
 //Jumping
 grav = .35
 termVel = 20;
