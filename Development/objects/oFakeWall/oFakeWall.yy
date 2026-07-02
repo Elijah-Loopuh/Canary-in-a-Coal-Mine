@@ -1,19 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"oMiner",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oFakeWall",
+  "eventList":[],
   "managed":true,
-  "name":"oMiner",
+  "name":"oFakeWall",
   "overriddenProperties":[],
   "parent":{
     "name":"Physical Elements",
     "path":"folders/Objects/Physical Elements.yy",
   },
-  "parentObjectId":null,
-  "persistent":true,
+  "parentObjectId":{
+    "name":"oWall",
+    "path":"objects/oWall/oWall.yy",
+  },
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -31,9 +31,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sMiner",
-    "path":"sprites/sMiner/sMiner.yy",
+    "name":"sFakeWall",
+    "path":"sprites/sFakeWall/sFakeWall.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"sNoCollision",
+    "path":"sprites/sNoCollision/sNoCollision.yy",
+  },
   "visible":true,
 }

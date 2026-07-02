@@ -6,8 +6,8 @@ moveDirSmooth = 0.0;
 moveSpd = 5;
 xspd = 0;
 yspd = 0;
-grip = 0.3;
-sprintPower = 2;
+grip = 0.1;
+sprintPower = 1.75;
 facing = 0;
 //Jumping
 grav = .35
