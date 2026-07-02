@@ -1,4 +1,6 @@
 //Moving
+image_speed = 0;
+image_index = 0;
 moveDir = 0;
 moveDirSmooth = 0.0;
 moveSpd = 5;

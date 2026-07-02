@@ -21,6 +21,7 @@
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sound","folderPath":"folders/Sound.yy","name":"Sound","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Player","folderPath":"folders/Sprites/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[
     {"link":"io.gamemaker.sdfshaders-1.0.0","name":"io.gamemaker.sdfshaders-1.0.0","path":"io.gamemaker.sdfshaders-1.0.0.yyp",},
@@ -69,6 +70,7 @@
     {"id":{"name":"mBackroundMusic","path":"sounds/mBackroundMusic/mBackroundMusic.yy",},},
     {"id":{"name":"mIntence_running","path":"sounds/mIntence_running/mIntence_running.yy",},},
     {"id":{"name":"mWeezer","path":"sounds/mWeezer/mWeezer.yy",},},
+    {"id":{"name":"s_player_idle","path":"sprites/s_player_idle/s_player_idle.yy",},},
     {"id":{"name":"sBackPack","path":"sprites/sBackPack/sBackPack.yy",},},
     {"id":{"name":"sBgTileBasic","path":"sprites/sBgTileBasic/sBgTileBasic.yy",},},
     {"id":{"name":"sBucketWitAFriend","path":"sprites/sBucketWitAFriend/sBucketWitAFriend.yy",},},
