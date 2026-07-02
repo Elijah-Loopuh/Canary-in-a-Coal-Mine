@@ -9,10 +9,7 @@
     "name":"Physical Elements",
     "path":"folders/Objects/Physical Elements.yy",
   },
-  "parentObjectId":{
-    "name":"oWall",
-    "path":"objects/oWall/oWall.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

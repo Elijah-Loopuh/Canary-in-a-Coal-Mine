@@ -35,7 +35,7 @@
     "right":0,
     "tileMode":[
       0,
-      0,
+      1,
       0,
       0,
       1,
@@ -44,8 +44,8 @@
   },
   "origin":0,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Physical",
+    "path":"folders/Sprites/Physical.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
