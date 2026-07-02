@@ -1,16 +1,16 @@
 //Moving
 moveDir = 0;
 moveDirSmooth = 0.0;
-moveSpd = 2;
+moveSpd = 5;
 xspd = 0;
 yspd = 0;
 grip = 0.3;
-sprintPower = 3;
+sprintPower = 2;
 
 //Jumping
-grav = 0.275;
-termVel = 6;
-jspd = -5.5;
+grav = .35
+termVel = 20;
+jspd = -10;
 
 //set depth
 id.depth = 300;

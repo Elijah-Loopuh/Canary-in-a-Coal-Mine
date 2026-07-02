@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"sFatMiner",
   "bboxMode":0,
-  "bbox_bottom":31,
+  "bbox_bottom":63,
   "bbox_left":0,
-  "bbox_right":23,
+  "bbox_right":47,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -30,7 +30,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":32,
+  "height":64,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"3931b3ec-7dc8-4ef2-8db2-e005e3815084","blendMode":0,"displayName":"default","isLocked":false,"name":"3931b3ec-7dc8-4ef2-8db2-e005e3815084","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -161,5 +161,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":24,
+  "width":48,
 }

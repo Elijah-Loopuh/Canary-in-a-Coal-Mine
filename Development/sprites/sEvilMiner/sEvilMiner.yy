@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"sEvilMiner",
   "bboxMode":0,
-  "bbox_bottom":15,
-  "bbox_left":1,
-  "bbox_right":14,
+  "bbox_bottom":31,
+  "bbox_left":2,
+  "bbox_right":29,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":16,
+  "height":32,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"9d010f50-0846-42d4-b5c1-fc9c3c7a4917","blendMode":0,"displayName":"default","isLocked":false,"name":"9d010f50-0846-42d4-b5c1-fc9c3c7a4917","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":16,
+  "width":32,
 }
