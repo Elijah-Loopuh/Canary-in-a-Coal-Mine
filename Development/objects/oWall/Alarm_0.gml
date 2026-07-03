@@ -8,7 +8,7 @@ up = place_meeting(x, y-32, oWall);
 down = place_meeting(x, y+32, oWall);
 
 //fully surrounded 0
-if(!left && !right && !up && !down){sprite_index = sNoTexture;}
+if(!left && !right && !up && !down){sprite_index = sAll_Sides_floor;}
 
 //only left open 1
 if(!left && right && up && down){sprite_index = sLeft_Middle_floor;}
