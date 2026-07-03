@@ -37,3 +37,15 @@ function spawn_wall_row(start_x, start_y, length)
         );
     }
 }
+function spawn_wall_collum(start_x, start_y, length)
+{
+    for (var i = 0; i < length; i++)
+    {
+        instance_create_layer(
+            start_x,
+            start_y + i * 32,
+            "Instances",
+            oWall
+        );
+    }
+}

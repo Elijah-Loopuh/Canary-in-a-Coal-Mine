@@ -17,3 +17,4 @@ spawn_wall_row(322,96, 13);
 spawn_wall_row(864,1344,8);
 spawn_wall_row(1248,1344,7);
 
+spawn_wall_collum(1248,1056, 3);
