@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"oWall",
+  "%Name":"oWallController",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oWall",
+  "name":"oWallController",
   "overriddenProperties":[],
   "parent":{
-    "name":"Physical Elements",
-    "path":"folders/Objects/Physical Elements.yy",
+    "name":"Invisible Elements",
+    "path":"folders/Objects/Invisible Elements.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sWALL",
-    "path":"sprites/sWALL/sWALL.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

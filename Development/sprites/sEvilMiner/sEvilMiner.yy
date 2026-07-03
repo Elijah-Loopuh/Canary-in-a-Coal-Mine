@@ -23,7 +23,7 @@
   ],
   "name":"sEvilMiner",
   "nineSlice":null,
-  "origin":4,
+  "origin":1,
   "parent":{
     "name":"Physical",
     "path":"folders/Sprites/Physical.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":16,
-    "yorigin":16,
+    "yorigin":0,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
