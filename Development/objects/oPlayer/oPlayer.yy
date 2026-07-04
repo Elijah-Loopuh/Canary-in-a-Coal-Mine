@@ -38,6 +38,9 @@
     "name":"sFatMiner",
     "path":"sprites/sFatMiner/sFatMiner.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"sPlayerHitbox",
+    "path":"sprites/sPlayerHitbox/sPlayerHitbox.yy",
+  },
   "visible":true,
 }

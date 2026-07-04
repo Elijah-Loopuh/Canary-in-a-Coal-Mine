@@ -2,7 +2,7 @@
 playerWeight = 0.8
 
 //Max distance the canary is allowed away from the player
-maxDist = 20
+maxDist = 40
 
 //Target coords
 xTgt = 0
@@ -14,6 +14,6 @@ id.depth = 75
 //Smooth movement variables
 xSpd = 0
 ySpd = 0
-grip = 0.1
-drag = 0.5
+grip = 0.15
+//drag = 0.5
 snapDist = 0.5

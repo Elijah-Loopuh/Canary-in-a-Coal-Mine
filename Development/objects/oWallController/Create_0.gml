@@ -1,7 +1,7 @@
 //function spawn_wall_row(start_x, start_y, length)
 // Makes room borders automatically
 width = room_width /32 + 2; 
-height = room_height /32 + 1;
+height = room_height /32 + 2;
 spawn_room_walls(-32 , -32, width, height);
 function spawn_room_walls(x, y, width, height, )
 {

@@ -8,9 +8,11 @@ controls:
 dev notes:
 - depth is used to determine where layers are drawn, larger numbers drawn on lower layers
 - depth listings below:
+	- dev marker: 1000, behind everything so it disappears in game
 	- backgrounds: 600
 	- doors: 450
 	- player: 300
+	- miners: 225
 	- walls: 150
 	- canary: 75
 	- shop background: 35
@@ -21,3 +23,6 @@ dev notes:
 - objects file names start with o
 - rooms file names start with r
 - sounds file names start with m
+
+- room dimensions are 1920*960 by default
+- camera dimensions are 960*600

@@ -1,9 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"oFakeWall",
-  "eventList":[],
+  "%Name":"oDevMarker",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"oFakeWall",
+  "name":"oDevMarker",
   "overriddenProperties":[],
   "parent":{
     "name":"Physical Elements",
@@ -28,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sFakeWall",
-    "path":"sprites/sFakeWall/sFakeWall.yy",
+    "name":"sNoTexture",
+    "path":"sprites/sNoTexture/sNoTexture.yy",
   },
   "spriteMaskId":{
     "name":"sNoCollision",
