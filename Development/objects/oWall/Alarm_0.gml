@@ -38,13 +38,13 @@ if(left && !right && up && !down){sprite_index = sRight_Bottom_floor;}
 if(!left && !right && up && down){sprite_index = sSkinny_Middle_floor;}
 
 //middle bit if skinny 2
-if(left && right && !up && !down){sprite_index = sSideways_Skinny_Floor;}
+if(left && right && !up && !down){sprite_index = sSkinny_Middle_horizontal_floor;}
 
 //middle side right 3
-if(!left && right && !up && !down){sprite_index = sSideways_Left_floor;}
+if(!left && right && !up && !down){sprite_index = sSkinny_Left_floor;}
 
 //middle side left 3
-if(left && !right && !up && !down){sprite_index = sSideways_Right_floor;}
+if(left && !right && !up && !down){sprite_index = sSkinny_Right_floor;}
 
 
 //top bit if skinny 3

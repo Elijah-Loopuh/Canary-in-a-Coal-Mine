@@ -1,3 +1,4 @@
+/*
 spawn_wall_row(32, 1344, 4);
 spawn_wall_row(32, 1152, 4);
 spawn_wall_row(32, 960, 4);
@@ -18,3 +19,4 @@ spawn_wall_row(864,1344,8);
 spawn_wall_row(1248,1344,7);
 
 spawn_wall_collum(1248,1056, 3);
+*/
