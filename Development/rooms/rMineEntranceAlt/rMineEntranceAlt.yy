@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"rMineEntranceAlt",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/rMineEntranceAlt/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
@@ -42,6 +42,7 @@
     {"name":"inst_6ADEFE7","path":"rooms/rMineEntranceAlt/rMineEntranceAlt.yy",},
     {"name":"inst_774D4942","path":"rooms/rMineEntranceAlt/rMineEntranceAlt.yy",},
     {"name":"inst_6083E754","path":"rooms/rMineEntranceAlt/rMineEntranceAlt.yy",},
+    {"name":"inst_4DD83D9E","path":"rooms/rMineEntranceAlt/rMineEntranceAlt.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -57,6 +58,7 @@
             {"$GMRInstance":"v4","%Name":"inst_58081180_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_58081180_1","objectId":{"name":"oMiner","path":"objects/oMiner/oMiner.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":416.0,},
             {"$GMRInstance":"v4","%Name":"inst_7764150A1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7764150A1","objectId":{"name":"oMiner","path":"objects/oMiner/oMiner.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":416.0,},
             {"$GMRInstance":"v4","%Name":"inst_6083E754","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6083E754","objectId":{"name":"oWallController","path":"objects/oWallController/oWallController.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":832.0,"y":512.0,},
+            {"$GMRInstance":"v4","%Name":"inst_4DD83D9E","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4DD83D9E","objectId":{"name":"oExit","path":"objects/oExit/oExit.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":704.0,},
           ],"layers":[],"name":"Interactables","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
         {"$GMRInstanceLayer":"","%Name":"Walls","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
             {"$GMRInstance":"v4","%Name":"inst_376F9EF6_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_376F9EF6_1","objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"previewSprite":{"name":"sSideways_Skinny_Floor","path":"sprites/sSideways_Skinny_Floor/sSideways_Skinny_Floor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":12.0,"scaleY":1.0,"x":1184.0,"y":160.0,},

@@ -69,6 +69,7 @@
     {"id":{"name":"oWelcomeSign","path":"objects/oWelcomeSign/oWelcomeSign.yy",},},
     {"id":{"name":"PlayerState","path":"objects/PlayerState/PlayerState.yy",},},
     {"id":{"name":"rBigTestingRoom","path":"rooms/rBigTestingRoom/rBigTestingRoom.yy",},},
+    {"id":{"name":"rLayer1Type1","path":"rooms/rLayer1Type1/rLayer1Type1.yy",},},
     {"id":{"name":"rMenu","path":"rooms/rMenu/rMenu.yy",},},
     {"id":{"name":"rMineEntrance","path":"rooms/rMineEntrance/rMineEntrance.yy",},},
     {"id":{"name":"rMineEntranceAlt","path":"rooms/rMineEntranceAlt/rMineEntranceAlt.yy",},},
@@ -134,6 +135,7 @@
     {"roomId":{"name":"rBigTestingRoom","path":"rooms/rBigTestingRoom/rBigTestingRoom.yy",},},
     {"roomId":{"name":"rMineEntrance","path":"rooms/rMineEntrance/rMineEntrance.yy",},},
     {"roomId":{"name":"rMineEntranceAlt","path":"rooms/rMineEntranceAlt/rMineEntranceAlt.yy",},},
+    {"roomId":{"name":"rLayer1Type1","path":"rooms/rLayer1Type1/rLayer1Type1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
