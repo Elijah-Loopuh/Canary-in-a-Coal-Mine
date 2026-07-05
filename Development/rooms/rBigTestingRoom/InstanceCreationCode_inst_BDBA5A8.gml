@@ -1,3 +1,4 @@
+
 targetX = 97
 targetY = 673
 

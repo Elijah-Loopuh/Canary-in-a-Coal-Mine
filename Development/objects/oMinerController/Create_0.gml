@@ -1,5 +1,5 @@
 
-miner = room_width / 32 / 5;
+miner = room_width / 32 / 5; // NOTE KEEP UNDER ~200
 width = room_width; 
 height = room_height;
 

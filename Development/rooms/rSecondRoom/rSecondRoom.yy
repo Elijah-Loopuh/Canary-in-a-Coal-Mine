@@ -114,8 +114,8 @@
   ],
   "name":"rSecondRoom",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Unused Rooms",
+    "path":"folders/Rooms/Unused Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

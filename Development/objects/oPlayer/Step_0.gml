@@ -21,8 +21,17 @@ sprintKey = keyboard_check( vk_shift );
 		moveDir = rightKey - leftKey
 	}
 
+	//Reducing grip when in the air
+	if yspd == 0
+	{
+		grip = 0.12
+	}
+	else
+	{
+		grip = 0.05
+	}
 	
-	//Return moveDirSmooth to 0 when no key pressed, or when moving in opposite direction
+	//Return moveDirSmooth to 0 when moving in opposite direction or no keys pressed
 	if sign(moveDir) != sign(moveDirSmooth)
 	{
 		if moveDirSmooth > 0
