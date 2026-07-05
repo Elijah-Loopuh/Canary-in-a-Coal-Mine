@@ -1,4 +1,4 @@
-targetX = 1568
-targetY = 96
+targetX = 97
+targetY = 673
 
-targetRoom = rLayer1Type1
+targetRoom = rMineEntrance;

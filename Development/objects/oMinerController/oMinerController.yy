@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"oExitShop",
+  "%Name":"oMinerController",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oExitShop",
+  "name":"oMinerController",
   "overriddenProperties":[],
   "parent":{
-    "name":"UI Elements",
-    "path":"folders/Rooms/UI Elements.yy",
+    "name":"Invisible Elements",
+    "path":"folders/Objects/Invisible Elements.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sExitShop",
-    "path":"sprites/sExitShop/sExitShop.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
