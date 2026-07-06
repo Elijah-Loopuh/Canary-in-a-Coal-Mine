@@ -42,7 +42,7 @@ function spawn_walls(x, y, width, height, ) // replaces devMarker with proper wa
 			//show_debug_message(xx*32)
 			//show_debug_message(yy*32)
             //check for devmarker
-            if (position_meeting(xx*32, yy*32, oDevMarker))
+            if (position_meeting((xx*32)+1, (yy*32)+1, oDevMarker))
             {
                 instance_create_layer(
                     x + xx * 32,

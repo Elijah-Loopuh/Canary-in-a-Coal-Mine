@@ -22,7 +22,7 @@ sprintKey = keyboard_check( vk_shift );
 	}
 
 	//Reducing grip when in the air
-	if yspd == 0
+	if place_meeting( x, y + 1, oWall) // checks if standing on floor
 	{
 		grip = 0.12
 	}

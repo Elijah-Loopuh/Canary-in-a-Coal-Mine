@@ -44,6 +44,7 @@
   "resources":[
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
     {"id":{"name":"oBackPack","path":"objects/oBackPack/oBackPack.yy",},},
+    {"id":{"name":"Object28","path":"objects/Object28/Object28.yy",},},
     {"id":{"name":"oBucket","path":"objects/oBucket/oBucket.yy",},},
     {"id":{"name":"oButtonDebug","path":"objects/oButtonDebug/oButtonDebug.yy",},},
     {"id":{"name":"oButtonParent","path":"objects/oButtonParent/oButtonParent.yy",},},
@@ -73,6 +74,7 @@
     {"id":{"name":"rBigTestingRoom","path":"rooms/rBigTestingRoom/rBigTestingRoom.yy",},},
     {"id":{"name":"rLayer1Type1","path":"rooms/rLayer1Type1/rLayer1Type1.yy",},},
     {"id":{"name":"rLayer2Type1","path":"rooms/rLayer2Type1/rLayer2Type1.yy",},},
+    {"id":{"name":"rLayer3Type1","path":"rooms/rLayer3Type1/rLayer3Type1.yy",},},
     {"id":{"name":"rMenu","path":"rooms/rMenu/rMenu.yy",},},
     {"id":{"name":"rMineEntrance","path":"rooms/rMineEntrance/rMineEntrance.yy",},},
     {"id":{"name":"rMineEntranceAlt","path":"rooms/rMineEntranceAlt/rMineEntranceAlt.yy",},},
@@ -90,6 +92,7 @@
     {"id":{"name":"sBucketWitAFriend","path":"sprites/sBucketWitAFriend/sBucketWitAFriend.yy",},},
     {"id":{"name":"sButton","path":"sprites/sButton/sButton.yy",},},
     {"id":{"name":"sCanary","path":"sprites/sCanary/sCanary.yy",},},
+    {"id":{"name":"sCanarySmall","path":"sprites/sCanarySmall/sCanarySmall.yy",},},
     {"id":{"name":"sEvilMiner","path":"sprites/sEvilMiner/sEvilMiner.yy",},},
     {"id":{"name":"sExit","path":"sprites/sExit/sExit.yy",},},
     {"id":{"name":"sExitShop","path":"sprites/sExitShop/sExitShop.yy",},},
@@ -141,6 +144,7 @@
     {"roomId":{"name":"rMineEntranceAlt","path":"rooms/rMineEntranceAlt/rMineEntranceAlt.yy",},},
     {"roomId":{"name":"rLayer1Type1","path":"rooms/rLayer1Type1/rLayer1Type1.yy",},},
     {"roomId":{"name":"rLayer2Type1","path":"rooms/rLayer2Type1/rLayer2Type1.yy",},},
+    {"roomId":{"name":"rLayer3Type1","path":"rooms/rLayer3Type1/rLayer3Type1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
