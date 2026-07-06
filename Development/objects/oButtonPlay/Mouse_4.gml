@@ -1,6 +1,6 @@
 // Inherit the parent event
 event_inherited();
-
+randomize();
 vDebug = false
 
 room_goto(rBigTestingRoom);

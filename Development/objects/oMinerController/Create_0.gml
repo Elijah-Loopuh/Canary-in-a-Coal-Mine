@@ -3,45 +3,22 @@ miner = room_width / 32 / 5; // NOTE KEEP UNDER ~200
 width = room_width; 
 height = room_height;
 
+SpawnMiners(miner);
 
-//runs til miner capacity is reached
-while(instance_number(oMiner) != miner)
+function SpawnMiners(amount) 
 {
-	SpawnMiners(x, y, width, height, miner);
+	while (instance_number(oMiner) < amount)
+	{
+		xx = irandom(floor(room_width/32) -1);
+		yy = irandom(floor(room_height/32) -1);
+	
+		px = xx * 32;
+		py = yy * 32;
+	
+		instance_create_layer(px, py, "Instances", oMiner);
+	
+	
+	}
 }
 
-
-
-function SpawnMiners(x, y, width, height, amount) 
-	{
-		//define collums and rows
-		var cols = floor(width /32)
-	    var rows = floor(height /32) 
-	    {
-			//run through all collums and rows
-			 for (var yy = 0; yy < rows; yy++)
-		    {
-		        for (var xx = 0; xx < cols; xx++)
-				{
-					
-					
-					
-					if (true)
-					{
-						if(random(1) < 0.1)
-						{
-								if(instance_number(oMiner) != amount)
-								{
-									instance_create_layer(
-										x + xx * 32,
-							            y + yy * 32,
-										"Instances",
-										oMiner);
-								}
-						}
-					}
-				}
-			}
-	    }
-	}
 
