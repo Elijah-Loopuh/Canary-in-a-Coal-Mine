@@ -182,9 +182,12 @@ if(moveDir != 0)
 	}
 	if(yspd = 0)
 	{
-		standin();
-		if(moveDir > 1 || moveDir < -1){image_index = 13;}	
-		else{image_index = 4;}
+		sprite_index = sPlayerRunningAnimation;
+		if(moveDir > 1 || moveDir < -1){image_speed = 2;}	
+		else
+		{
+			image_speed = 1;
+		}
 	}
 }
 
