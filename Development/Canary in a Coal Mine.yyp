@@ -44,7 +44,6 @@
   "resources":[
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
     {"id":{"name":"oBackPack","path":"objects/oBackPack/oBackPack.yy",},},
-    {"id":{"name":"Object28","path":"objects/Object28/Object28.yy",},},
     {"id":{"name":"oBucket","path":"objects/oBucket/oBucket.yy",},},
     {"id":{"name":"oButtonDebug","path":"objects/oButtonDebug/oButtonDebug.yy",},},
     {"id":{"name":"oButtonParent","path":"objects/oButtonParent/oButtonParent.yy",},},
@@ -73,7 +72,9 @@
     {"id":{"name":"PlayerState","path":"objects/PlayerState/PlayerState.yy",},},
     {"id":{"name":"rBigTestingRoom","path":"rooms/rBigTestingRoom/rBigTestingRoom.yy",},},
     {"id":{"name":"rLayer1Type1","path":"rooms/rLayer1Type1/rLayer1Type1.yy",},},
+    {"id":{"name":"rLayer1Type2","path":"rooms/rLayer1Type2/rLayer1Type2.yy",},},
     {"id":{"name":"rLayer2Type1","path":"rooms/rLayer2Type1/rLayer2Type1.yy",},},
+    {"id":{"name":"rLayer2Type2","path":"rooms/rLayer2Type2/rLayer2Type2.yy",},},
     {"id":{"name":"rLayer3Type1","path":"rooms/rLayer3Type1/rLayer3Type1.yy",},},
     {"id":{"name":"rMenu","path":"rooms/rMenu/rMenu.yy",},},
     {"id":{"name":"rMineEntrance","path":"rooms/rMineEntrance/rMineEntrance.yy",},},
@@ -145,6 +146,8 @@
     {"roomId":{"name":"rLayer1Type1","path":"rooms/rLayer1Type1/rLayer1Type1.yy",},},
     {"roomId":{"name":"rLayer2Type1","path":"rooms/rLayer2Type1/rLayer2Type1.yy",},},
     {"roomId":{"name":"rLayer3Type1","path":"rooms/rLayer3Type1/rLayer3Type1.yy",},},
+    {"roomId":{"name":"rLayer1Type2","path":"rooms/rLayer1Type2/rLayer1Type2.yy",},},
+    {"roomId":{"name":"rLayer2Type2","path":"rooms/rLayer2Type2/rLayer2Type2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

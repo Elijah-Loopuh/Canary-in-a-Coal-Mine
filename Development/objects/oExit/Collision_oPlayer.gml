@@ -1,3 +1,6 @@
+//record the last room the player was in to return to after ui
+global.last_room = room
+
 //put player in new room
 room_goto(targetRoom)
 
@@ -9,15 +12,11 @@ other.y = targetY
 oCanary.x = targetX
 oCanary.y = targetY
 
-//record the last room the player was in to return to after ui
-global.last_room = room
-
-if (variable_instance_exists(id, "returnX"))
+if (variable_instance_exists(id, "returnX")) // if returnX & Y are assigned, assign the global variables
 {
 	global.returnX = returnX
 	global.returnY = returnY
 }
 
-/*
-show_debug_message(global.last_room)
-*/
+
+//show_debug_message(global.last_room)
