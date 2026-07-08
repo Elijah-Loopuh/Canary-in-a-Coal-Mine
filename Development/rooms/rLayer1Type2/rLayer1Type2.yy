@@ -207,8 +207,8 @@
   ],
   "name":"rLayer1Type2",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Layer1",
+    "path":"folders/Rooms/Layer1.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

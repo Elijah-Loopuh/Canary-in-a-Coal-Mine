@@ -24,8 +24,8 @@ dev notes:
 - rooms file names start with r
 - sounds file names start with m
 
-- room dimensions are 1920*960 by default
+- room dimensions are
+	- 1920*960 small (layer1)
+	- 1920*1920 medium (layer2)
+	- 3840*1920 large (layer3)
 - camera dimensions are 640*400
-
-- KNOWN BUGS/ISSUES
-	- if oMinerController is 1st in the instance creation order for a room, it will cycle infinitely because it will have no walls to place miners on

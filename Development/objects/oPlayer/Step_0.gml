@@ -12,13 +12,11 @@ sprintKey = keyboard_check( vk_shift );
 
 //X Movement
 	//Direction (right = positive, left = negative)
+	moveDir = rightKey - leftKey
+	
 	if sprintKey
 	{
-		moveDir = sprintPower * (rightKey - leftKey)
-	}
-	else
-	{
-		moveDir = rightKey - leftKey
+		moveDir *= sprintPower
 	}
 
 	//Reducing grip when in the air
@@ -31,70 +29,68 @@ sprintKey = keyboard_check( vk_shift );
 		grip = 0.05
 	}
 	
-	//Return moveDirSmooth to 0 when moving in opposite direction or no keys pressed
-	if sign(moveDir) != sign(moveDirSmooth)
+	//smooth xspd to moveDir, less jarring
+	//Return xspd to 0 when moving in opposite direction or no keys pressed
+	if sign(moveDir) != sign(xspd)
 	{
-		if moveDirSmooth > 0
+		if xspd > 0
 		{
-			moveDirSmooth -= grip
+			xspd -= grip
 		}
 		
-		if moveDirSmooth < 0
+		if xspd < 0
 		{
-			moveDirSmooth += grip
+			xspd += grip
 		}
 	}
 	
-	//Increase moveDirSmooth when moving Right
+	//Increase xspd when moving Right
 	if moveDir > 0
 	{		
-		if moveDirSmooth < moveDir
+		if xspd < moveDir
 		{
-			moveDirSmooth += grip;
+			xspd += grip;
 		}
 		
-		if moveDirSmooth > moveDir
+		if xspd > moveDir
 		{
-			moveDirSmooth -= grip;
+			xspd -= grip;
 		}
 	}
 	
-	//Increase moveDirSmooth when moving Right
+	//Increase xspd when moving Right
 	if moveDir < 0
 	{		
-		if moveDirSmooth < moveDir
+		if xspd < moveDir
 		{
-			moveDirSmooth += grip;
+			xspd += grip;
 		}
 		
-		if moveDirSmooth > moveDir
+		if xspd > moveDir
 		{
-			moveDirSmooth -= grip;
+			xspd -= grip;
 		}
 	}
 	
-	//Set moveDirSmooth to 0 to prevent fluttering around 0 from float errors
-	if abs(moveDirSmooth) < grip
+	//Set xspd to 0 to prevent fluttering around 0 from float errors
+	if abs(xspd) < grip
 	{
-		moveDirSmooth = 0.0
+		xspd = 0.0
 	}
 	
 	//See above but for max speed
-	if abs(moveDirSmooth - moveDir) < grip
+	if abs(xspd - moveDir) < grip
 	{
-		moveDirSmooth = moveDir
+		xspd = moveDir
 	}
 
 
-	//Get xspd
-	xspd = moveDirSmooth * moveSpd;
-
 	//X collision
 	var _subPixel = 0.5;
-	if place_meeting( x + xspd, y, oWall )
+	if place_meeting( x + (xspd * moveSpd), y, oWall )
 	{
 		//Scoot up to wall precisely
-		var _pixelCheck = _subPixel * sign(xspd);
+		var _pixelCheck = _subPixel * sign((xspd * moveSpd));
 		while !place_meeting( x + _pixelCheck, y, oWall )
 		{
 			x += _pixelCheck;
@@ -102,11 +98,10 @@ sprintKey = keyboard_check( vk_shift );
 	
 		//Set xspd to zero to "collide
 		xspd = 0;
-		moveDirSmooth = 0;
 	}
 
 	//Move
-	x += xspd;
+	x += xspd * moveSpd;
 
 
 //Y Movement

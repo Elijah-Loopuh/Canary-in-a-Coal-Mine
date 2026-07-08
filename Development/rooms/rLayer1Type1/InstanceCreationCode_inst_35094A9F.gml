@@ -1,4 +1,4 @@
-targetX = 224
-targetY = 704
+targetX = 2400
+targetY = 1408
 
-targetRoom = rMineEntranceAlt
+targetRoom = rBigTestingRoom

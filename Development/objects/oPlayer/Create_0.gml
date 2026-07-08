@@ -1,13 +1,13 @@
 //Moving
 image_speed = 0;
 image_index = 0;
-moveDir = 0;
-moveDirSmooth = 0.0;
-moveSpd = 5;
+moveDir = 0; // instant response, the direction the player wants to go. what key is pressed, as an integer value
+moveSpd = 5; // max walking speed
 xspd = 0;
 yspd = 0;
-grip = 0.1;
-sprintPower = 1.75;
+gGrip = 0.12;// rate of change of moveDirSmooth on ground
+aGrip = 0.05 // rate of change of moveDirSmooth in the air
+sprintPower = 1.75; // sprint max speed multiplier
 facing = 0;
 //Jumping
 grav = .35
@@ -16,6 +16,8 @@ jspd = -10;
 
 //set depth
 id.depth = 300;
+
+DEBUG = 0
 
 //miner points
 minersCollected = 0;

@@ -1,5 +1,5 @@
 
-miner = room_width / 32 / 5; // NOTE KEEP UNDER ~200
+miner = 12 // KEEP UNDER ~200 or buggy
 width = room_width; 
 height = room_height;
 //i = 0 CYCLE COUNT DEBUG VARIABLE

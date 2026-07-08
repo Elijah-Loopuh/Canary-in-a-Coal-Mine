@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sCanarySmall",
-    "path":"sprites/sCanarySmall/sCanarySmall.yy",
+    "name":"sCanary_New",
+    "path":"sprites/sCanary_New/sCanary_New.yy",
   },
   "spriteMaskId":{
     "name":"sNoCollision",

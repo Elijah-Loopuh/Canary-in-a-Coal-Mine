@@ -12,6 +12,9 @@ other.y = targetY
 oCanary.x = targetX
 oCanary.y = targetY
 
+other.xspd = 0
+other.yspd = 0
+
 if (variable_instance_exists(id, "returnX")) // if returnX & Y are assigned, assign the global variables
 {
 	global.returnX = returnX
