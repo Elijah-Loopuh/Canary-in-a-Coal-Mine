@@ -1,61 +1,57 @@
-
-centerX = oPlayer.x + sprite_get_width(sFatMiner)/2 - sprite_get_width(sCanary)/2
-centerY = oPlayer.y + sprite_get_height(sFatMiner)/2 - sprite_get_height(sCanary)/2
-
 //Calculate stopping distances
 xStop = (xSpd * xSpd) / (2 * grip)
 yStop = (ySpd * ySpd) / (2 * grip)
 
 //Variable to hold the nearest miner for mathing
-minerNearest = instance_nearest(centerX, centerY, oMiner)
+minerNearest = instance_nearest(oPlayer.x, oPlayer.y, oMiner)
 
 //only do miner math when miners exist
 if minerNearest == noone
 {
-	canaryX = centerX
-	canaryY = centerY
+	canaryX = oPlayer.x
+	canaryY = oPlayer.y
 }
 else
 {
 	//doing miner math
 
 	//Doing weighted averages to find the spot the canary wants to be
-	canaryX = ((playerWeight) * centerX + (1 - playerWeight) * instance_nearest(centerX, centerY, oMiner).x)
-	canaryY = ((playerWeight) * centerY + (1 - playerWeight) * instance_nearest(centerX, centerY, oMiner).y)
+	canaryX = ((playerWeight) * oPlayer.x + (1 - playerWeight) * instance_nearest(oPlayer.x, oPlayer.y, oMiner).x)
+	canaryY = ((playerWeight) * oPlayer.y + (1 - playerWeight) * instance_nearest(oPlayer.x, oPlayer.y, oMiner).y)
 }
 
 
 	//sets the target properly every frame
-	if canaryX < centerX + maxDist
+	if canaryX < oPlayer.x + maxDist
 	{
-		if canaryX > centerX - maxDist
+		if canaryX > oPlayer.x - maxDist
 		{
 			xTgt = canaryX
 		}
 		else
 		{
-			xTgt = centerX - maxDist
+			xTgt = oPlayer.x - maxDist
 		}
 	}
 	else
 	{
-		xTgt = centerX + maxDist
+		xTgt = oPlayer.x + maxDist
 	}
 
-	if canaryY < centerY + maxDist
+	if canaryY < oPlayer.y + maxDist
 	{
-		if canaryY > centerY - maxDist
+		if canaryY > oPlayer.y - maxDist
 		{
 			yTgt = canaryY
 		}
 		else
 		{
-			yTgt = centerY - maxDist
+			yTgt = oPlayer.y - maxDist
 		}
 	}
 	else
 	{
-		yTgt = centerY + maxDist
+		yTgt = oPlayer.y + maxDist
 	}
 	
 	

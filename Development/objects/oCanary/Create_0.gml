@@ -1,8 +1,8 @@
 //Bias of canary to stay near the player. 
-playerWeight = 0.8
+playerWeight = 0.6
 
 //Max distance the canary is allowed away from the player
-maxDist = 40
+maxDist = 80
 
 //Target coords
 xTgt = 0
@@ -14,7 +14,7 @@ id.depth = 75
 //Smooth movement variables
 xSpd = 0
 ySpd = 0
-grip = 0.15
+grip = 0.3
 //drag = 0.5
 snapDist = 0.5
 
