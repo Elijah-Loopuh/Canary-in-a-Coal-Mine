@@ -17,3 +17,6 @@ ySpd = 0
 grip = 0.15
 //drag = 0.5
 snapDist = 0.5
+
+sprite_index = sCanary_New;
+image_speed = 1;
