@@ -1,13 +1,19 @@
+worm = 5;
+drunk = 5;
 
-miner = 5;
+
 width = room_width; 
 height = room_height;
 //i = 0 CYCLE COUNT DEBUG VARIABLE
-SpawnMiners(miner);
 
-function SpawnMiners(amount) 
+
+SpawnEnemy(worm, oWorm);
+SpawnEnemy(drunk, oDrunkMiner);
+
+
+function SpawnEnemy(amount, type) 
 {
-	while (instance_number(oEnemy) < amount)
+	while (instance_number(type) < amount)
 	{
 		//i++
 		xx = irandom(floor(room_width/32) -1);
@@ -16,7 +22,7 @@ function SpawnMiners(amount)
 		px = xx * 32;
 		py = yy * 32;
 	
-		instance_create_layer(px, py, "Instances", oEnemy);
+		instance_create_layer(px, py, "Instances", type);
 		//show_debug_message(i)
 	
 	}
