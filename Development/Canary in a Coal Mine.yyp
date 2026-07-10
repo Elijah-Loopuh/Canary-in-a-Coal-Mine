@@ -126,6 +126,7 @@
     {"id":{"name":"sPlayerHitbox","path":"sprites/sPlayerHitbox/sPlayerHitbox.yy",},},
     {"id":{"name":"sPlayerRunningAnimation","path":"sprites/sPlayerRunningAnimation/sPlayerRunningAnimation.yy",},},
     {"id":{"name":"sPointer","path":"sprites/sPointer/sPointer.yy",},},
+    {"id":{"name":"Sprintingdust","path":"sprites/Sprintingdust/Sprintingdust.yy",},},
     {"id":{"name":"sPurpleCubeOfDebuggig","path":"sprites/sPurpleCubeOfDebuggig/sPurpleCubeOfDebuggig.yy",},},
     {"id":{"name":"sRight_Bottom_floor","path":"sprites/sRight_Bottom_floor/sRight_Bottom_floor.yy",},},
     {"id":{"name":"sRight_Middle_floor","path":"sprites/sRight_Middle_floor/sRight_Middle_floor.yy",},},
