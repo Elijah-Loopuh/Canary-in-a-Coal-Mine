@@ -9,6 +9,7 @@ dev notes:
 - depth is used to determine where layers are drawn, larger numbers drawn on lower layers
 - depth listings below:
 	- dev marker: 1000, behind everything so it disappears in game
+	- no spawn region: 1000, same as dev marker
 	- backgrounds: 600
 	- doors: 450
 	- player: 300
@@ -18,6 +19,7 @@ dev notes:
 	- shop background: 35
 	- shop objects: 18
 	- in game menus/ui readouts: 9
+	- pointer: 0
 
 - sprite file names start with s
 - objects file names start with o

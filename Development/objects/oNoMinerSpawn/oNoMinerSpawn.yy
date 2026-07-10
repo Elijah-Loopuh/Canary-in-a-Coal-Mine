@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"oNoSpawnArea",
+  "%Name":"oNoMinerSpawn",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oNoSpawnArea",
+  "name":"oNoMinerSpawn",
   "overriddenProperties":[],
   "parent":{
     "name":"Invisible Elements",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sNoTextureRed",
-    "path":"sprites/sNoTextureRed/sNoTextureRed.yy",
+    "name":"sNoMinerSpawn",
+    "path":"sprites/sNoMinerSpawn/sNoMinerSpawn.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,12 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"oEnemyController",
+  "%Name":"oPointer",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oEnemyController",
+  "name":"oPointer",
   "overriddenProperties":[],
   "parent":{
     "name":"Invisible Elements",
@@ -30,10 +29,13 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sPointer",
+    "path":"sprites/sPointer/sPointer.yy",
+  },
   "spriteMaskId":{
-    "name":"sNoTexture",
-    "path":"sprites/sNoTexture/sNoTexture.yy",
+    "name":"sNoCollision",
+    "path":"sprites/sNoCollision/sNoCollision.yy",
   },
   "visible":true,
 }
