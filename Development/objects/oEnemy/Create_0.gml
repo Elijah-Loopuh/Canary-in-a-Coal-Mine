@@ -3,10 +3,10 @@ move_speed = 1;
 
 image_speed = 1;
 
-down = place_meeting(x, y+32, oWall);
+downl = place_meeting(x-16, y+16, oWall);
+downr = place_meeting(x+16, y+16, oWall);
 
-
-if(!down) // if not standing on a wall, delete
+if(!downl || !downr) // if not standing on a wall, delete
 {
 	instance_deactivate_object(id)
 }
