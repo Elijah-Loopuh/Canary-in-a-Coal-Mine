@@ -1,5 +1,7 @@
 worm = 5;
 drunk = 5;
+bat = 5;
+mole = 5;
 
 
 width = room_width; 
@@ -9,7 +11,8 @@ i = 0
 
 SpawnEnemy(worm, oWorm);
 SpawnEnemy(drunk, oDrunkMiner);
-
+SpawnEnemy(bat, oBat);
+SpawnEnemy(mole, oMole);
 
 function SpawnEnemy(amount, type) 
 {
