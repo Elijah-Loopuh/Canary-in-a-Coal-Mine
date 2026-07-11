@@ -1,0 +1,9 @@
+image_angle = -90;
+visible = false
+swing_time = 16;
+swing_progress = 0;
+swinging = false;
+attack_timer = 0;
+facing = 1;
+mask_index = NoHitBox;        
+normal_mask = sPixAxe;
