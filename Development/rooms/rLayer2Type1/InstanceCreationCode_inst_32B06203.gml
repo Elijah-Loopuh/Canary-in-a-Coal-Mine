@@ -1,4 +1,4 @@
-targetRoom = rBigTestingRoom
+targetRoom = oGlobalFunctions.getRoomId(0)
 
-targetX = 96
-targetY = 1408
+targetX = oGlobalFunctions.getRoomBottomX(0)
+targetY = oGlobalFunctions.getRoomBottomY(0)

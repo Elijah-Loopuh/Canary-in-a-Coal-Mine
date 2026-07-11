@@ -1,4 +1,4 @@
-targetRoom = rLayer1Type2
+targetRoom = oGlobalFunctions.getRoomId(1)
 
-targetX = 1664
-targetY = 96
+targetX = oGlobalFunctions.getRoomTopX(1)
+targetY = oGlobalFunctions.getRoomTopY(1)

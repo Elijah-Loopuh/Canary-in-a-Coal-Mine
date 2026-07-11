@@ -1,4 +1,4 @@
-targetRoom = rLayer1Type1
+targetRoom = rBigTestingRoom
 
-targetX = 192
-targetY = 896
+targetX = 2400
+targetY = 1408

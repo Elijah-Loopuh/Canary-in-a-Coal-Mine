@@ -25,7 +25,7 @@ else
 		if(attack_timer <= 0)
 		{
 			move_speed = 0;
-			instance_create_layer(x,y - 32, "Instances", oBeer,)
+			instance_create_layer(x,y - 32, "Instances", oBeer)
 			attack_timer = attack_cooldown;
 		}
 		else 

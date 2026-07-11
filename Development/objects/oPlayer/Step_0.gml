@@ -118,7 +118,7 @@ sprintKey = keyboard_check( vk_shift );
 	}
 	
 	//Y collision
-	var _subPixel = 0.5;
+	 _subPixel = 0.5;
 	if place_meeting( x, y + yspd, oWall )
 	{
 		//Scoot up to wall precisely

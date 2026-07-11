@@ -26,7 +26,7 @@
   ],
   "name":"sBat",
   "nineSlice":null,
-  "origin":9,
+  "origin":7,
   "parent":{
     "name":"Physical",
     "path":"folders/Sprites/Physical.yy",
@@ -88,7 +88,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":16,
-    "yorigin":33,
+    "yorigin":32,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

@@ -62,6 +62,7 @@
     {"id":{"name":"oEnemyController","path":"objects/oEnemyController/oEnemyController.yy",},},
     {"id":{"name":"oExit","path":"objects/oExit/oExit.yy",},},
     {"id":{"name":"oExitShop","path":"objects/oExitShop/oExitShop.yy",},},
+    {"id":{"name":"oGlobalFunctions","path":"objects/oGlobalFunctions/oGlobalFunctions.yy",},},
     {"id":{"name":"oHealth","path":"objects/oHealth/oHealth.yy",},},
     {"id":{"name":"oHealthBoost","path":"objects/oHealthBoost/oHealthBoost.yy",},},
     {"id":{"name":"oInGameMenu","path":"objects/oInGameMenu/oInGameMenu.yy",},},
@@ -89,6 +90,7 @@
     {"id":{"name":"rLayer1Type5","path":"rooms/rLayer1Type5/rLayer1Type5.yy",},},
     {"id":{"name":"rLayer2Type1","path":"rooms/rLayer2Type1/rLayer2Type1.yy",},},
     {"id":{"name":"rLayer2Type2","path":"rooms/rLayer2Type2/rLayer2Type2.yy",},},
+    {"id":{"name":"rLayer2Type3","path":"rooms/rLayer2Type3/rLayer2Type3.yy",},},
     {"id":{"name":"rMenu","path":"rooms/rMenu/rMenu.yy",},},
     {"id":{"name":"rMineEntrance","path":"rooms/rMineEntrance/rMineEntrance.yy",},},
     {"id":{"name":"rMineEntranceAlt","path":"rooms/rMineEntranceAlt/rMineEntranceAlt.yy",},},
@@ -173,6 +175,7 @@
     {"roomId":{"name":"rLayer1Type4","path":"rooms/rLayer1Type4/rLayer1Type4.yy",},},
     {"roomId":{"name":"rLayer2Type1","path":"rooms/rLayer2Type1/rLayer2Type1.yy",},},
     {"roomId":{"name":"rLayer2Type2","path":"rooms/rLayer2Type2/rLayer2Type2.yy",},},
+    {"roomId":{"name":"rLayer2Type3","path":"rooms/rLayer2Type3/rLayer2Type3.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
