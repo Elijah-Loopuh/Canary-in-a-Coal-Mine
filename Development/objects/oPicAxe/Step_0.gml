@@ -15,8 +15,9 @@ if (attack_timer > 0)
 }
 if (mouse_check_button_pressed(mb_left) && !swinging && attack_timer == 0)
 {
-	visible = true
-	mask_index = sPixAxe
+	visible = true;
+	mask_index = sPixAxe;
+	sprite_index = sPixAxe;
 	swinging = true; 
 	swing_progress = 0;
 
@@ -39,10 +40,11 @@ if(swinging)
 	
 	if(t >= 1)
 	{
-		mask_index = NoHitBox; 
+		mask_index = sNoCollision;
+		sprite_index = sNoCollision;
+		//visible = false;
 		image_angle = 0;
 		swinging = false;
-		visible = false;
 		attack_timer = 15;
 	}
 }

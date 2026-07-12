@@ -30,6 +30,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":null,
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"sNoTexture",
+    "path":"sprites/sNoTexture/sNoTexture.yy",
+  },
   "visible":true,
 }

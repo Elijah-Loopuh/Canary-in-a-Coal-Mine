@@ -5,5 +5,5 @@ swing_progress = 0;
 swinging = false;
 attack_timer = 0;
 facing = 1;
-mask_index = NoHitBox;        
+mask_index = sNoCollision;        
 normal_mask = sPixAxe;

@@ -1,2 +1,2 @@
 id.depth = 1000
-alarm[0] = 1
+alarm[0] = 2

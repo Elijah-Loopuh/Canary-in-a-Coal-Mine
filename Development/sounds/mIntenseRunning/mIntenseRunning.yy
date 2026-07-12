@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"mIntence_running",
+  "%Name":"mIntenseRunning",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -12,7 +12,7 @@
   "conversionMode":0,
   "duration":74.46937,
   "exportDir":"",
-  "name":"mIntence_running",
+  "name":"mIntenseRunning",
   "parent":{
     "name":"Sound",
     "path":"folders/Sound.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"mIntence_running.wav",
+  "soundFile":"mIntenseRunning.wav",
   "volume":1.0,
 }
