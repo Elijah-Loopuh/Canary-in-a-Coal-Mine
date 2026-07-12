@@ -31,4 +31,6 @@ dev notes:
 	- 1920*1920 medium (layer2)
 	- 3840*1920 large (layer3)
 
-- camera dimensions are 640*400
+- camera dimensions should be 640*400
+
+- you can change the amount of enemy and miner spawns in a room by changing the variables in the oFunctionCaller object
