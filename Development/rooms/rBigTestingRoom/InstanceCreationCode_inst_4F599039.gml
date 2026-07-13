@@ -1,4 +1,4 @@
 targetRoom = rLayer2Type3
 
-targetX = 100
-targetY = 100
+targetX = 1632
+targetY = 96

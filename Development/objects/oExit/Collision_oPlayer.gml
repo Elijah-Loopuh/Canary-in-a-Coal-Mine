@@ -1,5 +1,5 @@
 
-if keyboard_check_pressed( vk_space ) or keyboard_check_pressed( ord( "E" )) //true 1st step keys are held
+if keyboard_check_pressed( ord( "E" )) //true 1st step keys are held
 {
 	//record the last room the player was in to return to after ui
 	global.last_room = room

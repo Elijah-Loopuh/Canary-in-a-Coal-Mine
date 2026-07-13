@@ -26,7 +26,7 @@
 				if (place_meeting(px+16, py+1, oWall) && place_meeting(px-16, py+1, oWall)/*floor checks*/ && !place_meeting(px, py, oNoEnemySpawn)/*region check*/ && !place_meeting(px, py, oWall)/*inside wall check*/)
 				{
 					instance_create_layer(px, py+32, "Instances", type);
-					//instance_create_layer(px, py+1, "Instances", oPointer);
+					//instance_create_layer(px, py+32, "Instances", oPointer);
 				}
 				//show_debug_message(i)
 	

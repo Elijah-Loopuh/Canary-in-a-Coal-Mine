@@ -1,4 +1,4 @@
-if(instance_place(x, y, all) != noone) // if inside any object, delete
-{
-	instance_deactivate_object(id)
-}
+alarm[0] = oGlobalFunctions.boundIRandom(60*5, 60*15);
+descend = !descend;
+//show_debug_message(i);
+//i++;
