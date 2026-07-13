@@ -8,7 +8,7 @@ if(!is_gas_rising)
 		is_gas_rising = true
 	}
 	
-	show_debug_message("It feels like it's harder to breath.");
+	//show_debug_message("It feels like it's harder to breath."); commenter cause it fills the debug log
 }
 
 // Camera Lock
