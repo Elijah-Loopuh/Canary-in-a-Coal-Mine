@@ -75,6 +75,7 @@
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oPointer","path":"objects/oPointer/oPointer.yy",},},
     {"id":{"name":"oPoints","path":"objects/oPoints/oPoints.yy",},},
+    {"id":{"name":"oTimer","path":"objects/oTimer/oTimer.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"oWelcomeSign","path":"objects/oWelcomeSign/oWelcomeSign.yy",},},
     {"id":{"name":"oWorm","path":"objects/oWorm/oWorm.yy",},},
