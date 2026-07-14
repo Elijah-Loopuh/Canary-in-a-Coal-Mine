@@ -2,7 +2,7 @@
 //spawn enemies
 oGlobalFunctions.SpawnEnemy(worm, oWorm);
 oGlobalFunctions.SpawnEnemy(drunk, oDrunkMiner);
-oGlobalFunctions.SpawnEnemy(bat, oBat);
+oGlobalFunctions.SpawnEnemy(bat, oBat, true);
 oGlobalFunctions.SpawnEnemy(mole, oMole);
 
 

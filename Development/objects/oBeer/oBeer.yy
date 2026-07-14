@@ -34,6 +34,9 @@
     "name":"sBeerBottle",
     "path":"sprites/sBeerBottle/sBeerBottle.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"sPointer",
+    "path":"sprites/sPointer/sPointer.yy",
+  },
   "visible":true,
 }

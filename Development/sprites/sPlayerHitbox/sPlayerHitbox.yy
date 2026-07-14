@@ -44,8 +44,8 @@
   },
   "origin":4,
   "parent":{
-    "name":"Physical",
-    "path":"folders/Sprites/Physical.yy",
+    "name":"Technical",
+    "path":"folders/Sprites/Technical.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -41,6 +41,9 @@
     "name":"sBat",
     "path":"sprites/sBat/sBat.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"sSmallCircleHitbox",
+    "path":"sprites/sSmallCircleHitbox/sSmallCircleHitbox.yy",
+  },
   "visible":true,
 }

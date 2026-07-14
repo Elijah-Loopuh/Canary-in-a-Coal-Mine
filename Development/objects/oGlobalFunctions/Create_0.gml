@@ -10,7 +10,7 @@
 		
 //spawning functions
 		
-		function SpawnEnemy(amount, type) 
+		function SpawnEnemy(amount, type, arial = false) 
 		{
 			i = 0
 			
@@ -23,7 +23,7 @@
 				px = xx * 32 + 16;
 				py = yy * 32;
 		
-				if (place_meeting(px+16, py+1, oWall) && place_meeting(px-16, py+1, oWall)/*floor checks*/ && !place_meeting(px, py, oNoEnemySpawn)/*region check*/ && !place_meeting(px, py, oWall)/*inside wall check*/)
+				if (((place_meeting(px+16, py+1, oWall) && place_meeting(px-16, py+1, oWall)) || arial)/*floor checks*/ && !place_meeting(px, py, oNoEnemySpawn)/*region check*/ && !place_meeting(px, py, oWall)/*inside wall check*/)
 				{
 					instance_create_layer(px, py+32, "Instances", type);
 					//instance_create_layer(px, py+32, "Instances", oPointer);

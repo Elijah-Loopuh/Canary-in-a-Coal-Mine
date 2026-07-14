@@ -1,2 +1,2 @@
 // Damage taken
-take_damage(1);
+//take_damage(1);

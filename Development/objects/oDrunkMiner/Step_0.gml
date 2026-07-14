@@ -20,13 +20,22 @@ else
 	{
 		movetowardsplayer();
 	}
-	if(distance <= firing_distance && canSee)
+	if(distance <= firing_distance && canSee) //if player is a valid target
 	{
-		if(attack_timer <= 0)
+		if(attack_timer <= 0) //if can attack
 		{
-			move_speed = 0;
-			instance_create_layer(x,y - 32, "Instances", oBeer)
-			attack_timer = attack_cooldown;
+			if (attack_startup <= 0) //if attack startup is done
+			{
+				move_speed = 0;
+				instance_create_layer(x,y - 32, "Instances", oBeer)
+				attack_timer = attack_cooldown;
+				attack_startup = attack_startup_master;
+			}
+			else //hold still and run through attack startup
+			{
+				move_speed = 0;
+				attack_startup -= 1;
+			}
 		}
 		else 
 		{

@@ -32,7 +32,7 @@ if (highr || highl) && (lowr || lowl) //check for obstruction above & below to n
 }
 
 // Turn after check
-if(position_meeting(x + look_ahead, y-16, oWall))
+if(place_meeting(x + look_ahead, y, oWall))
 {
 	move_speed = -move_speed;
 }
