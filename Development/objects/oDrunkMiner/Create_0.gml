@@ -4,8 +4,8 @@ attack_cooldown = 120;
 attack_timer = 0;
 image_speed = 1;
 
-attack_startup_master = 15; //number of frames of startup 
-attack_startup = 15;
+attack_startup_master = 30; //number of frames of startup 
+attack_startup = attack_startup_master;
 
 downl = place_meeting(x-16, y+16, oWall);
 downr = place_meeting(x+16, y+16, oWall);

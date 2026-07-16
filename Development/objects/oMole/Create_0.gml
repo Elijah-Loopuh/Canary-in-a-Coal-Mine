@@ -22,7 +22,7 @@ if(instance_place(x, y, all) != noone) // if inside any object, delete
 
 
 //Agro to player when in distance
-AgroDistance = 32*2;
+AgroDistance = 32*4;
 
 function movetowardsplayer()
 {

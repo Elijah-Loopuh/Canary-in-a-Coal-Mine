@@ -2,13 +2,23 @@
 
 rightKey = keyboard_check( ord( "D" ));
 leftKey = keyboard_check( ord( "A" ));
+//rightKeyPressed = keyboard_check_pressed( ord( "D" ));
+//leftKeyPressed = keyboard_check_pressed( ord( "A" ));
 jumpKeyPressed = keyboard_check_pressed( vk_space ) or keyboard_check_pressed( ord( "W" )); //true 1st step keys are held
 jumpKey = keyboard_check( vk_space ) or keyboard_check( ord( "W" )); //true every step keys are held
 sprintKey = keyboard_check( vk_shift );
+sprintKeyPressed = keyboard_check_pressed(vk_shift);
 
 //print position
 //show_debug_message(x)
 //show_debug_message(y)
+
+ //debug permissions
+	if vDEBUG
+	{
+			hp = 999; //inf hp
+			minerscore = 10000; //inf money
+	}
 
 //X Movement
 	//Direction (right = positive, left = negative)
@@ -83,6 +93,26 @@ sprintKey = keyboard_check( vk_shift );
 	{
 		xspd = moveDir
 	}
+	
+	//Manage dash activation
+	if (dashCooldown <= dashCooldownMaster) //if over master, dont decrease cooldown. allows dashes to be turned off by setting cooldown higher than cooldown master
+	{
+		//move trackers 
+		dashCooldown -= 1;
+		dashSensitivity -= 1;
+	}
+	
+	if (dashCooldown <= 0) //cooldown check
+	{		
+		//dash checks
+		if (sprintKeyPressed)
+		{
+				//do dash
+				xspd = sign(moveDir) * dashPower;
+				dashCooldown = dashCooldownMaster;
+				if (yspd > 0) {yspd = 0;} //float in air only if falling
+		}
+	}
 
 
 	//X collision
@@ -99,9 +129,10 @@ sprintKey = keyboard_check( vk_shift );
 		//Set xspd to zero to "collide
 		xspd = 0;
 	}
-
+	
 	//Move
-	x += xspd * moveSpd;
+	x += xspd * moveSpd;	
+
 
 
 //Y Movement
@@ -110,11 +141,19 @@ sprintKey = keyboard_check( vk_shift );
 	
 	//Cap falling speed
 	if yspd > termVel { yspd = termVel };
-	
+
 	//Jump
-	if jumpKeyPressed && (place_meeting( x, y + 1, oWall) || vDEBUG)
+	if (jumpKeyPressed)
 	{
-		yspd = jspd;
+		if (place_meeting( x, y + 1, oWall)) //regular jump
+		{
+			yspd = jspd;
+		}
+		else if (doubleJMP == 1) //double jump
+		{
+			yspd = jspd * 0.75; //weaker jump
+			doubleJMP = 0; //disable double jump
+		}
 	}
 	
 	//Y collision
@@ -155,61 +194,64 @@ sprintKey = keyboard_check( vk_shift );
 		reset_player();
 	}
 	
-	// Player State
-
-
-if(moveDir != 0)
-{
-	if(moveDir > 0){image_xscale = 1;}
-	if(moveDir < 0){image_xscale = -1;}
-	if(yspd > 0)
+	//Refresh double Jump
+	if (place_meeting(x, y+1, oWall) && doubleJMP = 0)
 	{
-		standin();
-		if(moveDir > 1 || moveDir < -1){image_index = 12;}	
-		else{image_index = 6;}
-	}		
-	if(yspd < 0)
-	{
-		standin();
-		if(moveDir > 1 || moveDir < -1){image_index = 14;}	
-		else{image_index = 5;}
-
+			doubleJMP = 1
 	}
-	if(yspd = 0)
+	
+	
+// Player State
+
+	if(moveDir != 0)
 	{
-		sprite_index = sPlayerRunningAnimation;
-		if(moveDir > 1 || moveDir < -1){image_speed = 2;}	
-		else
+		if(moveDir > 0){image_xscale = 1;}
+		if(moveDir < 0){image_xscale = -1;}
+		if(yspd > 0)
 		{
-			image_speed = 1;
+			standin();
+			if(moveDir > 1 || moveDir < -1){image_index = 12;}	
+			else{image_index = 6;}
+		}		
+		if(yspd < 0)
+		{
+			standin();
+			if(moveDir > 1 || moveDir < -1){image_index = 14;}	
+			else{image_index = 5;}
+
+		}
+		if(yspd = 0)
+		{
+			sprite_index = sPlayerRunningAnimation;
+			if(moveDir > 1 || moveDir < -1){image_speed = 2;}	
+			else
+			{
+				image_speed = 1;
+			}
 		}
 	}
-}
 
-if(moveDir == 0)
-{
-	if(yspd > 0)
+	if(moveDir == 0)
 	{
-		standin();
-		image_index = 1;
-	}		
-	if(yspd < 0)
-	{
-		standin();
-		image_index = 2;
+		if(yspd > 0)
+		{
+			standin();
+			image_index = 1;
+		}		
+		if(yspd < 0)
+		{
+			standin();
+			image_index = 2;
+		}
+		if(yspd = 0)
+		{
+			 sprite_index = s_player_idle;
+			 image_speed = 1;
+		}
 	}
-	if(yspd = 0)
+
+	function standin()
 	{
-		 sprite_index = s_player_idle;
-		 image_speed = 1;
+		image_speed = 0;
+		sprite_index = sFatMiner;
 	}
-}
-
-function standin()
-{
-	image_speed = 0;
-	sprite_index = sFatMiner;
-}
-
-
-

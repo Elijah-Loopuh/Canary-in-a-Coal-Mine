@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sExit",
-    "path":"sprites/sExit/sExit.yy",
+    "name":"sExitDown",
+    "path":"sprites/sExitDown/sExitDown.yy",
   },
   "spriteMaskId":null,
   "visible":true,

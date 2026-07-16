@@ -8,7 +8,7 @@ oPlayer.sprintPower = 4;
 oPlayer.grav /= 2;
 */
 oPlayer.vDEBUG = true;
+oPlayer.dashCooldown = 0; //turn on dashes
+oPlayer.doubleJMP = 0; //turn on double jumps
 oPlayer.minercapacity = 999;
-oPlayer.max_hp = 1000;
-oPlayer.hp = 1000;
-oPlayer.minerscore = 800;
+oPlayer.max_hp = 999;
