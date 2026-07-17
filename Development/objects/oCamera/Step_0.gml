@@ -17,7 +17,17 @@ var _camY = oPlayer.y - _camHeight/2;
 
 //Constrain cam to room borders
 _camX = clamp(_camX, 0, room_width - _camWidth)
-_camY = clamp(_camY, 0, room_height - _camHeight)
 
-//Set camera coordinates
-camera_set_view_pos(view_camera[0], _camX, _camY)
+//uses w & s keys to look up and down
+if keyboard_check( ord( "S" ))
+{
+	camera_set_view_pos(view_camera[0], _camX, clamp(_camY + 100, 0, room_height - _camHeight));
+}
+else if keyboard_check( ord( "W" ))
+{
+	camera_set_view_pos(view_camera[0], _camX, clamp(_camY - 100, 0, room_height - _camHeight));
+}
+else
+{
+	camera_set_view_pos(view_camera[0], _camX, clamp(_camY, 0, room_height - _camHeight));
+}

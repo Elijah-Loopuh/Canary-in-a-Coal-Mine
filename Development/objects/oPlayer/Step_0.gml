@@ -2,10 +2,8 @@
 
 rightKey = keyboard_check( ord( "D" ));
 leftKey = keyboard_check( ord( "A" ));
-//rightKeyPressed = keyboard_check_pressed( ord( "D" ));
-//leftKeyPressed = keyboard_check_pressed( ord( "A" ));
-jumpKeyPressed = keyboard_check_pressed( vk_space ) or keyboard_check_pressed( ord( "W" )); //true 1st step keys are held
-jumpKey = keyboard_check( vk_space ) or keyboard_check( ord( "W" )); //true every step keys are held
+jumpKeyPressed = keyboard_check_pressed( vk_space )// or keyboard_check_pressed( ord( "W" )); //true 1st step keys are held
+jumpKey = keyboard_check( vk_space )// or keyboard_check( ord( "W" )); //true every step keys are held
 sprintKey = keyboard_check( vk_shift );
 sprintKeyPressed = keyboard_check_pressed(vk_shift);
 
@@ -18,6 +16,7 @@ sprintKeyPressed = keyboard_check_pressed(vk_shift);
 	{
 			hp = 999; //inf hp
 			minerscore = 10000; //inf money
+			doubleJMP = 1;
 	}
 
 //X Movement
