@@ -110,83 +110,94 @@
 
 
 
-//data structures
+//data structures press plus on left to expand :)
 
 		//Room Data 2d array, holds ids & entrance coords
-		global.roomData = 
-		[
-		   /*"roomId", enterTopX, enterTopY, enterBottomX, enterBottomY*/
-			[rLayer1Type1, 1568, 96, 224, 896],		//original				0
-			[rLayer1Type2, 1632, 96, 192, 896],		//vertical shafts		1
-			[rLayer1Type3, 1632, 96, 192, 864],		//layer cake			2
-			[rLayer1Type4, 1664, 96, 1536, 768],	//fracking				3
-			[rLayer1Type5, 1664, 96, 256, 672],		//pit					4
+		{
+			roomData = 
+			[
+			   /*"roomId", enterTopX, enterTopY, enterBottomX, enterBottomY*/
+				[rLayer1Type1, 1568, 96, 224, 896],		//original				0
+				[rLayer1Type2, 1632, 96, 192, 896],		//vertical shafts		1
+				[rLayer1Type3, 1632, 96, 192, 864],		//layer cake			2
+				[rLayer1Type4, 1664, 96, 1536, 768],	//fracking				3
+				[rLayer1Type5, 1664, 96, 256, 672],		//pit					4
 	
-			[rLayer2Type1, 1664, 96, 160, 1664],	//floating islands		5
-			[rLayer2Type2, 1664, 1824, 1248, 1824],	//pyramid				6
-			[rLayer2Type3, 1728, 128, 1728, 1856],	//cave					7
+				[rLayer2Type1, 1664, 96, 160, 1664],	//floating islands		5
+				[rLayer2Type2, 1664, 1824, 1248, 1824],	//pyramid				6
+				[rLayer2Type3, 1728, 128, 1728, 1856],	//cave					7
 			
-			[rLayer3Type1, 1792, 96, 0, 0],			//great well			8
+				[rLayer3Type1, 1792, 96, 0, 0],			//great well			8
 	
-			[rBigTestingRoom, 0, 0, 2368, 1408]		//testing				9
-		]
+				[rBigTestingRoom, 0, 0, 2368, 1408]		//testing				9
+			]
+		}
 
 
 		//the room path expressed as indicies of the roomData array
-		global.path =
-		[
-			boundIRandom(0, 4),		//layer1 (5 rooms)
-			boundIRandom(5, 7),		//layer2 (3 rooms)
-			boundIRandom(8, 8)		//layer3 (not done)
-		]
+		{
+			path =
+			[
+				boundIRandom(0, 4),		//layer1 (5 rooms)
+				boundIRandom(5, 7),		//layer2 (3 rooms)
+				8						//layer3 (not done, 3 rooms planned)
+			]
+		}
 		
 		
 		//background music queue
-		queue = 
-		[
-			mBackroundMusic, 
-			mIntenseRunning
-		]
+		{
+			queue = 
+			[
+				mBackroundMusic, 
+				mIntenseRunning, 
+				mWeezer
+			]
+		}
 		
 		
 		//index of current song in the queue
-		queuePosition = 0;
-		
+		queuePosition = -1; //set to negative one when no song is playing
 		
 
 //array functions
 
-	//music queue
+	//music queue management
 	
 		getSongIndex = function(songId) //returns the index of the song id provided
 		{
 			return array_get_index(queue, songId);
 		}
 
-		getCurrentSong = function() //returns the id of the current song
+		getCurrentSongId = function() //returns the id of the current song
 		{
 			return queue[queuePosition];
 		}
 		
-		advanceQueue = function() //advances the queue with built in looping
+		getCurrentSongIndex = function() //returns the index of the currently playing song, wont crash when no song playing
 		{
-			if queuePosition < array_length(queue)-1
+			return queuePosition;	
+		}
+		
+		isSongPlaying = function(songId) //checks if a specific song is playing if inputted, or any song if input set to 'any'
+		{
+			if (songId == "any") //if checking any song, just make sure queue position is not on the null value
 			{
-				queuePosition += 1;	
+				return queuePosition != -1;
 			}
 			else
 			{
-				queuePosition = 0;	
+				return getCurrentSongIndex() == getSongIndex(songId);
 			}
 		}
 		
 		setQueue = function(input) //sets queue position to a ceratin index or song depending on input type
 		{
-			if (typeof(input == "int64")) //if integer passed in
+			if (typeof(input) == "int64") //if integer passed in
 			{
 				queuePosition = array_length(queue)-1 % index; //overflow protection
 			}
-			else if (typeof(input == "ref")) //if song id passed in
+			else if (typeof(input) == "ref") //if song id passed in
 			{
 				queuePosition = getSongIndex(input) //set queue to position of that song
 			}
@@ -194,18 +205,22 @@
 		
 		stopAllSongs = function() //stops every song that exists in the queue
 		{
-			for (i = 0; i < array_length(queue)-1; i++)
+			if isSongPlaying("any")
 			{
-				audio_stop_sound(getCurrentSong());
+				for (i = 0; i < array_length(queue); i++)
+				{
+					audio_stop_sound(getCurrentSongId());
+				}
+				queuePosition = -1; //indicate no song is playing
 			}
 		}
 		
 		playCurrentSong = function() //plays the song at index queuePosition
 		{
-			audio_play_sound(queue[queuePosition], 100, false);
+			audio_play_sound(queue[queuePosition], 100, true);
 		}
 		
-		playSong = function(songId)
+		forcePlaySong = function(songId) //stops all songs, then moves queue to provided song and plays that song
 		{
 			stopAllSongs(); //override other music
 			setQueue(songId); //move to new song
@@ -214,42 +229,48 @@
 
 
 	//room data
-
-		getRoomId = function (rLayer)
+	
+		getAllRoomIds = function() //returns the room id of every room in the current random path in order
 		{
-			return global.roomData	//main array to index
-			[global.path[rLayer]]	//index to the randomized room
+			Ids = []
+			for (i = 0; i < array_length(path); i++;)
+			{
+				array_push(Ids, getRoomId(i));
+			}
+			return Ids;
+		}
+
+		getRoomId = function (rLayer) //returns the id for the room on that layer of the random path
+		{
+			return roomData	//main array to index
+			[path[rLayer]]	//index to the randomized room
 			[0]						// index for the roomId
 		}
 
-
-		getRoomTopX = function (rLayer)
+		getRoomTopX = function (rLayer) //returns the exit x coord of the top door of the room on the given layer, depending on the random path
 		{
-			return global.roomData	//main array to index
-			[global.path[rLayer]]	//index to the randomized room
+			return roomData	//main array to index
+			[path[rLayer]]	//index to the randomized room
 			[1]						// index for x value of the top entrance point
 		}
 
-
-		getRoomTopY = function (rLayer)
+		getRoomTopY = function (rLayer) //returns the exit y coord of the top door of the room on the given layer, depending on the random path
 		{
-			return global.roomData	//main array to index
-			[global.path[rLayer]]	//index to the randomized room
+			return roomData	//main array to index
+			[path[rLayer]]	//index to the randomized room
 			[2]						// index for y value of the top entrance point
 		}
 
-
-		getRoomBottomX = function (rLayer)
+		getRoomBottomX = function (rLayer) //returns the exit x coord of the bottom door of the room on the given layer, depending on the random path
 		{
-			return global.roomData	//main array to index
-			[global.path[rLayer]]	//index to the randomized room
+			return roomData	//main array to index
+			[path[rLayer]]	//index to the randomized room
 			[3]						// index for x value of the bottom entrance point
 		}
 
-
-		getRoomBottomY = function (rLayer)
+		getRoomBottomY = function (rLayer) //returns the exit y coord of the bottom door of the room on the given layer, depending on the random path
 		{
-			return global.roomData	//main array to index
-			[global.path[rLayer]]	//index to the randomized room
+			return roomData	//main array to index
+			[path[rLayer]]	//index to the randomized room
 			[4]						// index for y value of the bottom entrance point
 		}
