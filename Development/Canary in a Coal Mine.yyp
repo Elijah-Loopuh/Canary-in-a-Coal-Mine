@@ -35,6 +35,7 @@
     {"link":"io.gamemaker.sdfshaders-1.0.0","name":"io.gamemaker.sdfshaders-1.0.0","path":"io.gamemaker.sdfshaders-1.0.0.yyp",},
   ],
   "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"fill_song_2.m4a","CopyToMask":-1,"filePath":"datafiles","name":"fill_song_2.m4a","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"pixeled.zip","CopyToMask":-1,"filePath":"datafiles","name":"pixeled.zip","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"save_the_miners_filler_song.m4a","CopyToMask":-1,"filePath":"datafiles","name":"save_the_miners_filler_song.m4a","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
@@ -99,6 +100,8 @@
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
     {"id":{"name":"mBackroundMusic","path":"sounds/mBackroundMusic/mBackroundMusic.yy",},},
     {"id":{"name":"mIntenseRunning","path":"sounds/mIntenseRunning/mIntenseRunning.yy",},},
+    {"id":{"name":"mShopMusic","path":"sounds/mShopMusic/mShopMusic.yy",},},
+    {"id":{"name":"mTitleMusic","path":"sounds/mTitleMusic/mTitleMusic.yy",},},
     {"id":{"name":"mWeezer","path":"sounds/mWeezer/mWeezer.yy",},},
     {"id":{"name":"s_player_idle","path":"sprites/s_player_idle/s_player_idle.yy",},},
     {"id":{"name":"sAll_Sides_floor","path":"sprites/sAll_Sides_floor/sAll_Sides_floor.yy",},},

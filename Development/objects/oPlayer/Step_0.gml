@@ -7,7 +7,6 @@ jumpKey = keyboard_check( vk_space )// or keyboard_check( ord( "W" )); //true ev
 sprintKey = keyboard_check( vk_shift );
 sprintKeyPressed = keyboard_check_pressed(vk_shift);
 
-
  //debug powers
 	if vDEBUG
 	{
@@ -147,13 +146,24 @@ sprintKeyPressed = keyboard_check_pressed(vk_shift);
 	
 	//Cap falling speed
 	if yspd > termVel { yspd = termVel };
+	
+	//coyote time management
+	if (place_meeting( x, y + 1, oWall)) //max out coyoteTime when on ground
+	{
+		coyoteTime = coyoteTimeMaster;
+	}
+	else if (coyoteTime >= -10) // underflow protection
+	{
+		coyoteTime --;	
+	}
 
 	//Jump
 	if (jumpKeyPressed)
 	{
-		if (place_meeting( x, y + 1, oWall)) //regular jump
+		if (place_meeting( x, y + 1, oWall) || coyoteTime >= 0) //regular jump
 		{
 			yspd = jspd;
+			coyoteTime = -1;
 		}
 		else if (doubleJMP == 1) //double jump
 		{

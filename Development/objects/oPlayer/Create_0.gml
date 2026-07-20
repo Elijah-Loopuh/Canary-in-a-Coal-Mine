@@ -24,6 +24,8 @@
 	termVel = 20;
 	jspd = -10;
 	doubleJMP = -1; //-1 = not unlocked, 1 = available, 0 = cooldown
+	coyoteTimeMaster = 0.15*60; //allows jumping for a brief time after falling off an edge
+	coyoteTime = coyoteTimeMaster;
 
 //set depth
 	id.depth = 300;

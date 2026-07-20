@@ -22,19 +22,25 @@
 //events and their respective songs
 
 	/*do conditionals this way so that the game wont crash if there is no song currently playing.*/
-	if (room == rShop && !oGlobalFunctions.isSongPlaying(mBackroundMusic)) //if in shop and background music is not playing already
+	if (room == rShop && !oGlobalFunctions.isSongPlaying(mShopMusic)) //shop song
 	{
 		show_debug_message("shop song start")
-		oGlobalFunctions.forcePlaySong(mBackroundMusic);
+		oGlobalFunctions.forcePlaySong(mShopMusic);
 	}
 
-	if (array_contains(oGlobalFunctions.getAllRoomIds(), room) && !oGlobalFunctions.isSongPlaying(mIntenseRunning))
+	if (array_contains(oGlobalFunctions.getAllRoomIds(), room) && !oGlobalFunctions.isSongPlaying(mBackroundMusic)) //cave background music
 	{
-		show_debug_message("run song start")
-		oGlobalFunctions.forcePlaySong(mIntenseRunning);
+		show_debug_message("bg song start")
+		oGlobalFunctions.forcePlaySong(mBackroundMusic);
 	}
 	
-	if (room == rBigTestingRoom && oGlobalFunctions.isSongPlaying("any")) //if in shop and background music is not playing already
+	if (room == rMenu && !oGlobalFunctions.isSongPlaying(mTitleMusic)) //title song
+	{
+		show_debug_message("title song started")
+		oGlobalFunctions.forcePlaySong(mTitleMusic);
+	}
+	
+	if (room == rBigTestingRoom && oGlobalFunctions.isSongPlaying("any")) //stop all music in bigtesting room
 	{
 		show_debug_message("all songs stopped")
 		oGlobalFunctions.stopAllSongs();

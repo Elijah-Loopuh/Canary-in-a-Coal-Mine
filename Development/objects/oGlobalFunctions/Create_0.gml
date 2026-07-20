@@ -151,7 +151,8 @@
 			[
 				mBackroundMusic, 
 				mIntenseRunning, 
-				mWeezer
+				mTitleMusic, 
+				mShopMusic, 
 			]
 		}
 		

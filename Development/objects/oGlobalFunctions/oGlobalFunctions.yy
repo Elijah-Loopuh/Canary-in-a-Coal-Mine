@@ -34,5 +34,5 @@
     "name":"sNoTexture",
     "path":"sprites/sNoTexture/sNoTexture.yy",
   },
-  "visible":true,
+  "visible":false,
 }
