@@ -7,11 +7,8 @@ jumpKey = keyboard_check( vk_space )// or keyboard_check( ord( "W" )); //true ev
 sprintKey = keyboard_check( vk_shift );
 sprintKeyPressed = keyboard_check_pressed(vk_shift);
 
-//print position
-//show_debug_message(x)
-//show_debug_message(y)
 
- //debug permissions
+ //debug powers
 	if vDEBUG
 	{
 			hp = 999; //inf hp
@@ -28,14 +25,19 @@ sprintKeyPressed = keyboard_check_pressed(vk_shift);
 		moveDir *= sprintPower
 	}
 
-	//Reducing grip when in the air
+	//Change grip based off what surface player is on
 	if place_meeting( x, y + 1, oWall) // checks if standing on floor
 	{
-		grip = 0.12
+		grip = gGrip;
 	}
 	else
 	{
-		grip = 0.05
+		grip = aGrip;
+	}
+	
+	if (abs(xspd) >= 1.75) //checks for overspeed
+	{
+		grip = oGrip;
 	}
 	
 	//smooth xspd to moveDir, less jarring
@@ -67,7 +69,7 @@ sprintKeyPressed = keyboard_check_pressed(vk_shift);
 		}
 	}
 	
-	//Increase xspd when moving Right
+	//Decrease xspd when moving left
 	if moveDir < 0
 	{		
 		if xspd < moveDir
@@ -96,20 +98,26 @@ sprintKeyPressed = keyboard_check_pressed(vk_shift);
 	//Manage dash activation
 	if (dashCooldown <= dashCooldownMaster) //if over master, dont decrease cooldown. allows dashes to be turned off by setting cooldown higher than cooldown master
 	{
-		//move trackers 
-		dashCooldown -= 1;
-		dashSensitivity -= 1;
+		//move counters
+		if (dashCooldown >= -100) //checks to prevent underflow errors :)
+		{
+			dashCooldown -= 1;
+		}
+		if (dashSensitivity >= -100) //checks to prevent underflow errors :)
+		{
+			dashSensitivity -= 1;
+		}
 	}
-	
+
 	if (dashCooldown <= 0) //cooldown check
 	{		
 		//dash checks
 		if (sprintKeyPressed)
 		{
-				//do dash
-				xspd = sign(moveDir) * dashPower;
-				dashCooldown = dashCooldownMaster;
-				if (yspd > 0) {yspd = 0;} //float in air only if falling
+			//do dash every frame
+			xspd = sign(moveDir) * dashPower;
+			dashCooldown = dashCooldownMaster;
+			if (yspd > 0) {yspd = 0;} //float in air only if falling
 		}
 	}
 
@@ -130,8 +138,7 @@ sprintKeyPressed = keyboard_check_pressed(vk_shift);
 	}
 	
 	//Move
-	x += xspd * moveSpd;	
-
+	x += xspd * moveSpd;
 
 
 //Y Movement

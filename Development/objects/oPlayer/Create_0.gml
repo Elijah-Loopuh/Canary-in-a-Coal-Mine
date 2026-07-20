@@ -1,23 +1,25 @@
 //Moving
 	image_speed = 0;
 	image_index = 0;
-	moveDir = 0; // instant response, the direction the player wants to go. what key is pressed, as an integer value
-	moveSpd = 5; // max walking speed
+	moveDir = 0; //instant response, the direction the player wants to go. what key is pressed, as an integer value
+	moveSpd = 5; //max walking speed
 	xspd = 0;
 	yspd = 0;
-	gGrip = 0.12;// rate of change of moveDirSmooth on ground
-	aGrip = 0.05 // rate of change of moveDirSmooth in the air
-	sprintPower = 1.75; // sprint max speed multiplier
+	//grip is the ammount that xSpd can change per frame. multiply by xSpd to get max normal player acceleration in px/frame
+	gGrip = 0.12; //grip on the ground (oWall, or the normal ground)
+	aGrip = 0.05; //grip in the air
+	oGrip = 0.05; //grip when over normal max xspd no matter what material
+	sprintPower = 1.75; //sprint max speed multiplier
 	facing = 0;
 
+	//dashing
 	dashCooldownMaster = 60*1; //set the dash cooldown in frames
 	dashCooldown = dashCooldownMaster + 10; //tracks the cooldown, set to greater than to disable dashes
-
 	dashSensitivityMaster = 60*0.25; //set the time between keypresses to dash, in frames
 	dashSensitivity = dashSensitivityMaster; //tracks double presses of right key
-	dashPower = 3;
-
-//Jumping
+	dashPower = 3.25; //dash speed multiplier
+	
+	//Jumping
 	grav = .35
 	termVel = 20;
 	jspd = -10;

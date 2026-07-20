@@ -157,13 +157,18 @@
 //array functions
 
 	//music queue
-
-		getCurrentSong = function() // returns the id of the current song
+	
+		getSongIndex = function(songId) //returns the index of the song id provided
 		{
-			return queue[queuePosition]
+			return array_get_index(queue, songId);
+		}
+
+		getCurrentSong = function() //returns the id of the current song
+		{
+			return queue[queuePosition];
 		}
 		
-		advanceQueue = function() // advances the queue with built in looping
+		advanceQueue = function() //advances the queue with built in looping
 		{
 			if queuePosition < array_length(queue)-1
 			{
@@ -173,6 +178,38 @@
 			{
 				queuePosition = 0;	
 			}
+		}
+		
+		setQueue = function(input) //sets queue position to a ceratin index or song depending on input type
+		{
+			if (typeof(input == "int64")) //if integer passed in
+			{
+				queuePosition = array_length(queue)-1 % index; //overflow protection
+			}
+			else if (typeof(input == "ref")) //if song id passed in
+			{
+				queuePosition = getSongIndex(input) //set queue to position of that song
+			}
+		}
+		
+		stopAllSongs = function() //stops every song that exists in the queue
+		{
+			for (i = 0; i < array_length(queue)-1; i++)
+			{
+				audio_stop_sound(getCurrentSong());
+			}
+		}
+		
+		playCurrentSong = function() //plays the song at index queuePosition
+		{
+			audio_play_sound(queue[queuePosition], 100, false);
+		}
+		
+		playSong = function(songId)
+		{
+			stopAllSongs(); //override other music
+			setQueue(songId); //move to new song
+			playCurrentSong(); //restart play
 		}
 
 

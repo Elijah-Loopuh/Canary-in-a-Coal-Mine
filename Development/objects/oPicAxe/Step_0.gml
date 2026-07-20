@@ -28,11 +28,11 @@ if(swinging)
 	t = swing_progress / swing_time;
 	if(facing == 1)
 	{
-	image_angle = lerp(45, -110, t);
+		image_angle = lerp(startAngle, -1*endAngle, t);
 	}
-		if(facing == -1)
+	if(facing == -1)
 	{
-	image_angle = lerp(-45, 110, t);
+		image_angle = lerp(-1*startAngle, endAngle, t);
 	}
 	image_xscale = facing;
 	

@@ -7,3 +7,6 @@ attack_timer = 0;
 facing = 1;
 mask_index = sNoCollision;        
 normal_mask = sPixAxe;
+
+startAngle = 45;
+endAngle = 135;
