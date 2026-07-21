@@ -39,9 +39,10 @@
 	vDEBUG = false;
 
 // Health
-	max_hp = 1;
+	max_hp = 5;
 	hp = max_hp;
 	is_dead = false;
+	attack_timer = 60;
 
 // Stored Initial Position
 	start_x = x;
@@ -66,8 +67,12 @@
 		camera_set_view_pos(view_camera[0], x - (camera_get_view_width(view_camera[0]) / 2), y - (camera_get_view_height(view_camera[0]) / 2));
 	}
 
-// Damage
+// Damage	
 	take_damage = function(_amount)
 	{
-		hp -= _amount;
+		if(attack_timer <= 0)
+		{
+			hp -= _amount;
+			attack_timer = 60;
+		}
 	}

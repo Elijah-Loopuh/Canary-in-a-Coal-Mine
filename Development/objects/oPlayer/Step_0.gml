@@ -6,7 +6,7 @@ jumpKeyPressed = keyboard_check_pressed( vk_space )// or keyboard_check_pressed(
 jumpKey = keyboard_check( vk_space )// or keyboard_check( ord( "W" )); //true every step keys are held
 sprintKey = keyboard_check( vk_shift );
 sprintKeyPressed = keyboard_check_pressed(vk_shift);
-
+attack_timer --;
  //debug powers
 	if vDEBUG
 	{
@@ -203,7 +203,6 @@ sprintKeyPressed = keyboard_check_pressed(vk_shift);
 	{
 		cancollect = false;
 	}
-	
 	// Check Dead\Alive
 	if (hp <= 0 || y > room_height)
 	{
