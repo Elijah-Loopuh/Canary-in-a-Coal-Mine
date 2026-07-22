@@ -140,7 +140,8 @@
 			[
 				boundIRandom(0, 4),		//layer1 (5 rooms)
 				boundIRandom(5, 7),		//layer2 (3 rooms)
-				8						//layer3 (not done, 3 rooms planned)
+				8, 						//layer3 (not done, 3 rooms planned)
+				9
 			]
 		}
 		
