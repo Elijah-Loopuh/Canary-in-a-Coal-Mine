@@ -35,10 +35,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
-    "name":"sButton",
-    "path":"sprites/sButton/sButton.yy",
+    "name":"sWoodenSign",
+    "path":"sprites/sWoodenSign/sWoodenSign.yy",
   },
   "spriteMaskId":null,
   "visible":true,
