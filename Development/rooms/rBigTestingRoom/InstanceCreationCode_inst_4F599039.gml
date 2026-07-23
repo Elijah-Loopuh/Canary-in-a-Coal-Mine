@@ -1,5 +1,5 @@
 
-targetRoom = rLayer3Type1
+targetRoom = rLayer3Type2
 
-targetX = 1792
-targetY = 96
+targetX = 1824
+targetY = 2816

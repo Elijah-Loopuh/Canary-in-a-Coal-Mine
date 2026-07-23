@@ -96,6 +96,7 @@
     {"id":{"name":"rLayer2Type2","path":"rooms/rLayer2Type2/rLayer2Type2.yy",},},
     {"id":{"name":"rLayer2Type3","path":"rooms/rLayer2Type3/rLayer2Type3.yy",},},
     {"id":{"name":"rLayer3Type1","path":"rooms/rLayer3Type1/rLayer3Type1.yy",},},
+    {"id":{"name":"rLayer3Type2","path":"rooms/rLayer3Type2/rLayer3Type2.yy",},},
     {"id":{"name":"rMenu","path":"rooms/rMenu/rMenu.yy",},},
     {"id":{"name":"rMineEntrance","path":"rooms/rMineEntrance/rMineEntrance.yy",},},
     {"id":{"name":"rMineEntranceAlt","path":"rooms/rMineEntranceAlt/rMineEntranceAlt.yy",},},
@@ -190,6 +191,7 @@
     {"roomId":{"name":"rLayer2Type2","path":"rooms/rLayer2Type2/rLayer2Type2.yy",},},
     {"roomId":{"name":"rLayer2Type3","path":"rooms/rLayer2Type3/rLayer2Type3.yy",},},
     {"roomId":{"name":"rLayer3Type1","path":"rooms/rLayer3Type1/rLayer3Type1.yy",},},
+    {"roomId":{"name":"rLayer3Type2","path":"rooms/rLayer3Type2/rLayer3Type2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

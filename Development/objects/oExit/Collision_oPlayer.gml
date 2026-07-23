@@ -23,6 +23,9 @@ if keyboard_check_pressed( ord( "E" )) //true 1st step keys are held
 	global.returnX = x + 32;
 	global.returnY = y - 16;
 
+	//lower gravity in the low gravity gimmick room
+
+	
 	/*
 	if (variable_instance_exists(id, "returnX")) // if returnX & Y are assigned, assign the global variables
 	{

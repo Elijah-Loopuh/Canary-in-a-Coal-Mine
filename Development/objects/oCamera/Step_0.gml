@@ -21,11 +21,11 @@ _camX = clamp(_camX, 0, room_width - _camWidth)
 //uses w & s keys to look up and down
 if keyboard_check( ord( "S" ))
 {
-	camera_set_view_pos(view_camera[0], _camX, clamp(_camY + 100, 0, room_height - _camHeight));
+	camera_set_view_pos(view_camera[0], _camX, clamp(_camY + _camHeight/4, 0, room_height - _camHeight));
 }
 else if keyboard_check( ord( "W" ))
 {
-	camera_set_view_pos(view_camera[0], _camX, clamp(_camY - 100, 0, room_height - _camHeight));
+	camera_set_view_pos(view_camera[0], _camX, clamp(_camY - _camHeight/4, 0, room_height - _camHeight));
 }
 else
 {

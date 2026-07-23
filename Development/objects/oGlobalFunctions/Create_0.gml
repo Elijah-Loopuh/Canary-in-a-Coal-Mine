@@ -127,9 +127,10 @@
 				[rLayer2Type2, 1664, 1824, 1248, 1824],	//pyramid				6
 				[rLayer2Type3, 1728, 128, 1728, 1856],	//cave					7
 			
-				[rLayer3Type1, 1792, 96, 0, 0],			//great well			8
+				[rLayer3Type1, 1792, 96, 0, 0],			//deepwell				8
+				[rLayer3Type2, 1824, 2816, 0, 0],		//moon temple			9
 	
-				[rBigTestingRoom, 0, 0, 2368, 1408]		//testing				9
+				[rBigTestingRoom, 0, 0, 2368, 1408]		//testing				10
 			]
 		}
 
@@ -140,8 +141,8 @@
 			[
 				boundIRandom(0, 4),		//layer1 (5 rooms)
 				boundIRandom(5, 7),		//layer2 (3 rooms)
-				8, 						//layer3 (not done, 3 rooms planned)
-				9
+				boundIRandom(8, 9), 	//layer3 (not done, 3 rooms planned)
+				10
 			]
 		}
 		
