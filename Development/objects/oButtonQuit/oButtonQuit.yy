@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sButton",
-    "path":"sprites/sButton/sButton.yy",
+    "name":"sWoodenSign",
+    "path":"sprites/sWoodenSign/sWoodenSign.yy",
   },
   "spriteMaskId":null,
   "visible":true,

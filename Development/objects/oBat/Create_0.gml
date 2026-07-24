@@ -7,6 +7,7 @@ lookDist = 8; //dist to look up & down
 descend = false; //makes the bat descend when true
 //i = 0; //debug variable
 
+dead = false;
 /*
 downl = place_meeting(x-16, y+16, oWall);
 downr = place_meeting(x+16, y+16, oWall);

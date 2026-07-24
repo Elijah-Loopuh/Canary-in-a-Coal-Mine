@@ -8,6 +8,7 @@ gospeed = 5;
 downl = place_meeting(x-16, y+16, oWall);
 downr = place_meeting(x+16, y+16, oWall);
 
+dead = false;
 /*
 if(!downl || !downr) // if not standing on a wall, delete
 {

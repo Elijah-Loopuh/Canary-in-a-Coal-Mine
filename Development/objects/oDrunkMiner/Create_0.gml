@@ -10,6 +10,7 @@ attack_startup = attack_startup_master + 10; //greaster than master = idle, less
 downl = place_meeting(x-16, y+16, oWall);
 downr = place_meeting(x+16, y+16, oWall);
 
+dead = false;
 
 //Agro to player when in distance
 //AgroDistance = 32*5;

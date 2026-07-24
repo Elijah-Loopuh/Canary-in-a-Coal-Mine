@@ -74,5 +74,7 @@
 		{
 			hp -= _amount;
 			attack_timer = 60;
+			image_blend = c_red;
+			alarm[1] = 20;
 		}
 	}

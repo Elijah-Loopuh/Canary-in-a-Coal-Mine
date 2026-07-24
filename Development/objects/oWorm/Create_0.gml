@@ -1,3 +1,4 @@
+dead = false;
 // Base Speed
 move_speed = 1; 
 

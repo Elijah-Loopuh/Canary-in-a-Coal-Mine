@@ -1,3 +1,5 @@
+if(dead == false)
+{
 // Moveing Left to Right
 x += move_speed;
 
@@ -14,4 +16,5 @@ if (place_meeting(x + look_ahead, y, oWall) || !position_meeting(x + look_ahead,
 if(move_speed != 0)
 {
 	image_xscale = sign(move_speed);
+}
 }
