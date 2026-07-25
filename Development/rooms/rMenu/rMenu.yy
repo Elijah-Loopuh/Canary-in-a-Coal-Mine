@@ -19,6 +19,7 @@
     {"name":"inst_48852E3F","path":"rooms/rMenu/rMenu.yy",},
     {"name":"inst_309440CF","path":"rooms/rMenu/rMenu.yy",},
     {"name":"inst_54248D64","path":"rooms/rMenu/rMenu.yy",},
+    {"name":"inst_CC0FEF2","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[

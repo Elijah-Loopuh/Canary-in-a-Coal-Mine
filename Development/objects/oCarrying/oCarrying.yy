@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sButton",
-    "path":"sprites/sButton/sButton.yy",
+    "name":"sCarrying",
+    "path":"sprites/sCarrying/sCarrying.yy",
   },
   "spriteMaskId":null,
   "visible":true,

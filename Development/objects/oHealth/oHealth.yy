@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sButton",
-    "path":"sprites/sButton/sButton.yy",
+    "name":"sHeart",
+    "path":"sprites/sHeart/sHeart.yy",
   },
   "spriteMaskId":null,
   "visible":true,
