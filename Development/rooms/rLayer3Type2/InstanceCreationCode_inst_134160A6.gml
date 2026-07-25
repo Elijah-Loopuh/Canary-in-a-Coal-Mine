@@ -1,4 +1,4 @@
 targetRoom = room
 
 targetX = 384
-targetY = 1792
+targetY = 1856

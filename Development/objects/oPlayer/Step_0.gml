@@ -1,13 +1,53 @@
-//Get inputs
-
-rightKey = keyboard_check( ord( "D" ));
-leftKey = keyboard_check( ord( "A" ));
-jumpKeyPressed = keyboard_check_pressed( vk_space )// or keyboard_check_pressed( ord( "W" )); //true 1st step keys are held
-jumpKey = keyboard_check( vk_space )// or keyboard_check( ord( "W" )); //true every step keys are held
-sprintKey = keyboard_check( vk_shift );
-sprintKeyPressed = keyboard_check_pressed(vk_shift);
 attack_timer --;
- //debug powers
+
+
+doUpdateKeys(); //registers keypresses
+
+doDebugPowers(); //grants debus powers each step (hard set health and inf double jumps, etc)
+
+
+
+
+
+
+//X Movement
+
+doSetMoveDir(); //sets the target speed for direction and sprint
+
+doChangeGrip(); //slippery in air and when fast
+
+doSmoothXspd(); //uses grip and moveDir
+
+doDash(); //overrides smoothed xSpd wit hard value
+
+doMoveX(); //uses xSpd and multiplies it by moveSpd, checks for collision before moving
+
+
+//Y Movement
+
+doGravity(); //applies gravity to y axis
+
+doJump(); //overrides gravity with jump and double jumps
+
+doMoveY(); // check for collsion and move on y axis
+
+	
+
+//general 2
+	
+doUpdateMinerCarry(); //update signaling variables and kill over capacity miners
+
+doDeath(); //if health is 0, reset (die)
+
+doDoubleJumpRefresh(); //refresh jump if on the ground
+
+doPlayerStates(); //update player animations
+
+
+	//old player code
+	{
+	/*
+	 //debug powers
 	if vDEBUG
 	{
 			hp = 999; //inf hp
@@ -269,4 +309,6 @@ attack_timer --;
 	{
 		image_speed = 0;
 		sprite_index = sFatMiner;
+	}
+	*/
 	}

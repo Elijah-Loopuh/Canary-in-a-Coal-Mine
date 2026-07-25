@@ -7,6 +7,9 @@ lookDist = 8; //dist to look up & down
 descend = false; //makes the bat descend when true
 //i = 0; //debug variable
 
+diveMinCooldown = 60*1;
+diveMaxCooldown = 60*15;
+
 dead = false;
 /*
 downl = place_meeting(x-16, y+16, oWall);
@@ -22,4 +25,4 @@ if(instance_place(x, y, all) != noone) // if inside any object, delete
 }
 */
 
-alarm[0] = oGlobalFunctions.boundIRandom(60*5, 60*15);
+alarm[0] = oGlobalFunctions.boundIRandom(diveMinCooldown, diveMaxCooldown);

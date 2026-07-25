@@ -1,4 +1,4 @@
-alarm[0] = oGlobalFunctions.boundIRandom(60*5, 60*15);
+alarm[0] = oGlobalFunctions.boundIRandom(diveMinCooldown, diveMaxCooldown);
 descend = !descend;
 //show_debug_message(i);
 //i++;

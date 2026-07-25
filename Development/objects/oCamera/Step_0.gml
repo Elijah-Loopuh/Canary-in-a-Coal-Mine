@@ -18,16 +18,38 @@ var _camY = oPlayer.y - _camHeight/2;
 //Constrain cam to room borders
 _camX = clamp(_camX, 0, room_width - _camWidth)
 
-//uses w & s keys to look up and down
-if keyboard_check( ord( "S" ))
+
+if (keyboard_check( ord( "S" )) && targetY >_camY - _camHeight/4) //move up or down
 {
-	camera_set_view_pos(view_camera[0], _camX, clamp(_camY + _camHeight/4, 0, room_height - _camHeight));
+	targetY += cam_speed;
+	//show_debug_message("moving + away");
 }
-else if keyboard_check( ord( "W" ))
+else if (keyboard_check( ord( "W" )) && targetY <_camY + _camHeight/4)
 {
-	camera_set_view_pos(view_camera[0], _camX, clamp(_camY - _camHeight/4, 0, room_height - _camHeight));
+	targetY -= cam_speed;
+	//show_debug_message("moving - away");
 }
-else
+if !(keyboard_check( ord( "S" )) || keyboard_check( ord( "W" )))
 {
-	camera_set_view_pos(view_camera[0], _camX, clamp(_camY, 0, room_height - _camHeight));
+	if targetY > clamp(_camY, 0, room_height - _camHeight) //return to normal coords
+	{
+		targetY -= cam_speed;
+		//show_debug_message("moving - towards");
+	}
+	else if (targetY < clamp(_camY, 0, room_height - _camHeight))
+	{
+		targetY += cam_speed;
+		//show_debug_message("moving + torwads");
+	}
+	
+	if (abs(targetY - clamp(_camY, 0, room_height - _camHeight)) <= cam_speed)	//snap if close enough
+	{
+		targetY = clamp(_camY, 0, room_height - _camHeight);
+		//show_debug_message("snapped");
+	}
 }
+
+targetY = clamp(targetY, _camY - _camHeight/4, _camY + _camHeight/4); //stay close to endpoint coords (keeps target location on screen)
+targetY = clamp(targetY, 0, room_height - _camHeight); //constrain inside room
+
+camera_set_view_pos(view_camera[0], _camX, targetY); //go to target coords

@@ -4,15 +4,25 @@ if(dead == false)
 	canSee = !collision_line(x, y - 4, oPlayer.x, oPlayer.y, oWall, false, true);
 	distance = distance_to_object(oPlayer)
 
-	// Moveing Left to Right
-	x += goDirection * gospeed;
+	
 
 
 	if(place_meeting(x, y, oWall) || !position_meeting(x + look_ahead, bbox_bottom + 1, oWall))
 	{
-		goDirection *= -1;
-		image_xscale *= -1;
+		if (distance < AgroDistance && canSee)
+		{
+			goDirection = 0;
+		}
+		else
+		{
+			goDirection *= -1;
+			image_xscale *= -1;
+		}
 	}
+	
+	// Moveing Left to Right
+	x += goDirection * gospeed;
+	
 	if(distance < AgroDistance && canSee)
 	{
 		image_index = 0;

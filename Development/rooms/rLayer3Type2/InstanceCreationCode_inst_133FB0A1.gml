@@ -1,5 +1,6 @@
-bat = 0;
-mole = 0;
-drunk = 0;
-miner = 0;
-worm = 0;
+miner = 24;
+
+worm = 10;
+bat = 10;
+drunk = 10;
+mole = 10;
