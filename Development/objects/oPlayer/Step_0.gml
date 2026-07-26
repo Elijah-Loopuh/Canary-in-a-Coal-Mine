@@ -6,10 +6,6 @@ doUpdateKeys(); //registers keypresses
 doDebugPowers(); //grants debus powers each step (hard set health and inf double jumps, etc)
 
 
-
-
-
-
 //X Movement
 
 doSetMoveDir(); //sets the target speed for direction and sprint

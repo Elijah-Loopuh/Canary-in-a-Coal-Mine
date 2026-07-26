@@ -1,4 +1,6 @@
 
+randomize() //sets the RNG seed to a random number
+
 //math functions
 
 		boundIRandom = function (lower, upper) // random int between lower and upper, inclusive on both sides
@@ -145,7 +147,6 @@
 				10
 			]
 		}
-		
 		
 		//background music queue
 		{
