@@ -7,7 +7,8 @@ draw_set_valign(fa_middle);
 
 draw_text_colour(x, y, "You Died", c_red, c_red, c_red, c_red, 1);
 
-
+draw_set_font(fNormal);
+draw_text_colour(x, y + 48, "Press [esc] to restart", c_red, c_red, c_red, c_red, 1);
 
 
 
