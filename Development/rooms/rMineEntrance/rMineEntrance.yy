@@ -76,7 +76,7 @@
   "name":"rMineEntrance",
   "parent":{
     "name":"Unused Rooms",
-    "path":"folders/Rooms/Unused Rooms.yy",
+    "path":"folders/Rooms/Layer3/Unused Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

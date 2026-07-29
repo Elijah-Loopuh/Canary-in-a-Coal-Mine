@@ -119,7 +119,11 @@
 		// Check Dead\Alive
 		if (hp <= 0 || y > room_height)
 		{
-			reset_player();
+			persistent = false;
+			oCanary.persistent = false;
+			oPicAxe.persistent = false;
+			room_goto(rDeathScreen);
+			layer_set_visible(layer_get_id("PlayerScoreUI"), false);
 		}
 	}
 	

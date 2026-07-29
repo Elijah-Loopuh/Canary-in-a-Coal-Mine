@@ -12,6 +12,6 @@ draw_set_font(fNormal);
 
 
 
-draw_text(x, y + 90, 	"-----Programmers------ " + "\n\n" + "Lucas Baker\nAbraham Craig\nEli Lubbe\nJames Sharp\n\n-----Artists-----\n\nDella Brewer\n\n-----Music-----\n\nJoseph Anderson\n\n-----Social Media Manger-----\n\n Mason Conrad\n\n--------------------\n\nThanks For Playing\n\n Follow us\n\n @freakyfroggames\n\nto stay in the loop");
+draw_text(x, y + 100, 	"-----Programmers------ " + "\n\n" + "Lucas Baker\n\nAbraham Craig\n\nEli Lubbe\n\nJames Sharp\n\n-----Artists-----\n\nDella Brewer\n\n-----Music-----\n\nJoseph Anderson\n\n-----Social Media Manger-----\n\n Mason Conrad\n\n--------------------\n\nThanks For Playing\n\n Follow us\n\n @freakyfroggames\n\nto stay in the loop");
 
 
