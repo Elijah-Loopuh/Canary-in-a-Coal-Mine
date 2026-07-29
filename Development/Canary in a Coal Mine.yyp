@@ -150,6 +150,8 @@
     {"id":{"name":"sMiddle_Top_floor","path":"sprites/sMiddle_Top_floor/sMiddle_Top_floor.yy",},},
     {"id":{"name":"sMiner_1","path":"sprites/sMiner_1/sMiner_1.yy",},},
     {"id":{"name":"sMiner","path":"sprites/sMiner/sMiner.yy",},},
+    {"id":{"name":"sMinerJump","path":"sprites/sMinerJump/sMinerJump.yy",},},
+    {"id":{"name":"sMinerJumpStartup32","path":"sprites/sMinerJumpStartup32/sMinerJumpStartup32.yy",},},
     {"id":{"name":"sMole","path":"sprites/sMole/sMole.yy",},},
     {"id":{"name":"sMoreTime","path":"sprites/sMoreTime/sMoreTime.yy",},},
     {"id":{"name":"sNoCollision","path":"sprites/sNoCollision/sNoCollision.yy",},},

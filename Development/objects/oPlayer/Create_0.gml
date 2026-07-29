@@ -26,6 +26,9 @@
 	doubleJMP = -1; //-1 = not unlocked, 1 = available, 0 = cooldown
 	coyoteTimeMaster = 0.15*60; //allows jumping for a brief time after falling off an edge
 	coyoteTime = coyoteTimeMaster;
+	jumpState = "not";
+	jumpStartupMaster = sprite_get_number(sMinerJumpStartup32); //gets number of frames in startup
+	jumpStartupTracker = jumpStartupMaster+1; //if over master, not starting up
 
 //set depth
 	id.depth = 300;
@@ -144,6 +147,7 @@
 		{
 			if(moveDir > 0){image_xscale = 1;}
 			if(moveDir < 0){image_xscale = -1;}
+			/*
 			if(yspd > 0)
 			{
 				standin();
@@ -157,6 +161,7 @@
 				else{image_index = 5;}
 
 			}
+			*/
 			if(yspd = 0)
 			{
 				sprite_index = sPlayerRunningAnimation;
@@ -170,16 +175,19 @@
 
 		if(moveDir == 0)
 		{
+			/*
 			if(yspd > 0)
 			{
 				standin();
 				image_index = 1;
-			}		
+			}
+			
 			if(yspd < 0)
 			{
 				standin();
 				image_index = 2;
 			}
+			*/
 			if(yspd = 0)
 			{
 					sprite_index = s_player_idle;
@@ -364,14 +372,13 @@
 		{
 			coyoteTime --;	
 		}
-
+		
 		//Jump
 		if (jumpKeyPressed)
 		{
 			if (place_meeting( x, y + 1, oWall) || coyoteTime >= 0) //regular jump
 			{
-				yspd = jspd;
-				coyoteTime = -1;
+				jumpStartupTracker = jumpStartupMaster;
 			}
 			else if (doubleJMP == 1) //double jump
 			{
@@ -379,6 +386,34 @@
 				doubleJMP = 0; //disable double jump
 			}
 		}
+		
+		//do startup
+		if (jumpStartupTracker <= jumpStartupMaster && jumpStartupTracker >= 0) //run startup animation + do tracking
+		{
+			jumpStartupTracker -= 1;
+
+			if (sprite_index != sMinerJumpStartup32) //start the startup animation if not already running
+			{
+				image_index = 0;
+				sprite_index = sMinerJumpStartup32;
+				image_speed = 1;
+				show_debug_message("startup begin")
+			}
+		}
+		else if (jumpStartupTracker <= 0) //do jump + reset trackers
+		{
+			jumpStartupTracker = jumpStartupMaster + 1;
+			yspd = jspd;
+			coyoteTime = -1;
+		}
+		
+		if (!place_meeting( x, y + 1, oWall) && sprite_index != sMinerJump) //play flying animation
+		{
+			sprite_index = sMinerJump;
+			image_index = 0;
+			image_speed = 1;
+		}
+		
 	}
 	
 	doMoveY = function() //checks for collision and moves player on y axis
