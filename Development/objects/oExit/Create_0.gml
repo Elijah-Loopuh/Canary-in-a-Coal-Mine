@@ -1,7 +1,7 @@
 targetRoom = 0 // uses the room name to move player to the right room
 
-targetX = 0 // target coords to put player @ in new room
-targetY = 0
+targetX = 100 // target coords to put player @ in new room
+targetY = 100
 
 
 //used for multiple doors leading to one door,

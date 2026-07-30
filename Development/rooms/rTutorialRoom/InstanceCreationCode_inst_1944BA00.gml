@@ -1,0 +1,1 @@
+text = "touch a yellow flask \n to unlock \n double jump and \n dash powers!";

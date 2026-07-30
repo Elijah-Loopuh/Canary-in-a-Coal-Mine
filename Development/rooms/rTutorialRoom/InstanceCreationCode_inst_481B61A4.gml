@@ -1,0 +1,1 @@
+text = "click to swing pickaxe";

@@ -1,0 +1,1 @@
+text = "press e on doors to enter. \n doors can lead to other rooms, shops, \n or other locations in the same room"

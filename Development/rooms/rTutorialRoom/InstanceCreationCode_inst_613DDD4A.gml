@@ -1,0 +1,1 @@
+text = "this door leads to the start of the game!";

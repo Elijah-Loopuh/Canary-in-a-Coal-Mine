@@ -1,0 +1,1 @@
+text = "w&s to look up & down";

@@ -1,0 +1,1 @@
+text = "your canary points to \n the nearest miner \n save them!";

@@ -1,0 +1,1 @@
+text = "touch miners to collect them \n touch bucket to save miners and get coins";
