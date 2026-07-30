@@ -4,7 +4,7 @@ if (MinerQueue != 0)
 	image_index = 1;
 	MinerQueue -= 1;
 	alarm[1] = 30;
-	oPlayer.minerscore += 1;
+	oPlayer.minerscore += 2;
 }
 
 else

@@ -27,7 +27,7 @@
 	coyoteTimeMaster = 0.15*60; //allows jumping for a brief time after falling off an edge
 	coyoteTime = coyoteTimeMaster;
 	jumpState = "not";
-	jumpStartupMaster = sprite_get_number(sMinerJumpStartup32); //gets number of frames in startup
+	jumpStartupMaster = 7; //gets number of frames in startup
 	jumpStartupTracker = jumpStartupMaster+1; //if over master, not starting up
 
 //set depth
@@ -35,7 +35,7 @@
 
 //miner points
 	minersCollected = 0;
-	minercapacity = 1;
+	minercapacity = 3;
 	cancollect = true;
 	minerscore = 0;
 
@@ -162,7 +162,7 @@
 
 			}
 			*/
-			if(yspd = 0)
+			if(yspd = 0 && !(jumpStartupTracker <= jumpStartupMaster && jumpStartupTracker >= 0))
 			{
 				sprite_index = sPlayerRunningAnimation;
 				if(moveDir > 1 || moveDir < -1){image_speed = 2;}	
@@ -188,7 +188,7 @@
 				image_index = 2;
 			}
 			*/
-			if(yspd = 0)
+			if(yspd = 0 && !(jumpStartupTracker <= jumpStartupMaster && jumpStartupTracker >= 0))
 			{
 					sprite_index = s_player_idle;
 					image_speed = 1;
@@ -386,7 +386,6 @@
 				doubleJMP = 0; //disable double jump
 			}
 		}
-		
 		//do startup
 		if (jumpStartupTracker <= jumpStartupMaster && jumpStartupTracker >= 0) //run startup animation + do tracking
 		{
@@ -397,7 +396,6 @@
 				image_index = 0;
 				sprite_index = sMinerJumpStartup32;
 				image_speed = 1;
-				show_debug_message("startup begin")
 			}
 		}
 		else if (jumpStartupTracker <= 0) //do jump + reset trackers
