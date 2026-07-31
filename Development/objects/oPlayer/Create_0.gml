@@ -142,26 +142,32 @@
 	doPlayerStates = function() //handles animations based on move speed and other stuff i think
 	{
 		// Player State
-
+		if(yspd > 0)
+		{
+			if (sprite_index != sMinerFalling) //play falling animation
+			{
+				sprite_index = sMinerFalling;
+				image_index = 0;
+				image_speed = 1;
+			}
+				
+		}
+		if (yspd < 0)
+		{
+			if (sprite_index != sMinerJump) //play flying animation
+			{
+				sprite_index = sMinerJump;
+				image_index = 0;
+				image_speed = 1;
+			}
+		}
+		
 		if(moveDir != 0)
 		{
 			if(moveDir > 0){image_xscale = 1;}
 			if(moveDir < 0){image_xscale = -1;}
-			/*
-			if(yspd > 0)
-			{
-				standin();
-				if(moveDir > 1 || moveDir < -1){image_index = 12;}	
-				else{image_index = 6;}
-			}		
-			if(yspd < 0)
-			{
-				standin();
-				if(moveDir > 1 || moveDir < -1){image_index = 14;}	
-				else{image_index = 5;}
+					
 
-			}
-			*/
 			if(yspd = 0 && !(jumpStartupTracker <= jumpStartupMaster && jumpStartupTracker >= 0))
 			{
 				sprite_index = sPlayerRunningAnimation;
@@ -175,30 +181,11 @@
 
 		if(moveDir == 0)
 		{
-			/*
-			if(yspd > 0)
-			{
-				standin();
-				image_index = 1;
-			}
-			
-			if(yspd < 0)
-			{
-				standin();
-				image_index = 2;
-			}
-			*/
 			if(yspd = 0 && !(jumpStartupTracker <= jumpStartupMaster && jumpStartupTracker >= 0))
 			{
 					sprite_index = s_player_idle;
 					image_speed = 1;
 			}
-		}
-
-		function standin()
-		{
-			image_speed = 0;
-			sprite_index = sFatMiner;
 		}
 	}
 	
@@ -403,13 +390,6 @@
 			jumpStartupTracker = jumpStartupMaster + 1;
 			yspd = jspd;
 			coyoteTime = -1;
-		}
-		
-		if (!place_meeting( x, y + 1, oWall) && sprite_index != sMinerJump) //play flying animation
-		{
-			sprite_index = sMinerJump;
-			image_index = 0;
-			image_speed = 1;
 		}
 		
 	}

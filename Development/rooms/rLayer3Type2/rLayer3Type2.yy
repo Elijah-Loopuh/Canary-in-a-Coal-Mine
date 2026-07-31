@@ -730,11 +730,13 @@
     {"name":"inst_4D9D0169","path":"rooms/rLayer3Type2/rLayer3Type2.yy",},
     {"name":"inst_4EA0FB72","path":"rooms/rLayer3Type2/rLayer3Type2.yy",},
     {"name":"inst_700B9620","path":"rooms/rLayer3Type2/rLayer3Type2.yy",},
+    {"name":"inst_7FCD690C","path":"rooms/rLayer3Type2/rLayer3Type2.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_133FB0A1","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_133FB0A1","objectId":{"name":"oFunctionCaller","path":"objects/oFunctionCaller/oFunctionCaller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":864.0,"y":-64.0,},
+        {"$GMRInstance":"v4","%Name":"inst_7FCD690C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7FCD690C","objectId":{"name":"oExit","path":"objects/oExit/oExit.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1152.0,"y":2848.0,},
       ],"layers":[
         {"$GMRInstanceLayer":"","%Name":"Interactables","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
             {"$GMRInstance":"v4","%Name":"inst_5D6501D1","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5D6501D1","objectId":{"name":"oExit","path":"objects/oExit/oExit.yy",},"previewSprite":{"name":"sExitUp","path":"sprites/sExitUp/sExitUp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1792.0,"y":2848.0,},

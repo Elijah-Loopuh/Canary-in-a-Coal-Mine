@@ -142,7 +142,6 @@
     {"name":"inst_69E709EF","path":"rooms/rLayer1Type1/rLayer1Type1.yy",},
     {"name":"inst_357AD7C6","path":"rooms/rLayer1Type1/rLayer1Type1.yy",},
     {"name":"inst_13889B70","path":"rooms/rLayer1Type1/rLayer1Type1.yy",},
-    {"name":"inst_61B1953","path":"rooms/rLayer1Type1/rLayer1Type1.yy",},
     {"name":"inst_3A150C50","path":"rooms/rLayer1Type1/rLayer1Type1.yy",},
     {"name":"inst_4D9968E3","path":"rooms/rLayer1Type1/rLayer1Type1.yy",},
     {"name":"inst_53DA86A","path":"rooms/rLayer1Type1/rLayer1Type1.yy",},
@@ -177,14 +176,16 @@
     {"name":"inst_618040A4","path":"rooms/rLayer1Type1/rLayer1Type1.yy",},
     {"name":"inst_4AF85F4C","path":"rooms/rLayer1Type1/rLayer1Type1.yy",},
     {"name":"inst_37FBD5D8","path":"rooms/rLayer1Type1/rLayer1Type1.yy",},
+    {"name":"inst_61B1953","path":"rooms/rLayer1Type1/rLayer1Type1.yy",},
   ],
   "isDnd":false,
   "layers":[
-    {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[
+    {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v4","%Name":"inst_61B1953","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_61B1953","objectId":{"name":"oFunctionCaller","path":"objects/oFunctionCaller/oFunctionCaller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":928.0,"y":-96.0,},
+      ],"layers":[
         {"$GMRInstanceLayer":"","%Name":"Interactables","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-            {"$GMRInstance":"v4","%Name":"inst_35094A9F","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_35094A9F","objectId":{"name":"oExit","path":"objects/oExit/oExit.yy",},"previewSprite":{"name":"sExitUp","path":"sprites/sExitUp/sExitUp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1696.0,"y":160.0,},
+            {"$GMRInstance":"v4","%Name":"inst_35094A9F","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_35094A9F","objectId":{"name":"oExit","path":"objects/oExit/oExit.yy",},"previewSprite":{"name":"sExitToShop","path":"sprites/sExitToShop/sExitToShop.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1696.0,"y":160.0,},
             {"$GMRInstance":"v4","%Name":"inst_6A6792A1","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6A6792A1","objectId":{"name":"oExit","path":"objects/oExit/oExit.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":928.0,},
-            {"$GMRInstance":"v4","%Name":"inst_61B1953","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_61B1953","objectId":{"name":"oFunctionCaller","path":"objects/oFunctionCaller/oFunctionCaller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":928.0,"y":-96.0,},
             {"$GMRInstance":"v4","%Name":"inst_3A150C50","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3A150C50","objectId":{"name":"oBucket","path":"objects/oBucket/oBucket.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1184.0,"y":448.0,},
           ],"layers":[],"name":"Interactables","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
         {"$GMRInstanceLayer":"","%Name":"Walls","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

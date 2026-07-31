@@ -1,6 +1,7 @@
 
 randomize() //sets the RNG seed to a random number
 
+
 //math functions
 
 		boundIRandom = function (lower, upper) // random int between lower and upper, inclusive on both sides
@@ -132,7 +133,8 @@ randomize() //sets the RNG seed to a random number
 				[rLayer3Type1, 1792, 96, 0, 0],			//deepwell				8
 				[rLayer3Type2, 1824, 2816, 0, 0],		//moon temple			9
 	
-				[rBigTestingRoom, 0, 0, 2368, 1408]		//testing				10
+				[rBigTestingRoom, 0, 0, 2368, 1408], 	//testing				10
+				[rTutorialRoom, 0, 0, 0, 0]				//tutorial, never enter 11
 			]
 		}
 
@@ -144,9 +146,13 @@ randomize() //sets the RNG seed to a random number
 				boundIRandom(0, 4),		//layer1 (5 rooms)
 				boundIRandom(5, 7),		//layer2 (3 rooms)
 				boundIRandom(8, 9), 	//layer3 (not done, 3 rooms planned)
-				10
+				
+				10,  //these are for music purposes
+				11
 			]
 		}
+		
+		show_debug_message(path);
 		
 		//background music queue
 		{

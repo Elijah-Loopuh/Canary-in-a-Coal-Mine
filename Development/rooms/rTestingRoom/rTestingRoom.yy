@@ -112,7 +112,7 @@
   "name":"rTestingRoom",
   "parent":{
     "name":"Unused Rooms",
-    "path":"folders/Rooms/Layer3/Unused Rooms.yy",
+    "path":"folders/Rooms/Unused Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

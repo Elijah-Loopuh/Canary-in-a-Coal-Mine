@@ -1,1 +1,1 @@
-draw_text(x, y, text);
+draw_text_transformed(x, y, text, scale, scale, 0);
