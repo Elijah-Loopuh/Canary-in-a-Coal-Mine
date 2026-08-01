@@ -40,8 +40,9 @@ doDoubleJumpRefresh(); //refresh jump if on the ground
 doPlayerStates(); //update player animations
 
 
+
 	//old player code
-	{
+	
 	/*
 	 //debug powers
 	if vDEBUG
@@ -307,4 +308,3 @@ doPlayerStates(); //update player animations
 		sprite_index = sFatMiner;
 	}
 	*/
-	}

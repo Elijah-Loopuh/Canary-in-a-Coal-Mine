@@ -1,3 +1,6 @@
+
+
+
 //Calculate stopping distances
 xStop = (xSpd * xSpd) / (2 * grip)
 yStop = (ySpd * ySpd) / (2 * grip)

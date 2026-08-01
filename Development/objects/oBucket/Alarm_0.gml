@@ -5,6 +5,8 @@ if (MinerQueue != 0)
 	MinerQueue -= 1;
 	alarm[1] = 30;
 	oPlayer.minerscore += 2;
+	oPlayer.totalscore += 2;
+	oPlayer.totalminers += 1;
 }
 
 else

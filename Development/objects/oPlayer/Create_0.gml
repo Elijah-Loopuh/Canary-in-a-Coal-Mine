@@ -30,6 +30,8 @@
 	jumpStartupMaster = 7; //gets number of frames in startup
 	jumpStartupTracker = jumpStartupMaster+1; //if over master, not starting up
 
+
+
 //set depth
 	id.depth = 300;
 
@@ -38,8 +40,12 @@
 	minercapacity = 3;
 	cancollect = true;
 	minerscore = 0;
-
+	totalscore = 0;
+	totalminers = 0;
 	vDEBUG = false;
+	monstersKill = 0;
+
+
 
 // Health
 	max_hp = 5;

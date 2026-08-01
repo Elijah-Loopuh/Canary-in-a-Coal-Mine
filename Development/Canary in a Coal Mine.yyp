@@ -93,6 +93,7 @@
     {"id":{"name":"oTimer","path":"objects/oTimer/oTimer.yy",},},
     {"id":{"name":"oTitle","path":"objects/oTitle/oTitle.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
+    {"id":{"name":"oWinner","path":"objects/oWinner/oWinner.yy",},},
     {"id":{"name":"oWorm","path":"objects/oWorm/oWorm.yy",},},
     {"id":{"name":"PlayerState","path":"objects/PlayerState/PlayerState.yy",},},
     {"id":{"name":"TitleScreen","path":"objects/TitleScreen/TitleScreen.yy",},},
@@ -116,6 +117,7 @@
     {"id":{"name":"rShop","path":"rooms/rShop/rShop.yy",},},
     {"id":{"name":"rTestingRoom","path":"rooms/rTestingRoom/rTestingRoom.yy",},},
     {"id":{"name":"rTutorialRoom","path":"rooms/rTutorialRoom/rTutorialRoom.yy",},},
+    {"id":{"name":"rWinScreen","path":"rooms/rWinScreen/rWinScreen.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
     {"id":{"name":"mBackroundMusic","path":"sounds/mBackroundMusic/mBackroundMusic.yy",},},
     {"id":{"name":"mIntenseRunning","path":"sounds/mIntenseRunning/mIntenseRunning.yy",},},
@@ -218,6 +220,7 @@
     {"roomId":{"name":"rCredits","path":"rooms/rCredits/rCredits.yy",},},
     {"roomId":{"name":"rDeathScreen","path":"rooms/rDeathScreen/rDeathScreen.yy",},},
     {"roomId":{"name":"rTutorialRoom","path":"rooms/rTutorialRoom/rTutorialRoom.yy",},},
+    {"roomId":{"name":"rWinScreen","path":"rooms/rWinScreen/rWinScreen.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

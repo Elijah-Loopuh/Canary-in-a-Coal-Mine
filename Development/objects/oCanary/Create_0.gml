@@ -20,3 +20,5 @@ snapDist = 0.5
 
 sprite_index = sCanary_New;
 image_speed = 1;
+
+gametime = 0;
