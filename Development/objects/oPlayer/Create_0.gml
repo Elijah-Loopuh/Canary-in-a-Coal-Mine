@@ -36,12 +36,12 @@
 	id.depth = 300;
 
 //miner points
-	minersCollected = 0;
+	minersCollected = 0; //carry ammount
 	minercapacity = 3;
 	cancollect = true;
-	minerscore = 0;
+	minerscore = 0; //currency
 	totalscore = 0;
-	totalminers = 0;
+	totalminers = 0; //miners collected tracker
 	vDEBUG = false;
 	monstersKill = 0;
 
@@ -101,8 +101,8 @@
 		if vDEBUG
 		{
 				hp = 999; //inf hp
-				minerscore = 10000; //inf money
 				doubleJMP = 1;
+				minercapacity = 1000;
 		}
 	}
 	

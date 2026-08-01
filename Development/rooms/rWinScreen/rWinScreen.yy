@@ -1,13 +1,12 @@
 {
   "$GMRoom":"v1",
   "%Name":"rWinScreen",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/rWinScreen/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_AC96851","path":"rooms/rWinScreen/rWinScreen.yy",},
-    {"name":"inst_72BDAEC7","path":"rooms/rWinScreen/rWinScreen.yy",},
     {"name":"inst_49A69389","path":"rooms/rWinScreen/rWinScreen.yy",},
     {"name":"inst_1C187231","path":"rooms/rWinScreen/rWinScreen.yy",},
   ],
@@ -15,7 +14,6 @@
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_AC96851","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_AC96851","objectId":{"name":"oWinner","path":"objects/oWinner/oWinner.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":672.0,"y":352.0,},
-        {"$GMRInstance":"v4","%Name":"inst_72BDAEC7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_72BDAEC7","objectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":352.0,},
         {"$GMRInstance":"v4","%Name":"inst_49A69389","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_49A69389","objectId":{"name":"oCanary","path":"objects/oCanary/oCanary.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":352.0,},
         {"$GMRInstance":"v4","%Name":"inst_1C187231","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1C187231","objectId":{"name":"oPicAxe","path":"objects/oPicAxe/oPicAxe.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":384.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
@@ -23,8 +21,8 @@
   ],
   "name":"rWinScreen",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Other",
+    "path":"folders/Rooms/Other.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

@@ -3,7 +3,7 @@
   "%Name":"fMedium",
   "AntiAlias":1,
   "applyKerning":0,
-  "ascender":35,
+  "ascender":33,
   "ascenderOffset":0,
   "bold":false,
   "canGenerateBitmap":true,
@@ -115,7 +115,7 @@
   "italic":false,
   "kerningPairs":[],
   "last":0,
-  "lineHeight":45,
+  "lineHeight":33,
   "maintainGms1Font":false,
   "name":"fMedium",
   "parent":{

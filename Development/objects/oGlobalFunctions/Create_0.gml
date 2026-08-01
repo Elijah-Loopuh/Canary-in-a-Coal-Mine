@@ -1,6 +1,9 @@
 
 randomize() //sets the RNG seed to a random number
 
+//stores number of spawned enemies & miners
+global.totalEnemies = 0;
+global.totalMiners = 0;
 
 //math functions
 
@@ -15,7 +18,7 @@ randomize() //sets the RNG seed to a random number
 		
 		function SpawnEnemy(amount, type, arial = false) 
 		{
-			i = 0
+			var i = 0;
 			
 			while (instance_number(type) < amount && i < 10000)
 			{
@@ -29,6 +32,8 @@ randomize() //sets the RNG seed to a random number
 				if (((place_meeting(px+16, py+1, oWall) && place_meeting(px-16, py+1, oWall)) || arial)/*floor checks*/ && !place_meeting(px, py, oNoEnemySpawn)/*region check*/ && !place_meeting(px, py, oWall)/*inside wall check*/)
 				{
 					instance_create_layer(px, py+32, "Instances", type);
+					global.totalEnemies += 1;
+
 					//instance_create_layer(px, py+32, "Instances", oPointer);
 				}
 				//show_debug_message(i)
@@ -104,6 +109,8 @@ randomize() //sets the RNG seed to a random number
 				if (place_meeting(px+16, py+1, oWall) && place_meeting(px-16, py+1, oWall)/*floor checks*/ && !place_meeting(px, py, oNoMinerSpawn)/*region*/ && !place_meeting(px, py, oWall)/*obstruction*/)
 				{
 					instance_create_layer(px, py+32, "Instances", oMiner);
+					global.totalMiners += 1;
+
 					//instance_create_layer(px, py+32, "Instances", oPointer);
 				}
 				//show_debug_message(i)
@@ -152,7 +159,6 @@ randomize() //sets the RNG seed to a random number
 			]
 		}
 		
-		show_debug_message(path);
 		
 		//background music queue
 		{
@@ -168,6 +174,10 @@ randomize() //sets the RNG seed to a random number
 		
 		//index of current song in the queue
 		queuePosition = -1; //set to negative one when no song is playing
+		
+		
+
+		
 		
 
 //array functions
