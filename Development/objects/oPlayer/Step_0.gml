@@ -39,7 +39,7 @@ doDoubleJumpRefresh(); //refresh jump if on the ground
 
 doPlayerStates(); //update player animations
 
-
+/*
 					show_debug_message(oPlayer.totalminers);
 					show_debug_message(global.totalMiners);
 					show_debug_message("");
