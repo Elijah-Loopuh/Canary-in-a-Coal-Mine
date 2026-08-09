@@ -164,6 +164,7 @@
     {"id":{"name":"sMinerJumpStartup32","path":"sprites/sMinerJumpStartup32/sMinerJumpStartup32.yy",},},
     {"id":{"name":"sMole","path":"sprites/sMole/sMole.yy",},},
     {"id":{"name":"sMoreTime","path":"sprites/sMoreTime/sMoreTime.yy",},},
+    {"id":{"name":"sNew_Pickaxe","path":"sprites/sNew_Pickaxe/sNew_Pickaxe.yy",},},
     {"id":{"name":"sNoCollision","path":"sprites/sNoCollision/sNoCollision.yy",},},
     {"id":{"name":"sNoEnemySpawn","path":"sprites/sNoEnemySpawn/sNoEnemySpawn.yy",},},
     {"id":{"name":"sNoMinerSpawn","path":"sprites/sNoMinerSpawn/sNoMinerSpawn.yy",},},
