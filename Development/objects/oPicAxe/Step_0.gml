@@ -1,5 +1,5 @@
-x = oPlayer.x+ 16 * facing
-y = oPlayer.y
+x = oPlayer.x + 14 * facing
+y = oPlayer.y + 8;
 if(oPlayer.moveDir < 0)
 {
 	facing = -1;
@@ -16,8 +16,8 @@ if (attack_timer > 0)
 if (mouse_check_button_pressed(mb_left) && !swinging && attack_timer == 0)
 {
 	visible = true;
-	mask_index = sPixAxe;
-	sprite_index = sPixAxe;
+	mask_index = sNew_Pickaxe;
+	sprite_index = sNew_Pickaxe;
 	swinging = true; 
 	swing_progress = 0;
 

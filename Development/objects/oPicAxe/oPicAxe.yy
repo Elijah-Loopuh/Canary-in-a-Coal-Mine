@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPixAxe",
-    "path":"sprites/sPixAxe/sPixAxe.yy",
+    "name":"sNew_Pickaxe",
+    "path":"sprites/sNew_Pickaxe/sNew_Pickaxe.yy",
   },
   "spriteMaskId":null,
   "visible":true,

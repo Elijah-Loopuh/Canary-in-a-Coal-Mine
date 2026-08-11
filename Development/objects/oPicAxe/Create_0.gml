@@ -10,3 +10,5 @@ normal_mask = sPixAxe;
 
 startAngle = 45;
 endAngle = 135;
+
+id.depth = 301;
