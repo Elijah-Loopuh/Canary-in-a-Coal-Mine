@@ -176,7 +176,8 @@ global.totalMiners = 0;
 		queuePosition = -1; //set to negative one when no song is playing
 		
 		
-
+		//tracks if the player will do the tutorial
+		doTutorial = true;
 		
 		
 

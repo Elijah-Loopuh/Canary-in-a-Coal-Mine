@@ -63,6 +63,7 @@
     {"id":{"name":"oButtonQuit_2","path":"objects/oButtonQuit_2/oButtonQuit_2.yy",},},
     {"id":{"name":"oButtonQuit","path":"objects/oButtonQuit/oButtonQuit.yy",},},
     {"id":{"name":"oButtonResume","path":"objects/oButtonResume/oButtonResume.yy",},},
+    {"id":{"name":"oButtonSkipTutorial","path":"objects/oButtonSkipTutorial/oButtonSkipTutorial.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"oCanary","path":"objects/oCanary/oCanary.yy",},},
     {"id":{"name":"oCarrying","path":"objects/oCarrying/oCarrying.yy",},},

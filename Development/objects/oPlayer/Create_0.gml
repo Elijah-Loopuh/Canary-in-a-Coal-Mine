@@ -45,7 +45,15 @@
 	vDEBUG = false;
 	monstersKill = 0;
 
-
+//skip tutorial option
+	if (!oGlobalFunctions.doTutorial)
+	{
+		room_goto(oGlobalFunctions.getRoomId(0));
+		x = oGlobalFunctions.getRoomTopX(0);
+		y = oGlobalFunctions.getRoomTopY(0);
+		
+		show_debug_message(string(x) + ", " + string(y));
+	}
 
 // Health
 	max_hp = 5;
@@ -361,24 +369,26 @@
 		{
 			coyoteTime = coyoteTimeMaster;
 		}
-		else if (coyoteTime >= -10) // underflow protection
+		else if (coyoteTime >= -10) // underflow protection, count down coyote time
 		{
 			coyoteTime --;	
 		}
 		
 		//Jump
-		if (jumpKeyPressed)
+
+		if ((place_meeting( x, y + 1, oWall) || coyoteTime >= 0)) //regular jump (buffered)
 		{
-			if (place_meeting( x, y + 1, oWall) || coyoteTime >= 0) //regular jump
+			if (jumpKey && jumpStartupTracker >= jumpStartupMaster)
 			{
 				jumpStartupTracker = jumpStartupMaster;
 			}
-			else if (doubleJMP == 1) //double jump
-			{
-				yspd = jspd * 0.75; //weaker jump
-				doubleJMP = 0; //disable double jump
-			}
 		}
+		else if (doubleJMP == 1 && jumpKeyPressed) //double jump
+		{
+			yspd = jspd * 0.75; //weaker jump
+			doubleJMP = 0; //disable double jump
+		}
+		
 		//do startup
 		if (jumpStartupTracker <= jumpStartupMaster && jumpStartupTracker >= 0) //run startup animation + do tracking
 		{
