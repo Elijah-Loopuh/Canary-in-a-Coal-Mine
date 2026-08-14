@@ -36,6 +36,7 @@ if(dead == false)
 		if(attack_timer <= 0 && attack_startup > attack_startup_master) //if can attack & not in startup
 		{
 			attack_startup = attack_startup_master; //start attack startup
+			sprite_index = sDrunkThrow;
 		}
 		else 
 		{
@@ -53,11 +54,12 @@ if(dead == false)
 	{
 		attack_timer = attack_cooldown; //reset timers
 		attack_startup = attack_startup_master + 10;
+		sprite_index = sMiner_1;
 		movetowardsplayer(); //reset move speed after attack startup ends
 	
 		if (distance <= firing_distance && canSee) //if player is a valid target
 		{
-			instance_create_layer(x,y - 16, "Instances", oBeer) //shoot beeer
+			instance_create_layer(x + (image_xscale*16),y - 32, "Instances", oBeer) //shoot beeer
 		}
 	}
 }

@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sMiner",
-    "path":"sprites/sMiner/sMiner.yy",
+    "name":"sMinerNew",
+    "path":"sprites/sMinerNew/sMinerNew.yy",
   },
   "spriteMaskId":null,
   "visible":true,
