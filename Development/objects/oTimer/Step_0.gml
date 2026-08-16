@@ -1,16 +1,32 @@
 // Countdown Timer Notice
-if(!is_gas_rising)
+if(gas_timer > 0)
 {
 	gas_timer--;
-	
-	if(gas_timer <=0)
+	is_gas_rising = false;
+}
+if(gas_timer <= 0)
+{
+	is_gas_rising = true;
+		
+	for (var i = 0; i < 2; i ++)
 	{
-		is_gas_rising = true
+		instance_create_layer(random_range(oCamera._camX - oCamera._camWidth / 2, oCamera._camX + oCamera._camWidth * 1.5), oCamera.targetY + oCamera._camHeight + 32, "Instances", oGasParticle); //create gas effect
 	}
 	
-	//show_debug_message("It feels like it's harder to breath."); commenter cause it fills the debug log
+	if (frame_counter % (60*10) == 0)
+	{
+		oPlayer.take_damage(1);
+	}
 }
 
+frame_counter += 1;
+
+if (frame_counter > 4294967295) //overflow protection
+{
+	frame_counter = 0;
+}
+
+/*
 // Camera Lock
 var _camX = camera_get_view_x(view_camera[0]);
 var _camY = camera_get_view_y(view_camera[0]);
