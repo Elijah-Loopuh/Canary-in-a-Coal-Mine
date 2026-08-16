@@ -1,6 +1,5 @@
 // Time till gas starts rising
 timer_seconds = 60*10;
-timer_seconds = 1;
 
 // Seconds to fps
 gas_timer = timer_seconds * game_get_speed(gamespeed_fps);
