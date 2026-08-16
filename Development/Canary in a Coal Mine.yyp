@@ -134,6 +134,7 @@
     {"id":{"name":"sBat","path":"sprites/sBat/sBat.yy",},},
     {"id":{"name":"sBeerBottle","path":"sprites/sBeerBottle/sBeerBottle.yy",},},
     {"id":{"name":"sBgTileBasic","path":"sprites/sBgTileBasic/sBgTileBasic.yy",},},
+    {"id":{"name":"sBucketNew","path":"sprites/sBucketNew/sBucketNew.yy",},},
     {"id":{"name":"sBucketWitAFriend","path":"sprites/sBucketWitAFriend/sBucketWitAFriend.yy",},},
     {"id":{"name":"sButton","path":"sprites/sButton/sButton.yy",},},
     {"id":{"name":"sCanary_New","path":"sprites/sCanary_New/sCanary_New.yy",},},

@@ -1,3 +1,7 @@
+image_index = 0;
+alarm[1] = 16;
+
+/*
 if(flash == false)
 {
 	image_index = 0;

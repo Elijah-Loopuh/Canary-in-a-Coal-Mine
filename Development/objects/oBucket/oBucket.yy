@@ -39,8 +39,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sGoodBucket",
-    "path":"sprites/sGoodBucket/sGoodBucket.yy",
+    "name":"sBucketNew",
+    "path":"sprites/sBucketNew/sBucketNew.yy",
   },
   "spriteMaskId":null,
   "visible":true,
