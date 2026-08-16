@@ -139,6 +139,8 @@
 			persistent = false;
 			oCanary.persistent = false;
 			oPicAxe.persistent = false;
+			global.monstersKill = monstersKill;
+			global.minerSaved = totalminers;
 			room_goto(rDeathScreen);
 			layer_set_visible(layer_get_id("PlayerScoreUI"), false);
 		}

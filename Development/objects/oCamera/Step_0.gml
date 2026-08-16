@@ -6,6 +6,7 @@ if keyboard_check_pressed(vk_f8)
 
 //Exit if there is no player
 if !instance_exists(oPlayer) exit;
+if room == rDeathScreen exit;
 
 //Get camera size
  _camWidth = camera_get_view_width(view_camera[0]);
