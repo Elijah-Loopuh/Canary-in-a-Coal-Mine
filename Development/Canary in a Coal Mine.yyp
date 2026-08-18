@@ -43,7 +43,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2026.0.0.16",
   },
   "name":"Canary in a Coal Mine",
   "resources":[
@@ -213,8 +213,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rLayer3Type3","path":"rooms/rLayer3Type3/rLayer3Type3.yy",},},
     {"roomId":{"name":"rMenu","path":"rooms/rMenu/rMenu.yy",},},
+    {"roomId":{"name":"rLayer3Type3","path":"rooms/rLayer3Type3/rLayer3Type3.yy",},},
     {"roomId":{"name":"rTestingRoom","path":"rooms/rTestingRoom/rTestingRoom.yy",},},
     {"roomId":{"name":"rSecondRoom","path":"rooms/rSecondRoom/rSecondRoom.yy",},},
     {"roomId":{"name":"rShop","path":"rooms/rShop/rShop.yy",},},
