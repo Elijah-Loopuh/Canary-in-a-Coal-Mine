@@ -31,16 +31,16 @@ for (i=0; i<1000000; i++)
 			with oNoWall
 			{
 				if place_empty(x + oBuilder.width, y, oNoWall)
-					instance_create_layer(x + oBuilder.width, y,"Instances",oDevMarker)
+					instance_create_layer(x + oBuilder.width, y,"Instances",oWall)
 	
 				if place_empty(x - oBuilder.width, y, oNoWall)
-					instance_create_layer(x - oBuilder.width, y,"Instances",oDevMarker)
+					instance_create_layer(x - oBuilder.width, y,"Instances",oWall)
 	
 				if place_empty(x, y + oBuilder.width, oNoWall)
-					instance_create_layer(x, y + oBuilder.width,"Instances",oDevMarker)
+					instance_create_layer(x, y + oBuilder.width,"Instances",oWall)
 	
 				if place_empty(x, y - oBuilder.width, oNoWall)
-					instance_create_layer(x, y - oBuilder.width,"Instances",oDevMarker)
+					instance_create_layer(x, y - oBuilder.width,"Instances",oWall)
 			}
 
 			break

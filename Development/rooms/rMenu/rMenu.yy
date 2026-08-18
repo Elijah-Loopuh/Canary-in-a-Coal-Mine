@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"rMenu",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/rMenu/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
@@ -15,6 +15,14 @@
     {"name":"inst_1DD53D28","path":"rooms/rMenu/rMenu.yy",},
     {"name":"inst_1244CD44","path":"rooms/rMenu/rMenu.yy",},
     {"name":"inst_775E3B9F","path":"rooms/rMenu/rMenu.yy",},
+    {"name":"inst_62AA4992","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_210D79B0","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_FD8C186","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_2CB09BBE","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_44D5C29B","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_6105C318","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_1C93D153","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_CC0FEF2","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[
