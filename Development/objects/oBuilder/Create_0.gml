@@ -5,7 +5,7 @@ random_set_seed(oGlobalFunctions.savedSeed); //replaces persistent room
 dir = irandom(3);
 
 width = 32
-size = 500
+size = 1000
 vectStartCoords = [x, y];
 bucketDepth = irandom(size);
 shopDepth = irandom(size);
@@ -96,7 +96,7 @@ for (i=0; i<10000; i++)
 	if dir = 3
 		y += width
 		
-	if (instance_place(x, y, oWall))
+	if (place_meeting(x, y, oWall))
 	{
 		x = vectStartCoords[0];
 		y = vectStartCoords[1];

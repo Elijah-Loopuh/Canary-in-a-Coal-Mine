@@ -155,7 +155,7 @@ global.totalMiners = 0;
 			[
 				boundIRandom(0, 4),		//layer1 (5 rooms)
 				boundIRandom(5, 7),		//layer2 (3 rooms)
-				boundIRandom(8, 10), 	//layer3 (not done, 3 rooms planned)
+				boundIRandom(10, 10), 	//layer3 (not done, 3 rooms planned)
 				
 				11,  //these are for music purposes
 				12
