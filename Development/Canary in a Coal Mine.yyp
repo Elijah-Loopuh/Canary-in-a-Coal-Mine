@@ -43,7 +43,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2026.0.0.16",
+    "IDEVersion":"2024.14.4.222",
   },
   "name":"Canary in a Coal Mine",
   "resources":[
@@ -94,7 +94,6 @@
     {"id":{"name":"oPointer","path":"objects/oPointer/oPointer.yy",},},
     {"id":{"name":"oPoints","path":"objects/oPoints/oPoints.yy",},},
     {"id":{"name":"oPowerUp","path":"objects/oPowerUp/oPowerUp.yy",},},
-    {"id":{"name":"oTest","path":"objects/oTest/oTest.yy",},},
     {"id":{"name":"oText","path":"objects/oText/oText.yy",},},
     {"id":{"name":"oTimer","path":"objects/oTimer/oTimer.yy",},},
     {"id":{"name":"oTitle","path":"objects/oTitle/oTitle.yy",},},
