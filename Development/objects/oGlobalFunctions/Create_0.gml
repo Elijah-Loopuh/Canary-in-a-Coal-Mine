@@ -1,6 +1,8 @@
 
 randomize() //sets the RNG seed to a random number
 
+savedSeed = random_get_seed(); //used to keep generation of last level consistent
+
 //stores number of spawned enemies & miners
 global.totalEnemies = 0;
 global.totalMiners = 0;
@@ -153,8 +155,7 @@ global.totalMiners = 0;
 			[
 				boundIRandom(0, 4),		//layer1 (5 rooms)
 				boundIRandom(5, 7),		//layer2 (3 rooms)
-				//boundIRandom(8, 10), 	//layer3 (not done, 3 rooms planned)
-				10,
+				boundIRandom(8, 10), 	//layer3 (not done, 3 rooms planned)
 				
 				11,  //these are for music purposes
 				12

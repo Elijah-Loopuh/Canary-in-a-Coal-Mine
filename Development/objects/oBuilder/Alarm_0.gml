@@ -1,0 +1,2 @@
+wallScan();
+instance_destroy();

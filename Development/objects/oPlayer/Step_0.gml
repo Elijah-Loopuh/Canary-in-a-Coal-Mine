@@ -38,3 +38,7 @@ doDeath(); //if health is 0, reset (die)
 doDoubleJumpRefresh(); //refresh jump if on the ground
 
 doPlayerStates(); //update player animations
+
+show_debug_message(x);
+show_debug_message(y);
+show_debug_message("");

@@ -43,7 +43,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2026.0.0.16",
   },
   "name":"Canary in a Coal Mine",
   "resources":[
@@ -74,7 +74,9 @@
     {"id":{"name":"oDevMarker","path":"objects/oDevMarker/oDevMarker.yy",},},
     {"id":{"name":"oDrunkMiner","path":"objects/oDrunkMiner/oDrunkMiner.yy",},},
     {"id":{"name":"oExit","path":"objects/oExit/oExit.yy",},},
+    {"id":{"name":"oExitEnd","path":"objects/oExitEnd/oExitEnd.yy",},},
     {"id":{"name":"oExitShop","path":"objects/oExitShop/oExitShop.yy",},},
+    {"id":{"name":"oExitToShop","path":"objects/oExitToShop/oExitToShop.yy",},},
     {"id":{"name":"oFullHealth","path":"objects/oFullHealth/oFullHealth.yy",},},
     {"id":{"name":"oFunctionCaller","path":"objects/oFunctionCaller/oFunctionCaller.yy",},},
     {"id":{"name":"oGasParticle","path":"objects/oGasParticle/oGasParticle.yy",},},

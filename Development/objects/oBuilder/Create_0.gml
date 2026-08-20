@@ -1,8 +1,14 @@
 //Insert Setup
-randomise()
-dir = irandom(3)
+
+random_set_seed(oGlobalFunctions.savedSeed); //replaces persistent room
+
+dir = irandom(3);
+
 width = 32
 size = 500
+vectStartCoords = [x, y];
+bucketDepth = irandom(size);
+shopDepth = irandom(size);
 
 //Wall all non-oNoWall spaces
 function wallScan()
@@ -37,6 +43,19 @@ for (i=0; i<10000; i++)
 {
 	dir = irandom(3)
 	
+	bucketDepth -= 1;
+	shopDepth -= 1;
+	if (bucketDepth <= 0)
+	{
+		instance_create_layer(x, y, "Instances", oBucket);
+		bucketDepth = 100000000000000000;
+	}
+	if (shopDepth <= 0)
+	{
+		instance_create_layer(x, y, "Instances", oExitToShop);
+		shopDepth = 100000000000000000;
+	}
+	
 	
 	if instance_number(oNoWall) >= size
 		{
@@ -55,8 +74,8 @@ for (i=0; i<10000; i++)
 					instance_create_layer(x, y - oBuilder.width,"Instances",oWall)
 			}*/
 
-			wallScan()
-			instance_destroy()
+			//wallScan();
+			//instance_destroy()
 			break;
 		}
 		
@@ -76,5 +95,14 @@ for (i=0; i<10000; i++)
 	
 	if dir = 3
 		y += width
+		
+	if (instance_place(x, y, oWall))
+	{
+		x = vectStartCoords[0];
+		y = vectStartCoords[1];
+	}
 }
 
+alarm[0] = 2;
+
+instance_create_layer(x, y, "Instances", oExitEnd)

@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"oBuilder",
+  "%Name":"oExitToShop",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oBuilder",
+  "name":"oExitToShop",
   "overriddenProperties":[],
   "parent":{
-    "name":"Invisible Elements",
-    "path":"folders/Objects/Invisible Elements.yy",
+    "name":"Physical Elements",
+    "path":"folders/Objects/Physical Elements.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sAll_Sides_floor",
-    "path":"sprites/sAll_Sides_floor/sAll_Sides_floor.yy",
+    "name":"sExitToShop",
+    "path":"sprites/sExitToShop/sExitToShop.yy",
   },
   "spriteMaskId":null,
   "visible":true,
