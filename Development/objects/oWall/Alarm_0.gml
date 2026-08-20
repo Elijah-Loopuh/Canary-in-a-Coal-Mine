@@ -2,10 +2,10 @@ id.depth = 150
 
 //fancy world gen stuff
 
-left = place_meeting(x-32, y, oWall);
-right = place_meeting(x+32, y, oWall);
-up = place_meeting(x, y-32, oWall);
-down = place_meeting(x, y+32, oWall);
+left = place_meeting(x-32, y, [oWall, oWallPerfomance]);
+right = place_meeting(x+32, y, [oWall, oWallPerfomance]);
+up = place_meeting(x, y-32, [oWall, oWallPerfomance]);
+down = place_meeting(x, y+32, [oWall, oWallPerfomance]);
 
 //fully surrounded 0
 if(!left && !right && !up && !down){sprite_index = sAll_Sides_floor;}

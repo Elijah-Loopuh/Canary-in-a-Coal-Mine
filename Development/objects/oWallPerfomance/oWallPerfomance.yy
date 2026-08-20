@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"oBuilder",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oWallPerfomance",
+  "eventList":[],
   "managed":true,
-  "name":"oBuilder",
+  "name":"oWallPerfomance",
   "overriddenProperties":[],
   "parent":{
-    "name":"Invisible Elements",
-    "path":"folders/Objects/Invisible Elements.yy",
+    "name":"Physical Elements",
+    "path":"folders/Objects/Physical Elements.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sAll_Sides_floor",
-    "path":"sprites/sAll_Sides_floor/sAll_Sides_floor.yy",
+    "name":"sTrue_Middle_floor",
+    "path":"sprites/sTrue_Middle_floor/sTrue_Middle_floor.yy",
   },
   "spriteMaskId":null,
   "visible":true,

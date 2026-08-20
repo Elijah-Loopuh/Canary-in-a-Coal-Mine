@@ -139,9 +139,10 @@ global.totalMiners = 0;
 			
 				[rLayer3Type1, 1792, 96, 0, 0],			//deepwell				8
 				[rLayer3Type2, 1824, 2816, 0, 0],		//moon temple			9
+				[rLayer3Type3, 928, 1408, 0, 0],		//mr bones wild ride	10
 	
-				[rBigTestingRoom, 0, 0, 2368, 1408], 	//testing				10
-				[rTutorialRoom, 0, 0, 0, 0]				//tutorial, never enter 11
+				[rBigTestingRoom, 0, 0, 2368, 1408], 	//testing				11
+				[rTutorialRoom, 0, 0, 0, 0],			//tutorial, never enter 12
 			]
 		}
 
@@ -152,10 +153,11 @@ global.totalMiners = 0;
 			[
 				boundIRandom(0, 4),		//layer1 (5 rooms)
 				boundIRandom(5, 7),		//layer2 (3 rooms)
-				boundIRandom(8, 9), 	//layer3 (not done, 3 rooms planned)
+				//boundIRandom(8, 10), 	//layer3 (not done, 3 rooms planned)
+				10,
 				
-				10,  //these are for music purposes
-				11
+				11,  //these are for music purposes
+				12
 			]
 		}
 		

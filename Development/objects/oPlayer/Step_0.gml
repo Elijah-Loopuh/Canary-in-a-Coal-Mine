@@ -38,10 +38,3 @@ doDeath(); //if health is 0, reset (die)
 doDoubleJumpRefresh(); //refresh jump if on the ground
 
 doPlayerStates(); //update player animations
-
-/*
-					show_debug_message(oPlayer.totalminers);
-					show_debug_message(global.totalMiners);
-					show_debug_message("");
-					show_debug_message(oPlayer.monstersKill);
-					show_debug_message(global.totalEnemies);

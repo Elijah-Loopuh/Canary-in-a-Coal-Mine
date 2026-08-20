@@ -43,7 +43,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2026.0.0.16",
   },
   "name":"Canary in a Coal Mine",
   "resources":[
@@ -98,6 +98,7 @@
     {"id":{"name":"oTimer","path":"objects/oTimer/oTimer.yy",},},
     {"id":{"name":"oTitle","path":"objects/oTitle/oTitle.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
+    {"id":{"name":"oWallPerfomance","path":"objects/oWallPerfomance/oWallPerfomance.yy",},},
     {"id":{"name":"oWinner","path":"objects/oWinner/oWinner.yy",},},
     {"id":{"name":"oWorm","path":"objects/oWorm/oWorm.yy",},},
     {"id":{"name":"PlayerState","path":"objects/PlayerState/PlayerState.yy",},},

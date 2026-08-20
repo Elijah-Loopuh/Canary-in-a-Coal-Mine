@@ -13,8 +13,8 @@ function wallScan()
 	for (i = 0; i < room_height * room_width; i += width)
 	{
 		//Check current space and place wall
-		if place_empty(x, y, oNoWall)
-			instance_create_layer(x, y, "Instances", oWall)
+		if place_empty(x, y, [oNoWall, oWall])
+			instance_create_layer(x, y, "Instances", oWallPerfomance)
 		
 		
 		//Move
@@ -40,7 +40,7 @@ for (i=0; i<10000; i++)
 	
 	if instance_number(oNoWall) >= size
 		{
-			/*with oNoWall
+			with oNoWall
 			{
 				if place_empty(x + oBuilder.width, y, oNoWall)
 					instance_create_layer(x + oBuilder.width, y,"Instances",oWall)
@@ -53,11 +53,11 @@ for (i=0; i<10000; i++)
 	
 				if place_empty(x, y - oBuilder.width, oNoWall)
 					instance_create_layer(x, y - oBuilder.width,"Instances",oWall)
-			}*/
+			}
 
 			wallScan()
 			instance_destroy()
-			break
+			break;
 		}
 		
 	
