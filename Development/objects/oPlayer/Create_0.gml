@@ -27,7 +27,7 @@
 	coyoteTimeMaster = 0.15*60; //allows jumping for a brief time after falling off an edge
 	coyoteTime = coyoteTimeMaster;
 	jumpState = "not";
-	jumpStartupMaster = 7; //gets number of frames in startup
+	jumpStartupMaster = 4; //gets number of frames in startup
 	jumpStartupTracker = jumpStartupMaster+1; //if over master, not starting up
 
 

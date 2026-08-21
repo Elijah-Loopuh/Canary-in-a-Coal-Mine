@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPowerUp",
-    "path":"sprites/sPowerUp/sPowerUp.yy",
+    "name":"sPowerUpNew",
+    "path":"sprites/sPowerUpNew/sPowerUpNew.yy",
   },
   "spriteMaskId":null,
   "visible":true,

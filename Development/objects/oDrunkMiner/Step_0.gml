@@ -54,7 +54,7 @@ if(dead == false)
 	{
 		attack_timer = attack_cooldown; //reset timers
 		attack_startup = attack_startup_master + 10;
-		sprite_index = sMiner_1;
+		sprite_index = sDrunkWalk;
 		movetowardsplayer(); //reset move speed after attack startup ends
 	
 		if (distance <= firing_distance && canSee) //if player is a valid target

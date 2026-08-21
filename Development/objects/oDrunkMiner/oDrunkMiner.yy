@@ -38,9 +38,12 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
+    "name":"sDrunkWalk",
+    "path":"sprites/sDrunkWalk/sDrunkWalk.yy",
+  },
+  "spriteMaskId":{
     "name":"sMiner_1",
     "path":"sprites/sMiner_1/sMiner_1.yy",
   },
-  "spriteMaskId":null,
   "visible":true,
 }
